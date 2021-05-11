@@ -1,0 +1,2964 @@
+fileFormatVersion: 2
+guid: 8e0c3dbf33d8440cab5a7ef017bad721
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4811971299800237358
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_0
+  - first:
+      213: -4954307242907341705
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_1
+  - first:
+      213: -5589270147170508797
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_2
+  - first:
+      213: 1323797435215506041
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_3
+  - first:
+      213: -1251259462792734978
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_4
+  - first:
+      213: 6672432824724246423
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_5
+  - first:
+      213: 7093744631504465030
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_6
+  - first:
+      213: -8763953536478651556
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_7
+  - first:
+      213: -2139951262469678735
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_8
+  - first:
+      213: -3170225946837064457
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_9
+  - first:
+      213: 72107981961755678
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_10
+  - first:
+      213: -7278357375359615123
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_11
+  - first:
+      213: 5507609350004836982
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_12
+  - first:
+      213: -1889363332440268122
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_13
+  - first:
+      213: 545970642354765432
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_14
+  - first:
+      213: 7497525228390082604
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_15
+  - first:
+      213: 7946202542196333146
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_16
+  - first:
+      213: 6770635349799720975
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_17
+  - first:
+      213: 1532677611906829826
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_18
+  - first:
+      213: -8141025546151357239
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_19
+  - first:
+      213: 1043842479002761104
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_20
+  - first:
+      213: 2337347870555604265
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_21
+  - first:
+      213: 6872880035109717362
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_22
+  - first:
+      213: -4042802463337982553
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_23
+  - first:
+      213: -3903318688716768990
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_24
+  - first:
+      213: -8049899369539190048
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_25
+  - first:
+      213: -2334981343067394147
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_26
+  - first:
+      213: 8107219994343694464
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_27
+  - first:
+      213: 3601564240271991340
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_28
+  - first:
+      213: 2369933746261670623
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_29
+  - first:
+      213: 6114183168175063074
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_30
+  - first:
+      213: 7226511089485057381
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_31
+  - first:
+      213: -6902108228494690209
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_32
+  - first:
+      213: 802990111672943439
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_33
+  - first:
+      213: 7501322121267461091
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_34
+  - first:
+      213: 2821813161846693503
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_35
+  - first:
+      213: 1847419559900918887
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_36
+  - first:
+      213: 4325801360733001338
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_37
+  - first:
+      213: -5661244475206331694
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_38
+  - first:
+      213: -6683856240975985861
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_39
+  - first:
+      213: 8581291713850959667
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_40
+  - first:
+      213: 4112429563500890907
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_41
+  - first:
+      213: 4831269991773980275
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_42
+  - first:
+      213: -1480632099204096572
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_43
+  - first:
+      213: -6471703872641649853
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_44
+  - first:
+      213: -5335439836342197151
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_45
+  - first:
+      213: 8712722357832247351
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_46
+  - first:
+      213: -1735144987784224950
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_47
+  - first:
+      213: 3475215746033960184
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_48
+  - first:
+      213: -4605575425365381215
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_49
+  - first:
+      213: -2621396740930489888
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_50
+  - first:
+      213: -1579814827323283837
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_51
+  - first:
+      213: -5719940744994705241
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_52
+  - first:
+      213: -3325935636184157181
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_53
+  - first:
+      213: 286328402720234737
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_54
+  - first:
+      213: 7209444982178659081
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_55
+  - first:
+      213: -3402067046310363747
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_56
+  - first:
+      213: -7099794124595861537
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_57
+  - first:
+      213: 8972081447297309429
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_58
+  - first:
+      213: -2376410613002932168
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_59
+  - first:
+      213: 4435885153010911425
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_60
+  - first:
+      213: -8265888209264140041
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_61
+  - first:
+      213: 6688021794061640228
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_62
+  - first:
+      213: -4652437545414794803
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_63
+  - first:
+      213: 4477523415257488393
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_64
+  - first:
+      213: -840113750265545925
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_65
+  - first:
+      213: 4100223497815668385
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_66
+  - first:
+      213: -202735114651895290
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_67
+  - first:
+      213: 4857244733619640378
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_68
+  - first:
+      213: -2298519827432249878
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_69
+  - first:
+      213: 4903486352602084779
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_70
+  - first:
+      213: 2838876530766100563
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_71
+  - first:
+      213: -8075238628358328839
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_72
+  - first:
+      213: -4465107133293084015
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_73
+  - first:
+      213: 6675183836442541259
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_74
+  - first:
+      213: 6432450885472898405
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_75
+  - first:
+      213: -8444071762849579950
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_76
+  - first:
+      213: -7311179225482845305
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_77
+  - first:
+      213: -853837806908055829
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_78
+  - first:
+      213: 191159762022568247
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_79
+  - first:
+      213: -3486308087686259247
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_80
+  - first:
+      213: 3499918141541372339
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_81
+  - first:
+      213: 8695388648730752671
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_82
+  - first:
+      213: 7246857192995628169
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_83
+  - first:
+      213: -8226882499464218129
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_84
+  - first:
+      213: -7026769299741535618
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_85
+  - first:
+      213: -5381559595950898426
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_86
+  - first:
+      213: -9103958785914201404
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_87
+  - first:
+      213: 6923898098275098487
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_88
+  - first:
+      213: 3911849966711363639
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_89
+  - first:
+      213: 5330237767539667747
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_90
+  - first:
+      213: -3270270316856714550
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_91
+  - first:
+      213: -1517188691635571292
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_92
+  - first:
+      213: -7056692338777325345
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_93
+  - first:
+      213: -5355129931877451601
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_94
+  - first:
+      213: -1072322159585818015
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_95
+  - first:
+      213: 8835873103032144300
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_96
+  - first:
+      213: 2195937233016205830
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_97
+  - first:
+      213: -5546314940237175456
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_98
+  - first:
+      213: -2405085201782938350
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_99
+  - first:
+      213: -7455814867363889272
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_100
+  - first:
+      213: -7574896658942602571
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_101
+  - first:
+      213: 8662845022738067973
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_102
+  - first:
+      213: -8739728346951699082
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_103
+  - first:
+      213: 949938388358881998
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_104
+  - first:
+      213: 7720405360204469792
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_105
+  - first:
+      213: -9084354505514524591
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_106
+  - first:
+      213: 1333645203283815012
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_107
+  - first:
+      213: 3481503504536533624
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_108
+  - first:
+      213: 1559002463769253986
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_109
+  - first:
+      213: -3854559215340737515
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_110
+  - first:
+      213: -306208025618344084
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_111
+  - first:
+      213: -640385122426301075
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_112
+  - first:
+      213: -6475236825372393927
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_113
+  - first:
+      213: 6107851574295315303
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_114
+  - first:
+      213: -6060603159618753399
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_115
+  - first:
+      213: -6555943684618613260
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_116
+  - first:
+      213: -8235420314110690339
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_117
+  - first:
+      213: 5024609046009858707
+    second: young_tails_the_fox_sprites_by_lexxart_d33b3o5_118
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25c7f9f66e87c240800000000000000
+      internalID: 4811971299800237358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cec56cfc3ce3bb0800000000000000
+      internalID: -4954307242907341705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300e4341a6cee62b0800000000000000
+      internalID: -5589270147170508797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ae798e0c21f5210800000000000000
+      internalID: 1323797435215506041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef69466e522a2aee0800000000000000
+      internalID: -1251259462792734978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f48515d4e399c50800000000000000
+      internalID: 6672432824724246423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_6
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c6828782b027260800000000000000
+      internalID: 7093744631504465030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_7
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b592621be206680800000000000000
+      internalID: -8763953536478651556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_8
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17998db2aad5d42e0800000000000000
+      internalID: -2139951262469678735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_9
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4ec054c481104d0800000000000000
+      internalID: -3170225946837064457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_10
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cfc4ad3dd200100800000000000000
+      internalID: 72107981961755678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_11
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f785d87841efa90800000000000000
+      internalID: -7278357375359615123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_12
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a88a4f585fe6c40800000000000000
+      internalID: 5507609350004836982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_13
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2ef363f02a7c5e0800000000000000
+      internalID: -1889363332440268122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_14
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ef853186da39700800000000000000
+      internalID: 545970642354765432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_15
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2868bcb87f8c0860800000000000000
+      internalID: 7497525228390082604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_16
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 268
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a1be08c15964e60800000000000000
+      internalID: 7946202542196333146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_17
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08d3807af026fd50800000000000000
+      internalID: 6770635349799720975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e86e4ea2a254510800000000000000
+      internalID: 1532677611906829826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_19
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c494461664450f80800000000000000
+      internalID: -8141025546151357239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_20
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0973c6244397c7e00800000000000000
+      internalID: 1043842479002761104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9258bf4218def6020800000000000000
+      internalID: 2337347870555604265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_22
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275c6945aff516f50800000000000000
+      internalID: 6872880035109717362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_23
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a55aab449415e7c0800000000000000
+      internalID: -4042802463337982553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_24
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229b4e15550a4d9c0800000000000000
+      internalID: -3903318688716768990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_25
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2c9f07c23094090800000000000000
+      internalID: -8049899369539190048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_26
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fad49f6da789fd0800000000000000
+      internalID: -2334981343067394147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_27
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080ecc681a1a28070800000000000000
+      internalID: 8107219994343694464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_28
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22692938935bf130800000000000000
+      internalID: 3601564240271991340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_29
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda332f8f22b3e020800000000000000
+      internalID: 2369933746261670623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_30
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2204fb67231f9d450800000000000000
+      internalID: 6114183168175063074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_31
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d8d265c89b94460800000000000000
+      internalID: 7226511089485057381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_32
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58f5479229c630a0800000000000000
+      internalID: -6902108228494690209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_33
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43ca6c804bc42b00800000000000000
+      internalID: 802990111672943439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_34
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb3defb9bc0a1860800000000000000
+      internalID: 7501322121267461091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_35
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ed46ebe18192720800000000000000
+      internalID: 2821813161846693503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_36
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764b00b3d4a53a910800000000000000
+      internalID: 1847419559900918887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_37
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7654632b65580c30800000000000000
+      internalID: 4325801360733001338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_38
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d21fa4f4283f61b0800000000000000
+      internalID: -5661244475206331694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_39
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3349d2592c2e33a0800000000000000
+      internalID: -6683856240975985861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_40
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337e61e195fd61770800000000000000
+      internalID: 8581291713850959667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_41
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b094046e8421930800000000000000
+      internalID: 4112429563500890907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_42
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37641b9d57e1c0340800000000000000
+      internalID: 4831269991773980275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_43
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd16e353fcb37be0800000000000000
+      internalID: -1480632099204096572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_44
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 176
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343bcabcd93ef26a0800000000000000
+      internalID: -6471703872641649853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_45
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 184
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164ea5abcb5b4f5b0800000000000000
+      internalID: -5335439836342197151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_46
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 184
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738e13d82dec9e870800000000000000
+      internalID: 8712722357832247351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_47
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 184
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f5259a3d68be7e0800000000000000
+      internalID: -1735144987784224950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_48
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 184
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4c23cfe427a3030800000000000000
+      internalID: 3475215746033960184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_49
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 184
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afe3d05d85b510c0800000000000000
+      internalID: -4605575425365381215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_50
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 184
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1b8798d8dee9bd0800000000000000
+      internalID: -2621396740930489888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_51
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3862086e8ce531ae0800000000000000
+      internalID: -1579814827323283837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_52
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0be4ea230be90b0800000000000000
+      internalID: -5719940744994705241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_53
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3043e631927e7d1d0800000000000000
+      internalID: -3325935636184157181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_54
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc9e3d4a2e39f300800000000000000
+      internalID: 286328402720234737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_55
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b3b7693081d0460800000000000000
+      internalID: 7209444982178659081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_56
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dbb9adb0e69c0d0800000000000000
+      internalID: -3402067046310363747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_57
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7ee092cd6787d90800000000000000
+      internalID: -7099794124595861537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_58
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa570a4a8c338c70800000000000000
+      internalID: 8972081447297309429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_59
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830fd73632b450fd0800000000000000
+      internalID: -2376410613002932168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_60
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 131
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c805a95b0e6f8d30800000000000000
+      internalID: 4435885153010911425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_61
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 142
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0a8bdd77aa94d80800000000000000
+      internalID: -8265888209264140041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_62
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 142
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4226d151360a0dc50800000000000000
+      internalID: 6688021794061640228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_63
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 142
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc16cddb3b83f6fb0800000000000000
+      internalID: -4652437545414794803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_64
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 142
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c9aefb2db532e30800000000000000
+      internalID: 4477523415257488393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_65
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 142
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b3088cef05754f0800000000000000
+      internalID: -840113750265545925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_66
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 142
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6330f1c8be6e830800000000000000
+      internalID: 4100223497815668385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_67
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 142
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60afca3cc7dbf2df0800000000000000
+      internalID: -202735114651895290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_68
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a381986b956686340800000000000000
+      internalID: 4857244733619640378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_69
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae565b025640a10e0800000000000000
+      internalID: -2298519827432249878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_70
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5b2df9bdeac0440800000000000000
+      internalID: 4903486352602084779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_71
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358b189e927b56720800000000000000
+      internalID: 2838876530766100563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd6030804dfeef80800000000000000
+      internalID: -8075238628358328839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_73
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192c00c28b0c802c0800000000000000
+      internalID: -4465107133293084015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_74
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc3695255403ac50800000000000000
+      internalID: 6675183836442541259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_75
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d42cfeff7a44950800000000000000
+      internalID: 6432450885472898405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_76
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25cb1756871a0da80800000000000000
+      internalID: -8444071762849579950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_77
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78321ef0b39798a90800000000000000
+      internalID: -7311179225482845305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_78
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee5277d90f8624f0800000000000000
+      internalID: -853837806908055829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_79
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73114be6ac227a200800000000000000
+      internalID: 191159762022568247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_80
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd93e7f3452e9fc0800000000000000
+      internalID: -3486308087686259247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_81
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1d481a105329030800000000000000
+      internalID: 3499918141541372339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_82
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f967f87e7e93ca870800000000000000
+      internalID: 8695388648730752671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_83
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9842d76b832029460800000000000000
+      internalID: 7246857192995628169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_84
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 100
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9be8264fd34dd80800000000000000
+      internalID: -8226882499464218129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_85
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7219422d86eb7e90800000000000000
+      internalID: -7026769299741535618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_86
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60380c96f0cd055b0800000000000000
+      internalID: -5381559595950898426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_87
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca99c318bd38a180800000000000000
+      internalID: -9103958785914201404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_88
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f90b0d2a0a61060800000000000000
+      internalID: 6923898098275098487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_89
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7385470a1dea94630800000000000000
+      internalID: 3911849966711363639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_90
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323b29e320fc8f940800000000000000
+      internalID: 5330237767539667747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_91
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca5044397aad92d0800000000000000
+      internalID: -3270270316856714550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_92
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a572d16cecd1fae0800000000000000
+      internalID: -1517188691635571292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_93
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd005f1b4b7911e90800000000000000
+      internalID: -7056692338777325345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_94
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8f16c13b1cea5b0800000000000000
+      internalID: -5355129931877451601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_95
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a8b116da85e11f0800000000000000
+      internalID: -1072322159585818015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_96
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1d8a2d5c35f9a70800000000000000
+      internalID: 8835873103032144300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_97
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6023cf26749897e10800000000000000
+      internalID: 2195937233016205830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_98
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065a8be82f78703b0800000000000000
+      internalID: -5546314940237175456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_99
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215ed2d60cb6f9ed0800000000000000
+      internalID: -2405085201782938350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_100
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ff2b771ef978890800000000000000
+      internalID: -7455814867363889272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_101
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 58
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2de694f9f80e690800000000000000
+      internalID: -7574896658942602571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_102
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502309486ab983870800000000000000
+      internalID: 8662845022738067973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_103
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675388e9f5f36b680800000000000000
+      internalID: -8739728346951699082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_104
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec263a46eebde2d00800000000000000
+      internalID: 949938388358881998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_105
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026520945c3642b60800000000000000
+      internalID: 7720405360204469792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_106
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150661d45b3ede180800000000000000
+      internalID: -9084354505514524591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_107
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46aa2261f3f028210800000000000000
+      internalID: 1333645203283815012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_108
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a7d28ddf8c05030800000000000000
+      internalID: 3481503504536533624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_109
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268dce81b70b2a510800000000000000
+      internalID: 1559002463769253986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_110
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c28e3e0dad18ac0800000000000000
+      internalID: -3854559215340737515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_111
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6715ad4c6120cbf0800000000000000
+      internalID: -306208025618344084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_112
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65d552cf15ec17f0800000000000000
+      internalID: -640385122426301075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_113
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e76232a665326a0800000000000000
+      internalID: -6475236825372393927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_114
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763cea265a273c450800000000000000
+      internalID: 6107851574295315303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_115
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c605a698964eba0800000000000000
+      internalID: -6060603159618753399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_116
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd87d624fb9405a0800000000000000
+      internalID: -6555943684618613260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_117
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb75618bd8e5bd80800000000000000
+      internalID: -8235420314110690339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: young_tails_the_fox_sprites_by_lexxart_d33b3o5_118
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 16
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ac1aa4e4ffab540800000000000000
+      internalID: 5024609046009858707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

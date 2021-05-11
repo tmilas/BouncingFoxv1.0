@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4915832705268777102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4915832705268777100}
+  - component: {fileID: 4915832705268777103}
+  m_Layer: 0
+  m_Name: ObstacleSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4915832705268777100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4915832705268777102}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.8, y: -3.84, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4915832705268777103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4915832705268777102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ea563837b8244c1ab31ed0b3d8f4bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level1Obstacles:
+  - {fileID: 5802434864290283811, guid: a82aa58584ad941d39fded535b1f24e6, type: 3}
+  - {fileID: 3597909489417349161, guid: 057f5a2ca10834e1db813e7384c0b34f, type: 3}
+  - {fileID: 4670744751788379720, guid: 18f729aa50ed943c9951751fa9f49723, type: 3}
+  level2Obstacles:
+  - {fileID: 3597909489417349161, guid: 057f5a2ca10834e1db813e7384c0b34f, type: 3}
+  - {fileID: 823813707100407999, guid: 8d0f34f7b55ff4bc2a5bb03d5311a46e, type: 3}
+  - {fileID: 3012692632282259199, guid: 0315e74b9e61e4f349d29df6b556f115, type: 3}
+  level3Obstacles:
+  - {fileID: 4968534577729520118, guid: a1167d39a238c46aeab4f42793754b14, type: 3}
+  - {fileID: 5694245797746683824, guid: 81d866346cf314d4787cc7953c39e027, type: 3}
+  level4Obstacles: []
+  level5Obstacles: []
+  level1ObsPosY: -6.18
+  level2ObsPosY: -6.18
+  level3ObsPosY: -6.18
+  level4ObsPosY: -6.18
+  level5ObsPosY: -6.18
+  level1ObsCrInSec: 5
+  level2ObsCrInSec: 5
+  level3ObsCrInSec: 5
+  level4ObsCrInSec: 5
+  level5ObsCrInSec: 5
+  defaultObsCreateInSeconds: 3
+  mainPath: {fileID: 0}
+  level1StartSec: 10
+  level2StartSec: 20
+  level3StartSec: 30
+  level4StartSec: 40
+  level5StartSec: 50
+  levelList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
