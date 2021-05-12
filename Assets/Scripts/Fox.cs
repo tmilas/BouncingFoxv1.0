@@ -7,7 +7,7 @@ public class Fox : MonoBehaviour
 
     //Jump parameters
     public float jumpSpeed = 5f;
-    public float jumpConstantSpeed = 5f;
+    private float jumpConstantSpeed = 5f;
 
     private float jumpBeginTime = 0;
     private float jumpPrevTime = 0;
@@ -26,11 +26,18 @@ public class Fox : MonoBehaviour
     BoxCollider2D myBoxCollider;
     Animator myAnimator;
 
+    //Global game cache parameters
+    GameEngine gameEngine;
+
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollider = GetComponent<BoxCollider2D>();
         myAnimator = GetComponent<Animator>();
+
+        gameEngine = FindObjectOfType<GameEngine>();
+
+        GetGameParameters();
     }
 
     void Update()
@@ -42,6 +49,17 @@ public class Fox : MonoBehaviour
         {
             KeyDetect();
             JumpAuto();
+        }
+    }
+
+    private void GetGameParameters()
+    {
+        //Get general game parameters
+        if (gameEngine)
+        {
+            jumpConstantSpeed = gameEngine.jumpConstantSpeed;
+            keyPressedMaxValue = gameEngine.keyPressedMaxValue;
+            keyPressedMinValue = gameEngine.keyPressedMinValue;
         }
     }
 
@@ -95,6 +113,8 @@ public class Fox : MonoBehaviour
                         keyPressedTime = keyPressedMinValue;
 
                     jumpSpeed = jumpConstantSpeed + keyPressedTime * 10;
+
+                    gameEngine.SetPower(keyPressedTime);
                 }
 
                 isKeyPressed = false;
@@ -118,6 +138,7 @@ public class Fox : MonoBehaviour
         if (myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Obstacle")))
         {
             isAlive = false;
+            gameEngine.setGameOver(true);
             myAnimator.SetTrigger("isAlive");
         }
     }
