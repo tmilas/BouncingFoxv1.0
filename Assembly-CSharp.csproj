@@ -65,7 +65,6 @@
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/CamAutoMove.cs" />
     <Compile Include="Assets/Scripts/GameEngine.cs" />
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/AnimationSpriteDemo.cs" />
-    <Compile Include="Assets/Scripts/test.cs" />
     <Compile Include="Assets/Scripts/BGScroller.cs" />
     <Compile Include="Assets/Scripts/UIHandler.cs" />
   </ItemGroup>
