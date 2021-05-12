@@ -4,10 +4,11 @@ public class Fox : MonoBehaviour
 {
     //parameters
     private bool isAlive = true;
+    private bool isPowerActive = false;
 
     //Jump parameters
     public float jumpSpeed = 5f;
-    public float jumpConstantSpeed = 5f;
+    private float jumpConstantSpeed = 5f;
 
     private float jumpBeginTime = 0;
     private float jumpPrevTime = 0;
@@ -26,11 +27,18 @@ public class Fox : MonoBehaviour
     BoxCollider2D myBoxCollider;
     Animator myAnimator;
 
+    //Global game cache parameters
+    GameEngine gameEngine;
+
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollider = GetComponent<BoxCollider2D>();
         myAnimator = GetComponent<Animator>();
+
+        gameEngine = FindObjectOfType<GameEngine>();
+
+        GetGameParameters();
     }
 
     void Update()
@@ -45,17 +53,41 @@ public class Fox : MonoBehaviour
         }
     }
 
+    private void GetGameParameters()
+    {
+        //Get general game parameters
+        if (gameEngine)
+        {
+            jumpConstantSpeed = gameEngine.jumpConstantSpeed;
+            keyPressedMaxValue = gameEngine.keyPressedMaxValue;
+            keyPressedMinValue = gameEngine.keyPressedMinValue;
+        }
+    }
+
     private void KeyDetect()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             keyPressedBeginTime = Time.time;
+            isPowerActive = true;
+        }
+
+        if(isPowerActive)
+        { 
+            float keyPressedTime = Time.time - keyPressedBeginTime;
+            if (keyPressedTime > keyPressedMaxValue)
+                keyPressedTime = keyPressedMaxValue;
+            //else if (keyPressedTime < keyPressedMinValue)
+            //    keyPressedTime = keyPressedMinValue;
+
+            gameEngine.SetPower(keyPressedTime, false);
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
             keyPressedEndTime = Time.time;
             isKeyPressed = true;
+            isPowerActive = false;
         }
     }
 
@@ -95,6 +127,8 @@ public class Fox : MonoBehaviour
                         keyPressedTime = keyPressedMinValue;
 
                     jumpSpeed = jumpConstantSpeed + keyPressedTime * 10;
+
+                    gameEngine.SetPower(keyPressedTime,true);
                 }
 
                 isKeyPressed = false;
@@ -118,6 +152,7 @@ public class Fox : MonoBehaviour
         if (myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Obstacle")))
         {
             isAlive = false;
+            gameEngine.setGameOver(true);
             myAnimator.SetTrigger("isAlive");
         }
     }
