@@ -66,7 +66,6 @@
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/AnimationSpriteDemo.cs" />
     <Compile Include="Assets/Scripts/GameEngine.cs" />
-    <Compile Include="Assets/Scripts/test.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/Spine/version.txt" />
