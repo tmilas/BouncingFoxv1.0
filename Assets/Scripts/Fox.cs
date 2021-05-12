@@ -4,6 +4,7 @@ public class Fox : MonoBehaviour
 {
     //parameters
     private bool isAlive = true;
+    private bool isPowerActive = false;
 
     //Jump parameters
     public float jumpSpeed = 5f;
@@ -68,12 +69,25 @@ public class Fox : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             keyPressedBeginTime = Time.time;
+            isPowerActive = true;
+        }
+
+        if(isPowerActive)
+        { 
+            float keyPressedTime = Time.time - keyPressedBeginTime;
+            if (keyPressedTime > keyPressedMaxValue)
+                keyPressedTime = keyPressedMaxValue;
+            //else if (keyPressedTime < keyPressedMinValue)
+            //    keyPressedTime = keyPressedMinValue;
+
+            gameEngine.SetPower(keyPressedTime, false);
         }
 
         if (Input.GetKeyUp(KeyCode.Space))
         {
             keyPressedEndTime = Time.time;
             isKeyPressed = true;
+            isPowerActive = false;
         }
     }
 
@@ -114,7 +128,7 @@ public class Fox : MonoBehaviour
 
                     jumpSpeed = jumpConstantSpeed + keyPressedTime * 10;
 
-                    gameEngine.SetPower(keyPressedTime);
+                    gameEngine.SetPower(keyPressedTime,true);
                 }
 
                 isKeyPressed = false;

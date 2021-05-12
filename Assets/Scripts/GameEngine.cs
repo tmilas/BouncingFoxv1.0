@@ -40,11 +40,21 @@ public class GameEngine : MonoBehaviour
         return isGameOver;
     }
 
-    public void SetPower(float power)
+    public void SetPower(float power, bool keyEnded)
     {
         float sliderValue = power / keyPressedMaxValue;
 
         if (uiHandler)
-            uiHandler.writePowerSlider(sliderValue);
+        {
+            if(keyEnded)
+            {
+                uiHandler.writePowerSlider(sliderValue);
+            }
+            else
+            {
+                uiHandler.updatePowerSlider(sliderValue);
+            }
+            
+        }
     }
 }
