@@ -24,7 +24,8 @@ public class GameEngine : MonoBehaviour
 
     void Update()
     {
-        CalculateScore();
+        if(!isGameOver)
+            CalculateScore();
     }
 
     private void CalculateScore()
