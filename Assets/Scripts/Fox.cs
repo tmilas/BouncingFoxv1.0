@@ -22,6 +22,13 @@ public class Fox : MonoBehaviour
     private float keyPressedMaxValue = 1f;
     private float keyPressedMinValue = 0.3f;
 
+    //SFX
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] [Range(0, 1)] float jumpSoundVolume = 0.8f;
+
+    [SerializeField] AudioClip stunSound;
+    [SerializeField] [Range(0, 1)] float stunSoundVolume = 0.8f;
+
     //Cache parameters
     Rigidbody2D myRigidBody;
     BoxCollider2D myBoxCollider;
@@ -140,6 +147,8 @@ public class Fox : MonoBehaviour
 
             Vector2 jumpVelocityToAdd = new Vector2(myRigidBody.velocity.x, jumpSpeed);
             myRigidBody.velocity = jumpVelocityToAdd;
+
+            AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position, jumpSoundVolume);
         }
         else
         {
@@ -154,6 +163,7 @@ public class Fox : MonoBehaviour
             isAlive = false;
             gameEngine.setGameOver(true);
             myAnimator.SetTrigger("isAlive");
+            AudioSource.PlayClipAtPoint(stunSound, Camera.main.transform.position, stunSoundVolume);
         }
     }
 }

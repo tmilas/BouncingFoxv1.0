@@ -3,10 +3,15 @@ using UnityEngine;
 
 public class GameEngine : MonoBehaviour
 {
+    [Header("Game Parameters")]
     public int totalPoints = 0;
     public float jumpConstantSpeed = 5f;
     public float keyPressedMaxValue = 1f;
     public float keyPressedMinValue = 0.3f;
+
+    [Header("Bonus Effects")]
+    public float jumpFactor = 1;
+    public int scoreFactor = 1;
 
     private UIHandler uiHandler;
 
@@ -24,7 +29,7 @@ public class GameEngine : MonoBehaviour
 
     private void CalculateScore()
     {
-        totalPoints = Mathf.FloorToInt(Time.timeSinceLevelLoad);
+        totalPoints = totalPoints + ((Mathf.FloorToInt(Time.timeSinceLevelLoad)-totalPoints) * scoreFactor);
 
         if (uiHandler)
             uiHandler.writeScore(totalPoints);
