@@ -115,6 +115,9 @@ public class GameEngine : MonoBehaviour
             //speed factor bonus
             speedFactor = (int)amount;
         }
+
+        if (uiHandler)
+            uiHandler.writeBonus("Bonus Active");
     }
 
     public void IsBonusActive()
@@ -139,5 +142,8 @@ public class GameEngine : MonoBehaviour
         speedFactor = 1;
         bonusDuration = 0;
         isBonusActive = false;
+
+        if (uiHandler)
+            uiHandler.writeBonus("");
     }
 }

@@ -6,6 +6,7 @@ public class UIHandler : MonoBehaviour
 {
     //cached parameters
     public Text scoreText;
+    public Text bonusText;
     public Slider powerSlider;
 
     [Header("Power Bar Properties")]
@@ -16,6 +17,11 @@ public class UIHandler : MonoBehaviour
     public void writeScore(int score)
     {
         scoreText.text = score.ToString();
+    }
+
+    public void writeBonus(string bonus)
+    {
+        bonusText.text = bonus;
     }
 
     public void updatePowerSlider(float value)
