@@ -44,12 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelObstacles:
-  - {fileID: 5802434864290283811, guid: a82aa58584ad941d39fded535b1f24e6, type: 3}
-  - {fileID: 3597909489417349161, guid: 057f5a2ca10834e1db813e7384c0b34f, type: 3}
-  - {fileID: 5694245797746683824, guid: 81d866346cf314d4787cc7953c39e027, type: 3}
-  obstaclePosY:
-  - -6.18
-  - -6.18
-  - -7.18
-  obstacleCreateInSec: 5
-  levelStartSec: 15
+  - {fileID: 6092972728506753069, guid: 93a138329f1084d1f8027885e8312247, type: 3}
+  - {fileID: 5595732009830112102, guid: f8185c28c1d084eacb2b53ba460b1124, type: 3}
+  - {fileID: 8592146027172869489, guid: 0f8320fdb24494095810bf16ae89e2fd, type: 3}
+  - {fileID: 3884957076631676251, guid: ce66666e823b54293b546c21aea9d7f8, type: 3}
+  - {fileID: 1645012148824393586, guid: 76bb64a3298134750a27dad5fcb8e160, type: 3}
+  obstacleCreateInSec: 7
+  levelStartSec: 0

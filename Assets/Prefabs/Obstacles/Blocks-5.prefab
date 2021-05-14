@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2944443695287900079}
   - component: {fileID: 4665576532099148065}
-  m_Layer: 0
+  - component: {fileID: 6297443055474123518}
+  - component: {fileID: 8442013017546891145}
+  m_Layer: 8
   m_Name: coins (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,6 +84,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &6297443055474123518
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067640981430156392}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.17575526}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.04, y: 2.08}
+    newSize: {x: 2.04, y: 2.08}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.04, y: 1.3267627}
+  m_EdgeRadius: 0
+--- !u!114 &8442013017546891145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067640981430156392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d4ee9f4b19348588aa2173409f7d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusPoints: 0
+  collectableType: 0
 --- !u!1 &2669088865410170788
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,7 +352,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9189259969290146737}
   - component: {fileID: 6760044743537113205}
-  m_Layer: 0
+  - component: {fileID: 159309239964698314}
+  - component: {fileID: 1507082064444981631}
+  m_Layer: 8
   m_Name: coins (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,6 +426,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &159309239964698314
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649804759074583683}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.20086324}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.04, y: 2.08}
+    newSize: {x: 2.04, y: 2.08}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.04, y: 1.3769791}
+  m_EdgeRadius: 0
+--- !u!114 &1507082064444981631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649804759074583683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d4ee9f4b19348588aa2173409f7d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusPoints: 0
+  collectableType: 0
 --- !u!1 &4046505031456406497
 GameObject:
   m_ObjectHideFlags: 0

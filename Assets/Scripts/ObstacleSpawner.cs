@@ -64,7 +64,8 @@ public class ObstacleSpawner : MonoBehaviour
         Debug.Log("CreateObsCurrLevel:" + currentLevelIndex.ToString());
         LevelProps  currentLevel= levelList[currentLevelIndex - 1].GetComponent<LevelProps>();
         randomObstacleIndex = Random.Range(0, currentLevel.levelObstacles.Length);
-        Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.obstaclePosY[randomObstacleIndex]);
+        //Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.obstaclePosY[randomObstacleIndex]);
+        Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.levelObstacles[randomObstacleIndex].transform.position.y);
         GameObject newObstacle = Instantiate(currentLevel.levelObstacles[randomObstacleIndex], creationPosition, Quaternion.identity);
         newObstacle.transform.parent = mainPath.transform;
         return;
@@ -78,7 +79,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     private int GetCurrentLevel()
     {
-        int currentLevel=1;
+        int currentLevel=0;
 
         foreach (float levelStartSec in levelsStartSec)
         {
