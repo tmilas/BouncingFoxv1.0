@@ -65,7 +65,7 @@ public class GameEngine : MonoBehaviour
             if(setTestBonus)
             {
                 setTestBonus = false;
-                SetGameBonus(3,4,5);
+                //SetGameBonus(3,4,5);
             }
             //--------------sil---------------
 
@@ -125,34 +125,34 @@ public class GameEngine : MonoBehaviour
         }
     }
 
-    public void SetGameBonus(int type, float amount, int duration)
+    public void SetGameBonus(CollectableItem collectableItem)
     {
         //get type of bonus, amount, duration
-        bonusDuration = duration;
+        bonusDuration = collectableItem.itemDuration;
         bonusBeginTime = Time.time;
         isBonusActive = true;
 
-        if(type==1)
+        if(collectableItem.collectableType==CollectableItem.CollectableType.FastMotion2x)
         {
             //if score point bonus
-            totalPoints += (int)amount;
+            totalPoints += (int)collectableItem.itemFactor;
         }
-        else if(type==2)
+        else if(collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x)
         {
             //score factor bonus
-            scoreFactor = (int)amount;
+            scoreFactor = (int)collectableItem.itemFactor;
         }
-        else if (type == 3)
+        else if (collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x)
         {
             //jump factor bonus
-            jumpFactor = (int)amount;
+            jumpFactor = (int)collectableItem.itemFactor;
         }
-        else if (type == 4)
+        else if (collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x)
         {
             //speed factor bonus
-            speedFactor = (int)amount;
+            speedFactor = (int)collectableItem.itemFactor;
         }
-
+            
         if (uiHandler)
             uiHandler.writeBonus("Bonus Active");
     }
