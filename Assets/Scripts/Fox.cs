@@ -22,6 +22,13 @@ public class Fox : MonoBehaviour
     private float keyPressedMaxValue = 1f;
     private float keyPressedMinValue = 0.3f;
 
+    //SFX
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] [Range(0, 1)] float jumpSoundVolume = 0.8f;
+
+    [SerializeField] AudioClip stunSound;
+    [SerializeField] [Range(0, 1)] float stunSoundVolume = 0.8f;
+
     //Cache parameters
     Rigidbody2D myRigidBody;
     BoxCollider2D myBoxCollider;
@@ -110,13 +117,12 @@ public class Fox : MonoBehaviour
         if (isTouched != isPreviousTouched)
         {
             myAnimator.SetTrigger("isTouched");
-            //Debug.Log("fox jump: " + jumpPrevTime + " - " + jumpBeginTime + "keyPressed:" + isKeyPressed);
-
+            
             if (isKeyPressed)
             {
 
                 float keyPressedTime = keyPressedEndTime - keyPressedBeginTime;
-                //Debug.Log("space: " + (keyPressedEndTime-keyPressedBeginTime));
+
                 isKeyPressed = false;
 
                 if (keyPressedEndTime >= jumpPrevTime && keyPressedEndTime <= jumpBeginTime)
@@ -138,8 +144,13 @@ public class Fox : MonoBehaviour
                 jumpSpeed = jumpConstantSpeed;
             }
 
+            //Set jump bonus factor
+            jumpSpeed = jumpSpeed * gameEngine.GetJumpBonusFactor();
+
             Vector2 jumpVelocityToAdd = new Vector2(myRigidBody.velocity.x, jumpSpeed);
             myRigidBody.velocity = jumpVelocityToAdd;
+
+            AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position, jumpSoundVolume);
         }
         else
         {
@@ -154,6 +165,7 @@ public class Fox : MonoBehaviour
             isAlive = false;
             gameEngine.setGameOver(true);
             myAnimator.SetTrigger("isAlive");
+            AudioSource.PlayClipAtPoint(stunSound, Camera.main.transform.position, stunSoundVolume);
         }
     }
 }

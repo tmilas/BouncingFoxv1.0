@@ -68,6 +68,8 @@
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/AnimationSpriteDemo.cs" />
     <Compile Include="Assets/Scripts/BGScroller.cs" />
     <Compile Include="Assets/Scripts/CollectableItem.cs" />
+    <Compile Include="Assets/Scripts/UIHandler.cs" />
+    <Compile Include="Assets/Scripts/StorageEngine.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/Spine/version.txt" />
