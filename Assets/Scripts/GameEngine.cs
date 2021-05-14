@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using UnityEngine;
 
 public class GameEngine : MonoBehaviour
@@ -17,23 +17,58 @@ public class GameEngine : MonoBehaviour
     public float bonusDuration = 0;
     public bool isBonusActive = false;
 
+    //--------------sil---------------
+    public bool setTestBonus = false;
+    //--------------sil---------------
+
+    public int highScore = 0;
     private float bonusBeginTime = 0f;
 
     private UIHandler uiHandler;
+    private StorageEngine storageEngine;
 
     private bool isGameOver = false;
 
     void Start()
     {
         uiHandler = FindObjectOfType<UIHandler>();
+        storageEngine = FindObjectOfType<StorageEngine>();
 
         SetDefaultFactors();
+
+        GetHighScore();
+    }
+
+    private void GetHighScore()
+    {
+        string highScoreText = storageEngine.LoadData();
+        if (highScoreText != "")
+        {
+            highScore = Int32.Parse(highScoreText);
+        }
+    }
+
+    private void SetHighScore()
+    {
+        if (totalPoints > highScore)
+        {
+            highScore = totalPoints;
+            storageEngine.SaveData(totalPoints.ToString());
+        }
     }
 
     void Update()
     {
         if(!isGameOver)
         {
+            //--------------sil---------------
+            if(setTestBonus)
+            {
+                setTestBonus = false;
+                SetGameBonus(3,4,5);
+            }
+            //--------------sil---------------
+
             IsBonusActive();
             CalculateScore();
         }
@@ -53,6 +88,8 @@ public class GameEngine : MonoBehaviour
     {
         isGameOver = status;
         speedFactor = 0;
+
+        SetHighScore();
     }
 
     public bool IsGameOver()
