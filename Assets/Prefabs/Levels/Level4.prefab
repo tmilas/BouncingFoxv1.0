@@ -46,8 +46,5 @@ MonoBehaviour:
   levelObstacles:
   - {fileID: 5694245797746683824, guid: 81d866346cf314d4787cc7953c39e027, type: 3}
   - {fileID: 4968534577729520118, guid: a1167d39a238c46aeab4f42793754b14, type: 3}
-  obstaclePosY:
-  - -7.18
-  - -4.18
   obstacleCreateInSec: 8
-  levelStartSec: 60
+  levelStartSec: 100

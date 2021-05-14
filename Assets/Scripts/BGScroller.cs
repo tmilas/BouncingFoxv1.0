@@ -45,32 +45,38 @@ public class BGScroller : MonoBehaviour {
     }
 
     void Update () {
-        //test2
-        //scroll the object according to the defined speed, loop when running out of width
-        float tempNewPostion = Time.time * scrollSpeed;
-        float newPosition = Mathf.Repeat(tempNewPostion, tileSizeX);
-      
-        if (newPosition >=0f && newPosition<=1f && objCreationControl==false && isObjCreated==false)
-        {
-            //Debug.Log(newPosition.ToString());
-            //Debug.Log(gameObject.name);
-            objCreationControl = true;
-            isObjCreated = true;
-            Vector2 newObjPosition = new Vector2(startPosition.x + bounds.size.x, startPosition.y);
-            GameObject newBG = bgSpawner.initiateObject(backGroundObject, newObjPosition);
-            if (gameObject.name.StartsWith("fg_path"))
-            {
-                Debug.Log("main path set");
-                obstacleSpawner.SetMainPath(newBG);
-            }
-            GameObject.Destroy(gameObject, scrollDividend / scrollSpeed * destroyObjectFactor);
-        }
-        else
-        {
-            if (!(newPosition >= 0f && newPosition <= 1f))
-                objCreationControl = false;
-        }
 
-        transform.position = startPosition + Vector2.left * tempNewPostion;
+        //if (!gameEngine.IsGameOver())
+        //{
+            //test2
+            //scroll the object according to the defined speed, loop when running out of width
+            float tempNewPostion = Time.time * scrollSpeed;
+            float newPosition = Mathf.Repeat(tempNewPostion, tileSizeX);
+
+            if (newPosition >= 0f && newPosition <= 1f && objCreationControl == false && isObjCreated == false)
+            {
+                //Debug.Log(newPosition.ToString());
+                //Debug.Log(gameObject.name);
+                objCreationControl = true;
+                isObjCreated = true;
+                Vector2 newObjPosition = new Vector2(startPosition.x + bounds.size.x, startPosition.y);
+                GameObject newBG = bgSpawner.initiateObject(backGroundObject, newObjPosition);
+                if (gameObject.name.StartsWith("fg_path"))
+                {
+                    Debug.Log("main path set");
+                    obstacleSpawner.SetMainPath(newBG);
+                }
+                GameObject.Destroy(gameObject, scrollDividend / scrollSpeed * destroyObjectFactor);
+            }
+            else
+            {
+                if (!(newPosition >= 0f && newPosition <= 1f))
+                    objCreationControl = false;
+            }
+
+            transform.position = startPosition + Vector2.left * tempNewPostion;
+
+        //}
+
     }
 }
