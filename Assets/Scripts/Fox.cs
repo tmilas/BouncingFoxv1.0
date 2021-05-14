@@ -117,13 +117,12 @@ public class Fox : MonoBehaviour
         if (isTouched != isPreviousTouched)
         {
             myAnimator.SetTrigger("isTouched");
-            //Debug.Log("fox jump: " + jumpPrevTime + " - " + jumpBeginTime + "keyPressed:" + isKeyPressed);
-
+            
             if (isKeyPressed)
             {
 
                 float keyPressedTime = keyPressedEndTime - keyPressedBeginTime;
-                //Debug.Log("space: " + (keyPressedEndTime-keyPressedBeginTime));
+
                 isKeyPressed = false;
 
                 if (keyPressedEndTime >= jumpPrevTime && keyPressedEndTime <= jumpBeginTime)
@@ -144,6 +143,9 @@ public class Fox : MonoBehaviour
             {
                 jumpSpeed = jumpConstantSpeed;
             }
+
+            //Set jump bonus factor
+            jumpSpeed = jumpSpeed * gameEngine.GetJumpBonusFactor();
 
             Vector2 jumpVelocityToAdd = new Vector2(myRigidBody.velocity.x, jumpSpeed);
             myRigidBody.velocity = jumpVelocityToAdd;
