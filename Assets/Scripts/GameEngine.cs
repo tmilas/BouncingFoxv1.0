@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameEngine : MonoBehaviour
 {
@@ -83,6 +85,12 @@ public class GameEngine : MonoBehaviour
         speedFactor = 0;
 
         SetHighScore();
+    }
+
+    IEnumerator GoToGameOverScene()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Game Over Scene");
     }
 
     public bool IsGameOver()
