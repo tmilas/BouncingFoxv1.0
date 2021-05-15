@@ -58,7 +58,7 @@ public class TestObject : MonoBehaviour
         {
             collectableItem = new CollectableItem();
             collectableItem.itemDuration = 3;
-            collectableItem.itemFactor = 1/2;
+            collectableItem.itemFactor = 0.5f;
             collectableItem.collectableType = CollectableItem.CollectableType.SmallerCharacter2x;
 
             isSmaller2x = false;
@@ -68,7 +68,7 @@ public class TestObject : MonoBehaviour
         {
             collectableItem = new CollectableItem();
             collectableItem.itemDuration = 3;
-            collectableItem.itemFactor = 1/3;
+            collectableItem.itemFactor = 0.3f;
             collectableItem.collectableType = CollectableItem.CollectableType.SmallerCharacter3x;
 
             isSmaller3x = false;
@@ -98,7 +98,7 @@ public class TestObject : MonoBehaviour
         {
             collectableItem = new CollectableItem();
             collectableItem.itemDuration = 3;
-            collectableItem.itemFactor = 1/2;
+            collectableItem.itemFactor = 0.8f;
             collectableItem.collectableType = CollectableItem.CollectableType.GravityIncrease2x;
 
             isGravity2x = false;
@@ -108,7 +108,7 @@ public class TestObject : MonoBehaviour
         {
             collectableItem = new CollectableItem();
             collectableItem.itemDuration = 3;
-            collectableItem.itemFactor = 1/3;
+            collectableItem.itemFactor = 0.7f;
             collectableItem.collectableType = CollectableItem.CollectableType.GravityIncrease3x;
 
             isGravity3x = false;
