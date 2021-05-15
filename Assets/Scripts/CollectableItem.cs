@@ -7,7 +7,9 @@ public class CollectableItem : MonoBehaviour
     public enum CollectableType { Invincibility5s, Invincibility8s, JumpPower2x, JumpPower3x,
         SlowMotion2x, SlowMotion3x, FastMotion2x, FastMotion3x,
         GravityIncrease2x, GravityIncrease3x, ObstacleIncrease2x,
-        ObstacleIncrease3x,RandomCollectable }
+        ObstacleIncrease3x, ScoreIncrease2x, ScoreIncrease3x,
+        BiggerCharacter2x, BiggerCharacter3x, SmallerCharacter2x, SmallerCharacter3x,
+        RandomCollectable }
 
     public float itemFactor = 0f;
     public float itemDuration = 3f;
@@ -23,6 +25,6 @@ public class CollectableItem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         gameEngine.SetGameBonus(this);
+        Destroy(gameObject);
     }
-
 }

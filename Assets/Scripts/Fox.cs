@@ -5,6 +5,7 @@ public class Fox : MonoBehaviour
     //parameters
     private bool isAlive = true;
     private bool isPowerActive = false;
+    private bool isInvincible = false;
 
     //Jump parameters
     public float jumpSpeed = 5f;
@@ -33,15 +34,23 @@ public class Fox : MonoBehaviour
     Rigidbody2D myRigidBody;
     BoxCollider2D myBoxCollider;
     Animator myAnimator;
+    SpriteRenderer mySpriteRenderer;
 
     //Global game cache parameters
     GameEngine gameEngine;
+
+
+    private Color defaultColor;
 
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollider = GetComponent<BoxCollider2D>();
         myAnimator = GetComponent<Animator>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+
+        if(mySpriteRenderer)
+            defaultColor = mySpriteRenderer.color;
 
         gameEngine = FindObjectOfType<GameEngine>();
 
@@ -160,12 +169,34 @@ public class Fox : MonoBehaviour
 
     private void IsObstacleTouched()
     {
-        if (myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Obstacle")))
+        if (!isInvincible && myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Obstacle")))
         {
             isAlive = false;
             gameEngine.setGameOver(true);
             myAnimator.SetTrigger("isAlive");
             AudioSource.PlayClipAtPoint(stunSound, Camera.main.transform.position, stunSoundVolume);
+        }
+    }
+
+    public void ScaleFox(float scaleFactor)
+    {
+        transform.localScale = new Vector3(scaleFactor, scaleFactor, 1);
+    }
+
+    public void InvincibleFox(bool value)
+    {
+        isInvincible = value;
+
+        if(isInvincible)
+        {
+            //mySpriteRenderer.color = new Color(defaultColor.r,defaultColor.g, defaultColor.b, 0.5f);
+            Color temp = defaultColor;
+            temp.a = 0.5f;
+            mySpriteRenderer.color = temp;
+        }
+        else
+        {
+            mySpriteRenderer.color = defaultColor;
         }
     }
 }

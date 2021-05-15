@@ -14,18 +14,17 @@ public class GameEngine : MonoBehaviour
     public float jumpFactor = 1;
     public int scoreFactor = 1;
     public float speedFactor = 1;
+    public float scaleFactor = 1;
+    public float obstacleGenerationFactor = 1;
     public float bonusDuration = 0;
     public bool isBonusActive = false;
-
-    //--------------sil---------------
-    public bool setTestBonus = false;
-    //--------------sil---------------
 
     public int highScore = 0;
     private float bonusBeginTime = 0f;
 
     private UIHandler uiHandler;
     private StorageEngine storageEngine;
+    private Fox fox;
 
     private bool isGameOver = false;
 
@@ -33,6 +32,8 @@ public class GameEngine : MonoBehaviour
     {
         uiHandler = FindObjectOfType<UIHandler>();
         storageEngine = FindObjectOfType<StorageEngine>();
+
+        fox = FindObjectOfType<Fox>();
 
         SetDefaultFactors();
 
@@ -61,14 +62,6 @@ public class GameEngine : MonoBehaviour
     {
         if(!isGameOver)
         {
-            //--------------sil---------------
-            if(setTestBonus)
-            {
-                setTestBonus = false;
-                //SetGameBonus(3,4,5);
-            }
-            //--------------sil---------------
-
             IsBonusActive();
             CalculateScore();
         }
@@ -107,6 +100,11 @@ public class GameEngine : MonoBehaviour
         return jumpFactor;
     }
 
+    public float GetObstacleGenerationBonusFactor()
+    {
+        return obstacleGenerationFactor;
+    }
+
     public void SetPower(float power, bool keyEnded)
     {
         float sliderValue = power / keyPressedMaxValue;
@@ -121,7 +119,6 @@ public class GameEngine : MonoBehaviour
             {
                 uiHandler.updatePowerSlider(sliderValue);
             }
-            
         }
     }
 
@@ -132,29 +129,49 @@ public class GameEngine : MonoBehaviour
         bonusBeginTime = Time.time;
         isBonusActive = true;
 
-        if(collectableItem.collectableType==CollectableItem.CollectableType.FastMotion2x)
+        if(collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x ||
+           collectableItem.collectableType == CollectableItem.CollectableType.FastMotion3x ||
+           collectableItem.collectableType == CollectableItem.CollectableType.SlowMotion2x ||
+           collectableItem.collectableType == CollectableItem.CollectableType.SlowMotion3x)
         {
-            //if score point bonus
-            totalPoints += (int)collectableItem.itemFactor;
+            speedFactor = collectableItem.itemFactor;
         }
-        else if(collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x)
+        else if (collectableItem.collectableType == CollectableItem.CollectableType.JumpPower2x ||
+                 collectableItem.collectableType == CollectableItem.CollectableType.JumpPower3x ||
+                 collectableItem.collectableType == CollectableItem.CollectableType.GravityIncrease2x ||
+                 collectableItem.collectableType == CollectableItem.CollectableType.GravityIncrease3x)
         {
-            //score factor bonus
+            jumpFactor = collectableItem.itemFactor;
+        }
+        else if (collectableItem.collectableType == CollectableItem.CollectableType.ScoreIncrease2x ||
+                 collectableItem.collectableType == CollectableItem.CollectableType.ScoreIncrease3x)
+        {
             scoreFactor = (int)collectableItem.itemFactor;
         }
-        else if (collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x)
+        else if (collectableItem.collectableType == CollectableItem.CollectableType.ObstacleIncrease2x ||
+                 collectableItem.collectableType == CollectableItem.CollectableType.ObstacleIncrease3x)
         {
-            //jump factor bonus
-            jumpFactor = (int)collectableItem.itemFactor;
+            obstacleGenerationFactor = collectableItem.itemFactor;
         }
-        else if (collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x)
+        else if (collectableItem.collectableType == CollectableItem.CollectableType.BiggerCharacter2x ||
+                 collectableItem.collectableType == CollectableItem.CollectableType.BiggerCharacter3x ||
+                 collectableItem.collectableType == CollectableItem.CollectableType.SmallerCharacter2x ||
+                 collectableItem.collectableType == CollectableItem.CollectableType.SmallerCharacter3x)
         {
-            //speed factor bonus
-            speedFactor = (int)collectableItem.itemFactor;
+            scaleFactor = collectableItem.itemFactor;
+
+            if(fox)
+                fox.ScaleFox(scaleFactor);
         }
-            
+        else if (collectableItem.collectableType == CollectableItem.CollectableType.Invincibility5s ||
+                 collectableItem.collectableType == CollectableItem.CollectableType.Invincibility8s)
+        {
+            if (fox)
+                fox.InvincibleFox(true);
+        }
+
         if (uiHandler)
-            uiHandler.writeBonus("Bonus Active");
+            uiHandler.writeBonus("Bonus");
     }
 
     public void IsBonusActive()
@@ -177,10 +194,18 @@ public class GameEngine : MonoBehaviour
         jumpFactor = 1;
         scoreFactor = 1;
         speedFactor = 1;
+        scaleFactor = 1;
+        obstacleGenerationFactor = 1;
         bonusDuration = 0;
         isBonusActive = false;
 
         if (uiHandler)
             uiHandler.writeBonus("");
+
+        if(fox)
+        { 
+            fox.ScaleFox(scaleFactor);
+            fox.InvincibleFox(false);
+        }
     }
 }
