@@ -74,7 +74,7 @@ public class BGScroller : MonoBehaviour {
                     objCreationControl = false;
             }
 
-            transform.position = startPosition + Vector2.left * tempNewPostion;
+            transform.position = startPosition + Vector2.left * tempNewPostion * gameEngine.speedFactor;
 
         //}
 

@@ -9,4 +9,9 @@ public class LevelProps : MonoBehaviour
 
     [SerializeField] public float obstacleCreateInSec = 5f;
     [SerializeField] public float levelStartSec;
+
+    [SerializeField] public GameObject[] levelParachutes;
+    [SerializeField] public float parachuteCreateInSec = 5f;
+
+
 }
