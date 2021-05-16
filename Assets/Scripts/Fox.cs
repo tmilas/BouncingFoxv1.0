@@ -82,28 +82,40 @@ public class Fox : MonoBehaviour
 
     private void KeyDetect()
     {
+        if (Input.touchCount > 0)
+        {
+            if (Input.touches[0].phase == TouchPhase.Began)
+            {
+                keyPressedBeginTime = Time.time;
+                isPowerActive = true;
+            }
+            else if (Input.touches[0].phase == TouchPhase.Ended)
+            {
+                keyPressedEndTime = Time.time;
+                isKeyPressed = true;
+                isPowerActive = false;
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             keyPressedBeginTime = Time.time;
             isPowerActive = true;
         }
-
-        if(isPowerActive)
-        { 
-            float keyPressedTime = Time.time - keyPressedBeginTime;
-            if (keyPressedTime > keyPressedMaxValue)
-                keyPressedTime = keyPressedMaxValue;
-            //else if (keyPressedTime < keyPressedMinValue)
-            //    keyPressedTime = keyPressedMinValue;
-
-            gameEngine.SetPower(keyPressedTime, false);
-        }
-
-        if (Input.GetKeyUp(KeyCode.Space))
+        else if (Input.GetKeyUp(KeyCode.Space))
         {
             keyPressedEndTime = Time.time;
             isKeyPressed = true;
             isPowerActive = false;
+        }
+
+        if (isPowerActive)
+        { 
+            float keyPressedTime = Time.time - keyPressedBeginTime;
+            if (keyPressedTime > keyPressedMaxValue)
+                keyPressedTime = keyPressedMaxValue;
+
+            gameEngine.SetPower(keyPressedTime, false);
         }
     }
 
@@ -189,7 +201,6 @@ public class Fox : MonoBehaviour
 
         if(isInvincible)
         {
-            //mySpriteRenderer.color = new Color(defaultColor.r,defaultColor.g, defaultColor.b, 0.5f);
             Color temp = defaultColor;
             temp.a = 0.5f;
             mySpriteRenderer.color = temp;
