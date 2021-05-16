@@ -5,6 +5,8 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour
 {
     public float defaultObsCreateInSeconds = 5f;
+    public float defaultParachuteCreateInSeconds = 5f;
+
 
     public GameObject mainPath;
 
@@ -27,6 +29,8 @@ public class ObstacleSpawner : MonoBehaviour
         levelsStartSec.Sort();
 
         StartCoroutine("ObstacleCreation");
+        StartCoroutine("ParachuteCreation");
+
     }
 
     // Update is called once per frame
@@ -54,7 +58,8 @@ public class ObstacleSpawner : MonoBehaviour
 
             // Place your method calls
             yield return waitForSeconds;
-            CreateObstacle(GetCurrentLevel());
+            if (currentLevel.levelObstacles.Length>0)
+                CreateObstacle(GetCurrentLevel());
         }
     }
 
@@ -68,6 +73,36 @@ public class ObstacleSpawner : MonoBehaviour
         Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.levelObstacles[randomObstacleIndex].transform.position.y);
         GameObject newObstacle = Instantiate(currentLevel.levelObstacles[randomObstacleIndex], creationPosition, Quaternion.identity);
         newObstacle.transform.parent = mainPath.transform;
+        return;
+
+    }
+
+    IEnumerator ParachuteCreation()
+    {
+        WaitForSeconds waitForSeconds;
+        while (true)
+        {
+            LevelProps currentLevel = levelList[GetCurrentLevel() - 1].GetComponent<LevelProps>();
+            if (currentLevel)
+                waitForSeconds = new WaitForSeconds(currentLevel.parachuteCreateInSec);
+            else
+                waitForSeconds = new WaitForSeconds(defaultParachuteCreateInSeconds);
+
+            // Place your method calls
+            yield return waitForSeconds;
+            if (currentLevel.levelParachutes.Length>0)
+                CreateParachute(GetCurrentLevel());
+        }
+    }
+
+    private void CreateParachute(int currentLevelIndex)
+    {
+        int randomParachuteIndex;
+        LevelProps currentLevel = levelList[currentLevelIndex - 1].GetComponent<LevelProps>();
+        randomParachuteIndex = Random.Range(0, currentLevel.levelParachutes.Length);
+        GameObject newParachute = Instantiate(currentLevel.levelParachutes[randomParachuteIndex]);
+        Object.Destroy(newParachute, 5f);
+        //newParachute.transform.parent = mainPath.transform;
         return;
 
     }
