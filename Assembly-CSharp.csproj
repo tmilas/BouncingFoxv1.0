@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A5272296-03D0-1646-EF19-FA79E0048654}</ProjectGuid>
+    <ProjectGuid>{2DE7DBEF-9F8B-DA80-C7ED-561096FE5350}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,21 +56,21 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/UIHandler.cs" />
+    <Compile Include="Assets/Scripts/TestObject.cs" />
     <Compile Include="Assets/Scripts/LevelProps.cs" />
+    <Compile Include="Assets/Scripts/StorageEngine.cs" />
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/GameController.cs" />
+    <Compile Include="Assets/Scripts/CollectableItem.cs" />
     <Compile Include="Assets/Scripts/Fox.cs" />
     <Compile Include="Assets/Scripts/BGSpawner.cs" />
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/AnimationDemo.cs" />
+    <Compile Include="Assets/Scripts/NavigationHandler.cs" />
     <Compile Include="Assets/Scripts/ObstacleSpawner.cs" />
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/CamAutoMove.cs" />
     <Compile Include="Assets/Scripts/GameEngine.cs" />
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/AnimationSpriteDemo.cs" />
     <Compile Include="Assets/Scripts/BGScroller.cs" />
-    <Compile Include="Assets/Scripts/UIHandler.cs" />
-    <Compile Include="Assets/Scripts/StorageEngine.cs" />
-    <Compile Include="Assets/Scripts/CollectableItem.cs" />
-    <Compile Include="Assets/Scripts/TestObject.cs" />
-    <Compile Include="Assets/Scripts/NavigationHandler.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/Spine/version.txt" />
@@ -734,11 +734,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="spine-unity.csproj">
-      <Project>{20EC50ED-F825-E010-2626-9D492FA28221}</Project>
+      <Project>{71CC35B4-FC80-4E27-37FA-CC6F1C814AE2}</Project>
       <Name>spine-unity</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity-editor.csproj">
-      <Project>{40518DBA-D9C1-2C39-420A-A8821D7771A7}</Project>
+      <Project>{A9247237-6021-AC9F-D305-B6B08D9BE079}</Project>
       <Name>spine-unity-editor</Name>
     </ProjectReference>
   </ItemGroup>
