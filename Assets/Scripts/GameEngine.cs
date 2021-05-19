@@ -11,6 +11,7 @@ public class GameEngine : MonoBehaviour
     public float jumpConstantSpeed = 5f;
     public float keyPressedMaxValue = 1f;
     public float keyPressedMinValue = 0.3f;
+    public float maxJumpLimit = 15f;
 
     [Header("Bonus Effects")]
     public float jumpFactor = 1;
@@ -85,12 +86,14 @@ public class GameEngine : MonoBehaviour
         speedFactor = 0;
 
         SetHighScore();
+
+        StartCoroutine(GoToGameOverScene());
     }
 
     IEnumerator GoToGameOverScene()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Game Over Scene");
+        SceneManager.LoadScene("Game Over Screen");
     }
 
     public bool IsGameOver()

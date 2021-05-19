@@ -168,6 +168,9 @@ public class Fox : MonoBehaviour
             //Set jump bonus factor
             jumpSpeed = jumpSpeed * gameEngine.GetJumpBonusFactor();
 
+            if (jumpSpeed > gameEngine.maxJumpLimit)
+                jumpSpeed = gameEngine.maxJumpLimit;
+
             Vector2 jumpVelocityToAdd = new Vector2(myRigidBody.velocity.x, jumpSpeed);
             myRigidBody.velocity = jumpVelocityToAdd;
 
