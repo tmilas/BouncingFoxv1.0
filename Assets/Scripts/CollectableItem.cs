@@ -14,17 +14,26 @@ public class CollectableItem : MonoBehaviour
     public float itemFactor = 0f;
     public float itemDuration = 3f;
     public CollectableType collectableType;
+    public GameObject collectableParticleEffect;
 
     private GameEngine gameEngine;
 
     private void Start()
     {
-        gameEngine = FindObjectOfType<GameEngine>();    
+        gameEngine = FindObjectOfType<GameEngine>();
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         gameEngine.SetGameBonus(this);
-        Destroy(gameObject);
+        if (collectableParticleEffect)
+        {
+            Vector3 particlePos = new Vector3(transform.position.x,transform.position.y-0.7f, 0f);
+            GameObject particleEffect=Instantiate(collectableParticleEffect,particlePos,Quaternion.identity);
+            Object.Destroy(particleEffect, 3f);
+        }
+
+        Object.Destroy(gameObject);
     }
 }

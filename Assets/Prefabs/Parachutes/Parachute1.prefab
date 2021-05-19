@@ -150,6 +150,7 @@ MonoBehaviour:
   itemFactor: 0
   itemDuration: 3
   collectableType: 0
+  collectableParticleEffect: {fileID: 4825728301956106568, guid: d1ce9735b395f4084b7a57822985da97, type: 3}
 --- !u!61 &5910609341358655214
 BoxCollider2D:
   m_ObjectHideFlags: 0
