@@ -47,5 +47,8 @@ MonoBehaviour:
   - {fileID: 3012692632282259199, guid: 0315e74b9e61e4f349d29df6b556f115, type: 3}
   - {fileID: 823813707100407999, guid: 8d0f34f7b55ff4bc2a5bb03d5311a46e, type: 3}
   - {fileID: 5694245797746683824, guid: 81d866346cf314d4787cc7953c39e027, type: 3}
+  - {fileID: 6383805334952536594, guid: cd62028db42764299969d51a0fdce0fd, type: 3}
   obstacleCreateInSec: 5
   levelStartSec: 80
+  levelParachutes: []
+  parachuteCreateInSec: 5

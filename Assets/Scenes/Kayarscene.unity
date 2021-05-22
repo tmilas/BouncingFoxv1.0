@@ -970,6 +970,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2527078067549734416, guid: 64b273df01d0445abbaae65fbd2ff69e, type: 3}
+      propertyPath: isFast3x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2527078067549734417, guid: 64b273df01d0445abbaae65fbd2ff69e, type: 3}
       propertyPath: m_Name
       value: TestObject
