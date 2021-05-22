@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 905239435
   m_SortingLayer: 7
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 5ddb9e6270b63994181428eaf3a5ed00, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b3f62845b49943a6a745b314d7b2f47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3350951852936508595}
   - component: {fileID: 5910609341358655214}
   m_Layer: 0
-  m_Name: Parachute1
+  m_Name: Parachute Purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d4ee9f4b19348588aa2173409f7d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemFactor: 2
+  itemFactor: 3
   itemDuration: 3
-  collectableType: 12
+  collectableType: 14
   collectableParticleEffect: {fileID: 4825728301956106568, guid: d1ce9735b395f4084b7a57822985da97, type: 3}
 --- !u!61 &5910609341358655214
 BoxCollider2D:
@@ -164,7 +164,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.024992585, y: -0.23430598}
+  m_Offset: {x: 0.009984687, y: -0.3000641}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -175,5 +175,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.54228485, y: 0.60366786}
+  m_Size: {x: 0.5674684, y: 0.5505024}
   m_EdgeRadius: 0

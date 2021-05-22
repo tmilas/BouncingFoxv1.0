@@ -52,6 +52,13 @@ MonoBehaviour:
   obstacleCreateInSec: 7
   levelStartSec: 0
   levelParachutes:
+  - {fileID: 6106871115080299849, guid: a7da187ad71aa49c9a8f6a88f5ea100b, type: 3}
+  - {fileID: 6106871115080299849, guid: e0ae3043c199a47e99650628280aa3d1, type: 3}
+  - {fileID: 6106871115080299849, guid: d5c1adf6f2e2143c0b5d1be7b42d88e9, type: 3}
+  - {fileID: 6106871115080299849, guid: 6ccdc63ead9064122a731607c5cc55ef, type: 3}
+  - {fileID: 6106871115080299849, guid: a65e632b34d27461997c6a2642146b19, type: 3}
+  - {fileID: 6106871115080299849, guid: 9b2b3ba1a8b7346ca8ec88b6c8d3fac9, type: 3}
+  - {fileID: 6106871115080299849, guid: cec4fb5816e074011bb39d91b82d1e24, type: 3}
   - {fileID: 6106871115080299849, guid: d88718cb4fdd74275b42603d73b0f677, type: 3}
   - {fileID: 6106871115080299849, guid: 7724b7169edcf4b4996d008edd418968, type: 3}
   - {fileID: 6106871115080299849, guid: 9a5ee417e073e4390a0a85018afaf4b9, type: 3}
