@@ -204,7 +204,7 @@ public class GameEngine : MonoBehaviour
     {
         jumpFactor = 1;
         scoreFactor = 1;
-        speedFactor = 1;
+        speedFactor = 1f;
         scaleFactor = 1;
         obstacleGenerationFactor = 1;
         bonusDuration = 0;

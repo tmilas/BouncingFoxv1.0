@@ -117,8 +117,8 @@ public class TestObject : MonoBehaviour
         else if (isFast2x)
         {
             collectableItem = new CollectableItem();
-            collectableItem.itemDuration = 3;
-            collectableItem.itemFactor = 2;
+            collectableItem.itemDuration = 10;
+            collectableItem.itemFactor = 1.6f;
             collectableItem.collectableType = CollectableItem.CollectableType.FastMotion2x;
 
             isFast2x = false;
@@ -127,8 +127,8 @@ public class TestObject : MonoBehaviour
         else if (isFast3x)
         {
             collectableItem = new CollectableItem();
-            collectableItem.itemDuration = 3;
-            collectableItem.itemFactor = 3;
+            collectableItem.itemDuration = 10;
+            collectableItem.itemFactor = 2.2f;
             collectableItem.collectableType = CollectableItem.CollectableType.FastMotion3x;
 
             isFast3x = false;
@@ -137,8 +137,8 @@ public class TestObject : MonoBehaviour
         else if (isSlow2x)
         {
             collectableItem = new CollectableItem();
-            collectableItem.itemDuration = 3;
-            collectableItem.itemFactor = 1/2;
+            collectableItem.itemDuration = 10;
+            collectableItem.itemFactor = 0.7f;
             collectableItem.collectableType = CollectableItem.CollectableType.SlowMotion2x;
 
             isSlow2x = false;
@@ -147,8 +147,8 @@ public class TestObject : MonoBehaviour
         else if (isSlow3x)
         {
             collectableItem = new CollectableItem();
-            collectableItem.itemDuration = 3;
-            collectableItem.itemFactor = 1/3;
+            collectableItem.itemDuration = 10;
+            collectableItem.itemFactor = 0.4f;
             collectableItem.collectableType = CollectableItem.CollectableType.SlowMotion3x;
 
             isSlow3x = false;
