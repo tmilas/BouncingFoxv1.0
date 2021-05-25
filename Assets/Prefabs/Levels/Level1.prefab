@@ -64,4 +64,4 @@ MonoBehaviour:
   - {fileID: 6106871115080299849, guid: 9a5ee417e073e4390a0a85018afaf4b9, type: 3}
   - {fileID: 6106871115080299849, guid: 870ce43c49d784662a987425403998bd, type: 3}
   - {fileID: 6106871115080299849, guid: a506526921fed4181a38de59c9782af0, type: 3}
-  parachuteCreateInSec: 100
+  parachuteCreateInSec: 3
