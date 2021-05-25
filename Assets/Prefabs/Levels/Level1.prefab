@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelObstacles:
-  - {fileID: 6092972728506753069, guid: 93a138329f1084d1f8027885e8312247, type: 3}
-  - {fileID: 5595732009830112102, guid: f8185c28c1d084eacb2b53ba460b1124, type: 3}
-  - {fileID: 8592146027172869489, guid: 0f8320fdb24494095810bf16ae89e2fd, type: 3}
-  - {fileID: 3884957076631676251, guid: ce66666e823b54293b546c21aea9d7f8, type: 3}
-  - {fileID: 1645012148824393586, guid: 76bb64a3298134750a27dad5fcb8e160, type: 3}
+  - {fileID: 3884957076631676251, guid: 93741655e00e846f5bf2d2c295b971e7, type: 3}
+  - {fileID: 3884957076631676251, guid: 93741655e00e846f5bf2d2c295b971e7, type: 3}
+  - {fileID: 3884957076631676251, guid: 93741655e00e846f5bf2d2c295b971e7, type: 3}
+  - {fileID: 5595732009830112102, guid: 3c4cede7519fe4da28fc256248227481, type: 3}
+  - {fileID: 1645012148824393586, guid: 6c82aff0377c146eba47ce5240f6b80b, type: 3}
   obstacleCreateInSec: 7
   levelStartSec: 0
   levelParachutes:
