@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da5f7fadc91dc240971888b70ef3e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.006
+  scrollSpeed: 0.02
   screenWidth: 100
   backGroundObject: {fileID: 5774537381815173581}
 --- !u!1 &5774537381821689289
