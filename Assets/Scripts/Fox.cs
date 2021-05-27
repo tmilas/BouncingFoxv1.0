@@ -153,7 +153,7 @@ public class Fox : MonoBehaviour
                     else if (keyPressedTime < keyPressedMinValue)
                         keyPressedTime = keyPressedMinValue;
 
-                    jumpSpeed = jumpConstantSpeed + keyPressedTime * 10;
+                    jumpSpeed = jumpConstantSpeed + keyPressedTime * gameEngine.jumpSpeedFactor;
 
                     gameEngine.SetPower(keyPressedTime,true);
                 }
