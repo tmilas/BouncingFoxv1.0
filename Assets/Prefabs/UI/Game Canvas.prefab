@@ -664,7 +664,7 @@ MonoBehaviour:
   scoreText: {fileID: 7520473450032830221}
   bonusText: {fileID: 7185378595742028321}
   powerSlider: {fileID: 896239854}
-  waitSecondsForBar: 1
+  waitSecondsForBar: 0.6
   incPowerBar: 0.01
   decPowerBar: 0.1
 --- !u!1 &7520473450032830219

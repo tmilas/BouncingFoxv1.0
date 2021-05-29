@@ -10,7 +10,7 @@ public class UIHandler : MonoBehaviour
     public Slider powerSlider;
 
     [Header("Power Bar Properties")]
-    public float waitSecondsForBar = 1f;
+    public float waitSecondsForBar = 0.6f;
     public float incPowerBar = 0.01f;
     public float decPowerBar = 0.1f;
 
