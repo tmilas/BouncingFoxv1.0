@@ -44,8 +44,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalPoints: 0
-  jumpConstantSpeed: 3
+  totalTimePoints: 0
+  jumpConstantSpeed: 6
   keyPressedMaxValue: 1
   keyPressedMinValue: 0.3
+  maxJumpLimit: 3000
+  jumpSpeedFactor: 18
   jumpFactor: 1
   scoreFactor: 1
+  speedFactor: 1
+  scaleFactor: 1
+  obstacleGenerationFactor: 1
+  bonusDuration: 0
+  isBonusActive: 0
+  highScore: 0
