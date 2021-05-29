@@ -45,11 +45,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalPoints: 0
   totalTimePoints: 0
-  jumpConstantSpeed: 6
-  keyPressedMaxValue: 1
-  keyPressedMinValue: 0.3
-  maxJumpLimit: 3000
-  jumpSpeedFactor: 18
+  jumpConstantSpeed: 7
+  keyPressedMaxValue: 0.6
+  keyPressedMinValue: 0.1
+  maxJumpLimit: 30
+  jumpSpeedFactor: 30
   jumpFactor: 1
   scoreFactor: 1
   speedFactor: 1

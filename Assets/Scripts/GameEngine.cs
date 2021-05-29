@@ -8,11 +8,11 @@ public class GameEngine : MonoBehaviour
     [Header("Game Parameters")]
     public int totalPoints = 0;
     public int totalTimePoints = 0;
-    public float jumpConstantSpeed = 5f;
-    public float keyPressedMaxValue = 1f;
-    public float keyPressedMinValue = 0.3f;
-    public float maxJumpLimit = 18f;
-    public float jumpSpeedFactor = 14f;
+    public float jumpConstantSpeed = 7f;
+    public float keyPressedMaxValue = 0.6f;
+    public float keyPressedMinValue = 0.1f;
+    public float maxJumpLimit = 30f;
+    public float jumpSpeedFactor = 30f;
 
 
     [Header("Bonus Effects")]

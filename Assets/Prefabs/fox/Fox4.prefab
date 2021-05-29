@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec494bd0a61de4318bb5130800ec5df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 3
+  jumpSpeed: 5
   jumpSound: {fileID: 8300000, guid: bf99b6a5b97974674930be2b70f45833, type: 3}
   jumpSoundVolume: 0.8
   stunSound: {fileID: 8300000, guid: b1878529147b8445284641b8a6108aca, type: 3}

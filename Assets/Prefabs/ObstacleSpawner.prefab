@@ -43,38 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ea563837b8244c1ab31ed0b3d8f4bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level1Obstacles:
-  - {fileID: 5802434864290283811, guid: a82aa58584ad941d39fded535b1f24e6, type: 3}
-  - {fileID: 3597909489417349161, guid: 057f5a2ca10834e1db813e7384c0b34f, type: 3}
-  - {fileID: 4670744751788379720, guid: 18f729aa50ed943c9951751fa9f49723, type: 3}
-  level2Obstacles:
-  - {fileID: 3597909489417349161, guid: 057f5a2ca10834e1db813e7384c0b34f, type: 3}
-  - {fileID: 823813707100407999, guid: 8d0f34f7b55ff4bc2a5bb03d5311a46e, type: 3}
-  - {fileID: 3012692632282259199, guid: 0315e74b9e61e4f349d29df6b556f115, type: 3}
-  level3Obstacles:
-  - {fileID: 4968534577729520118, guid: a1167d39a238c46aeab4f42793754b14, type: 3}
-  - {fileID: 5694245797746683824, guid: 81d866346cf314d4787cc7953c39e027, type: 3}
-  level4Obstacles: []
-  level5Obstacles: []
-  level1ObsPosY: -6.18
-  level2ObsPosY: -6.18
-  level3ObsPosY: -6.18
-  level4ObsPosY: -6.18
-  level5ObsPosY: -6.18
-  level1ObsCrInSec: 5
-  level2ObsCrInSec: 5
-  level3ObsCrInSec: 5
-  level4ObsCrInSec: 5
-  level5ObsCrInSec: 5
-  defaultObsCreateInSeconds: 3
+  defaultObsCreateInSeconds: 5
+  defaultParachuteCreateInSeconds: 5
   mainPath: {fileID: 0}
-  level1StartSec: 10
-  level2StartSec: 20
-  level3StartSec: 30
-  level4StartSec: 40
-  level5StartSec: 50
   levelList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8189877197402596768, guid: 7ee24003fb8814bd98b97e5c31dbfc62, type: 3}
+  - {fileID: 2843652726019083167, guid: 60b6250169f4545be9dd5d92c35c01e9, type: 3}
+  - {fileID: 1224822629449417378, guid: fbe100eee25c446b2819d28846e69183, type: 3}
+  - {fileID: 6378477081598237888, guid: a6d38e4acb4854dcd95088098b45ffea, type: 3}
+  - {fileID: 6378477081598237888, guid: 21e9c0daf5d194c83ae7f5558d007a9e, type: 3}

@@ -20,7 +20,7 @@ public class Fox : MonoBehaviour
     private bool isKeyPressed = false;
     private float keyPressedBeginTime = 0f;
     private float keyPressedEndTime = 0f;
-    private float keyPressedMaxValue = 1f;
+    private float keyPressedMaxValue = 0.8f;
     private float keyPressedMinValue = 0.3f;
 
     //SFX
@@ -200,17 +200,21 @@ public class Fox : MonoBehaviour
 
     public void InvincibleFox(bool value)
     {
-        isInvincible = value;
+        if (mySpriteRenderer)
+        {
+            isInvincible = value;
 
-        if(isInvincible)
-        {
-            Color temp = defaultColor;
-            temp.a = 0.5f;
-            mySpriteRenderer.color = temp;
-        }
-        else
-        {
-            mySpriteRenderer.color = defaultColor;
+            if (isInvincible)
+            {
+                Color temp = defaultColor;
+                temp.a = 0.5f;
+                mySpriteRenderer.color = temp;
+            }
+            else
+            {
+                mySpriteRenderer.color = defaultColor;
+            }
+
         }
     }
 }

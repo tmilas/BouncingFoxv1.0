@@ -74,22 +74,13 @@ public class BGScroller : MonoBehaviour {
             else
                 currentSpeedFactor = gameEngine.speedFactor;
 
-            if (gameObject.name.Equals("fg"))
+            if (gameObject.name.Equals("fg_path"))
             {
-                Debug.Log("fg speed:" + currentSpeedFactor);
-                Debug.Log("scroll speed:" + scrollSpeed);
-                Debug.Log("transformx=" + transform.position.x.ToString());
-                Debug.Log("startposx=" + startPosition.x.ToString());
-                Debug.Log("boundsx=" + bounds.size.x.ToString());
-            }
-
-            if (gameObject.name.Equals("near_fg"))
-            {
-                Debug.Log("nearfg speed:" + currentSpeedFactor);
-                Debug.Log("scroll speed:" + scrollSpeed);
-                Debug.Log("transformx=" + transform.position.x.ToString());
-                Debug.Log("startposx=" + startPosition.x.ToString());
-                Debug.Log("boundsx=" + bounds.size.x.ToString());
+                //Debug.Log("fg_path speed:" + currentSpeedFactor);
+                //Debug.Log("scroll speed:" + scrollSpeed);
+                //Debug.Log("transformx=" + transform.position.x.ToString());
+                //Debug.Log("startposx=" + startPosition.x.ToString());
+                //Debug.Log("boundsx=" + bounds.size.x.ToString());
             }
 
             

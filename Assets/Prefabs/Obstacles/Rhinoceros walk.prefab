@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 6986646680290078066}
   - component: {fileID: -1425979005722309438}
   m_Layer: 0
-  m_Name: Rhinoceros 2
+  m_Name: Rhinoceros walk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1a77930b4254b15b633e202efd2ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 0.09
+  walkingSpeed: 0.12
 --- !u!1 &3922455320527177612
 GameObject:
   m_ObjectHideFlags: 0
