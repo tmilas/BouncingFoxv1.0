@@ -24,6 +24,6 @@ public class NavigationHandler : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Kayarscene");
+        SceneManager.LoadScene("Main Scene");
     }
 }
