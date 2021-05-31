@@ -107,6 +107,11 @@ public class ObstacleSpawner : MonoBehaviour
 
     }
 
+    public LevelProps GetLevelProps()
+    {
+        return levelList[GetCurrentLevel() - 1].GetComponent<LevelProps>();
+    }
+
     public void SetMainPath(GameObject newPath)
     {
         mainPath = newPath;
