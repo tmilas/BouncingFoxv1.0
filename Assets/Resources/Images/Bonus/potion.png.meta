@@ -1,0 +1,2712 @@
+fileFormatVersion: 2
+guid: 6d212cdd6666743f4aa2adce4daef0c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5511282448070908222
+    second: black_potion_mini
+  - first:
+      213: -8972378160654493810
+    second: orange_potion_mini
+  - first:
+      213: 3321427043403668126
+    second: orang_potion_mini
+  - first:
+      213: 2721951255477376245
+    second: yellow_potion_mini
+  - first:
+      213: -3614444396364050923
+    second: hjm-pixie_dust_flasks-alpha_4
+  - first:
+      213: 7159610873524576396
+    second: green_potion_mini
+  - first:
+      213: -2649401056458149623
+    second: hjm-pixie_dust_flasks-alpha_6
+  - first:
+      213: 8007879529550918657
+    second: hjm-pixie_dust_flasks-alpha_7
+  - first:
+      213: -6058659173388542530
+    second: hjm-pixie_dust_flasks-alpha_8
+  - first:
+      213: -1989818596166350262
+    second: hjm-pixie_dust_flasks-alpha_9
+  - first:
+      213: -6812019293206297273
+    second: hjm-pixie_dust_flasks-alpha_10
+  - first:
+      213: 1576585391711791578
+    second: hjm-pixie_dust_flasks-alpha_11
+  - first:
+      213: -2790280247191970105
+    second: hjm-pixie_dust_flasks-alpha_12
+  - first:
+      213: 4826676316129907834
+    second: hjm-pixie_dust_flasks-alpha_13
+  - first:
+      213: 5470614761262451082
+    second: hjm-pixie_dust_flasks-alpha_14
+  - first:
+      213: 7838975877577934494
+    second: hjm-pixie_dust_flasks-alpha_15
+  - first:
+      213: 8574129797420691596
+    second: hjm-pixie_dust_flasks-alpha_16
+  - first:
+      213: 8701286520800982014
+    second: hjm-pixie_dust_flasks-alpha_17
+  - first:
+      213: -952793142352816595
+    second: hjm-pixie_dust_flasks-alpha_18
+  - first:
+      213: -1045276885283243856
+    second: hjm-pixie_dust_flasks-alpha_19
+  - first:
+      213: 168277533922151313
+    second: hjm-pixie_dust_flasks-alpha_20
+  - first:
+      213: -5879612203937536120
+    second: hjm-pixie_dust_flasks-alpha_21
+  - first:
+      213: 8572419114464207415
+    second: hjm-pixie_dust_flasks-alpha_22
+  - first:
+      213: 3787418930075543750
+    second: hjm-pixie_dust_flasks-alpha_23
+  - first:
+      213: 9176785338517871794
+    second: hjm-pixie_dust_flasks-alpha_24
+  - first:
+      213: -890930786447175756
+    second: hjm-pixie_dust_flasks-alpha_25
+  - first:
+      213: 2617055654387989092
+    second: hjm-pixie_dust_flasks-alpha_26
+  - first:
+      213: 1918834654982827868
+    second: hjm-pixie_dust_flasks-alpha_27
+  - first:
+      213: -3274475525184993796
+    second: hjm-pixie_dust_flasks-alpha_28
+  - first:
+      213: -8915843116726089288
+    second: hjm-pixie_dust_flasks-alpha_29
+  - first:
+      213: -8174703584228051288
+    second: hjm-pixie_dust_flasks-alpha_30
+  - first:
+      213: 8628553270801254272
+    second: hjm-pixie_dust_flasks-alpha_31
+  - first:
+      213: 8188620962739817098
+    second: hjm-pixie_dust_flasks-alpha_32
+  - first:
+      213: -6788417769184530366
+    second: hjm-pixie_dust_flasks-alpha_33
+  - first:
+      213: 1073448655830640182
+    second: hjm-pixie_dust_flasks-alpha_34
+  - first:
+      213: 6700458972704022583
+    second: hjm-pixie_dust_flasks-alpha_35
+  - first:
+      213: 8181175013190475220
+    second: hjm-pixie_dust_flasks-alpha_36
+  - first:
+      213: -611758938239096789
+    second: hjm-pixie_dust_flasks-alpha_37
+  - first:
+      213: 8759800538394274322
+    second: hjm-pixie_dust_flasks-alpha_38
+  - first:
+      213: -2919423947158298865
+    second: hjm-pixie_dust_flasks-alpha_39
+  - first:
+      213: 279341170986450893
+    second: hjm-pixie_dust_flasks-alpha_40
+  - first:
+      213: -5277236248845224320
+    second: hjm-pixie_dust_flasks-alpha_41
+  - first:
+      213: 1147716227385295582
+    second: hjm-pixie_dust_flasks-alpha_42
+  - first:
+      213: 6229968888720007711
+    second: hjm-pixie_dust_flasks-alpha_43
+  - first:
+      213: -6674548081838431112
+    second: hjm-pixie_dust_flasks-alpha_44
+  - first:
+      213: 2340727239606463277
+    second: hjm-pixie_dust_flasks-alpha_45
+  - first:
+      213: 2139149876570198926
+    second: hjm-pixie_dust_flasks-alpha_46
+  - first:
+      213: 3534010556274680967
+    second: hjm-pixie_dust_flasks-alpha_47
+  - first:
+      213: 9206462130306614346
+    second: hjm-pixie_dust_flasks-alpha_48
+  - first:
+      213: 8662686904054977279
+    second: hjm-pixie_dust_flasks-alpha_49
+  - first:
+      213: 4126911958022890281
+    second: hjm-pixie_dust_flasks-alpha_50
+  - first:
+      213: 554750983535110021
+    second: hjm-pixie_dust_flasks-alpha_51
+  - first:
+      213: -2262744399928237473
+    second: hjm-pixie_dust_flasks-alpha_52
+  - first:
+      213: 8186212236010092009
+    second: hjm-pixie_dust_flasks-alpha_53
+  - first:
+      213: 6970382158441717184
+    second: hjm-pixie_dust_flasks-alpha_54
+  - first:
+      213: -3029350725266406902
+    second: hjm-pixie_dust_flasks-alpha_55
+  - first:
+      213: -3935112769365242737
+    second: hjm-pixie_dust_flasks-alpha_56
+  - first:
+      213: -9041380876498539650
+    second: hjm-pixie_dust_flasks-alpha_57
+  - first:
+      213: 3072365712129724919
+    second: hjm-pixie_dust_flasks-alpha_58
+  - first:
+      213: -2470391538686787831
+    second: hjm-pixie_dust_flasks-alpha_59
+  - first:
+      213: -4490212706191751397
+    second: hjm-pixie_dust_flasks-alpha_60
+  - first:
+      213: 4476559360780140775
+    second: hjm-pixie_dust_flasks-alpha_61
+  - first:
+      213: -4840692687523857670
+    second: hjm-pixie_dust_flasks-alpha_62
+  - first:
+      213: 7521019478519603213
+    second: hjm-pixie_dust_flasks-alpha_63
+  - first:
+      213: 5177791803349799803
+    second: hjm-pixie_dust_flasks-alpha_64
+  - first:
+      213: 4634975805548216039
+    second: hjm-pixie_dust_flasks-alpha_65
+  - first:
+      213: 6590086696366593255
+    second: hjm-pixie_dust_flasks-alpha_66
+  - first:
+      213: 7781870363800709139
+    second: hjm-pixie_dust_flasks-alpha_67
+  - first:
+      213: 7343700349464870987
+    second: hjm-pixie_dust_flasks-alpha_68
+  - first:
+      213: 3197152930402950946
+    second: hjm-pixie_dust_flasks-alpha_69
+  - first:
+      213: 1718785722878937829
+    second: hjm-pixie_dust_flasks-alpha_70
+  - first:
+      213: -4748659657343325686
+    second: hjm-pixie_dust_flasks-alpha_71
+  - first:
+      213: 3087345487791132895
+    second: hjm-pixie_dust_flasks-alpha_72
+  - first:
+      213: -5347940284232105300
+    second: hjm-pixie_dust_flasks-alpha_73
+  - first:
+      213: 7597930963276762297
+    second: hjm-pixie_dust_flasks-alpha_74
+  - first:
+      213: -5154991599987403956
+    second: hjm-pixie_dust_flasks-alpha_75
+  - first:
+      213: 5047449155582781239
+    second: hjm-pixie_dust_flasks-alpha_76
+  - first:
+      213: -7959631101940187480
+    second: hjm-pixie_dust_flasks-alpha_77
+  - first:
+      213: -9031835667285599485
+    second: hjm-pixie_dust_flasks-alpha_78
+  - first:
+      213: -9070282746175928973
+    second: hjm-pixie_dust_flasks-alpha_79
+  - first:
+      213: 4203734595210454705
+    second: hjm-pixie_dust_flasks-alpha_80
+  - first:
+      213: -7501428356650410894
+    second: hjm-pixie_dust_flasks-alpha_81
+  - first:
+      213: 5039331484674149686
+    second: hjm-pixie_dust_flasks-alpha_82
+  - first:
+      213: -5913821869921037694
+    second: hjm-pixie_dust_flasks-alpha_83
+  - first:
+      213: -2459879871656182108
+    second: hjm-pixie_dust_flasks-alpha_84
+  - first:
+      213: -4589436630752190280
+    second: hjm-pixie_dust_flasks-alpha_85
+  - first:
+      213: -6728374431780052711
+    second: hjm-pixie_dust_flasks-alpha_86
+  - first:
+      213: 6528052633236516892
+    second: hjm-pixie_dust_flasks-alpha_87
+  - first:
+      213: -3131475537106730349
+    second: hjm-pixie_dust_flasks-alpha_88
+  - first:
+      213: -2206039588503556424
+    second: hjm-pixie_dust_flasks-alpha_89
+  - first:
+      213: 8511011547570586105
+    second: hjm-pixie_dust_flasks-alpha_90
+  - first:
+      213: -7180326290590247301
+    second: hjm-pixie_dust_flasks-alpha_91
+  - first:
+      213: -4959228853736364619
+    second: hjm-pixie_dust_flasks-alpha_92
+  - first:
+      213: 8754922715288385918
+    second: hjm-pixie_dust_flasks-alpha_93
+  - first:
+      213: -6652138549001207616
+    second: hjm-pixie_dust_flasks-alpha_94
+  - first:
+      213: 6718566325134315463
+    second: hjm-pixie_dust_flasks-alpha_95
+  - first:
+      213: -6908769091960242470
+    second: hjm-pixie_dust_flasks-alpha_96
+  - first:
+      213: 3509305618380911175
+    second: hjm-pixie_dust_flasks-alpha_97
+  - first:
+      213: 8955605343513831050
+    second: hjm-pixie_dust_flasks-alpha_98
+  - first:
+      213: -3566732131307190516
+    second: hjm-pixie_dust_flasks-alpha_99
+  - first:
+      213: -2628183179338286231
+    second: hjm-pixie_dust_flasks-alpha_100
+  - first:
+      213: -4528594198289973782
+    second: blue_potion_mini
+  - first:
+      213: -2711649526769804996
+    second: hjm-pixie_dust_flasks-alpha_102
+  - first:
+      213: 3815720194095886245
+    second: purple_potion_mini
+  - first:
+      213: 823845723918219275
+    second: hjm-pixie_dust_flasks-alpha_104
+  - first:
+      213: 731806605160617493
+    second: potion_0
+  - first:
+      213: 8840016672301374354
+    second: potion_1
+  - first:
+      213: -8805645451618135844
+    second: potion_2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: black_potion_mini
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 331
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e399c1ebf220c7c40800000000000000
+      internalID: 5511282448070908222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orange_potion_mini
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 332
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8757bfb995bb7380800000000000000
+      internalID: -8972378160654493810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orang_potion_mini
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 330
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a937d5c44181e20800000000000000
+      internalID: 3321427043403668126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_potion_mini
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 330
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f458aece3056c520800000000000000
+      internalID: 2721951255477376245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_4
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 330
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ec15eb8f9e6ddc0800000000000000
+      internalID: -3614444396364050923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: green_potion_mini
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 332
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80e47ef72c0c5360800000000000000
+      internalID: 7159610873524576396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 299
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901744ab6cf6b3bd0800000000000000
+      internalID: -2649401056458149623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_7
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 299
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104310b2104b12f60800000000000000
+      internalID: 8007879529550918657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_8
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 299
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd930bf4915beba0800000000000000
+      internalID: -6058659173388542530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_9
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 295
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ac900878eb264e0800000000000000
+      internalID: -1989818596166350262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_10
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 299
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745c4516b88d671a0800000000000000
+      internalID: -6812019293206297273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 297
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad92d078f0821e510800000000000000
+      internalID: 1576585391711791578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 297
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce555216eee649d0800000000000000
+      internalID: -2790280247191970105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 299
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74d6b4698ccbf240800000000000000
+      internalID: 4826676316129907834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_14
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 295
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a898e0c04278beb40800000000000000
+      internalID: 5470614761262451082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_15
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 299
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9683e92703a9cc60800000000000000
+      internalID: 7838975877577934494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_16
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 299
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c803a518f9d6df670800000000000000
+      internalID: 8574129797420691596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_17
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 295
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3bc314dfd21c870800000000000000
+      internalID: 8701286520800982014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_18
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 299
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26d1a56faff6c2f0800000000000000
+      internalID: -952793142352816595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_19
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 299
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8f3c0063e6e71f0800000000000000
+      internalID: -1045276885283243856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_20
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 299
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bcb198687d55200800000000000000
+      internalID: 168277533922151313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_21
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 299
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887604f1adb676ea0800000000000000
+      internalID: -5879612203937536120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_22
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 299
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732686714c957f670800000000000000
+      internalID: 8572419114464207415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_23
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 299
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c82eb6437d9f8430800000000000000
+      internalID: 3787418930075543750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_24
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 299
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcde5a05ad7a5f70800000000000000
+      internalID: 9176785338517871794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_25
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 299
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf4b5a8b27c2a3f0800000000000000
+      internalID: -890930786447175756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_26
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 295
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a393d7046a15420800000000000000
+      internalID: 2617055654387989092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_27
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 297
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fe5f8c3f111aa10800000000000000
+      internalID: 1918834654982827868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_28
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 299
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf543a7dbd9be82d0800000000000000
+      internalID: -3274475525184993796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_29
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 299
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b90e6a6cef844480800000000000000
+      internalID: -8915843116726089288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_30
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 299
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a679fdc66e9d8e80800000000000000
+      internalID: -8174703584228051288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_31
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 299
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087c4a7db77ceb770800000000000000
+      internalID: 8628553270801254272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_32
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 297
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a8c646163d3a170800000000000000
+      internalID: 8188620962739817098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_33
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 299
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2407ec86102bac1a0800000000000000
+      internalID: -6788417769184530366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_34
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 299
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636e7677dd7a5ee00800000000000000
+      internalID: 1073448655830640182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_35
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 299
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7302a146fefccfc50800000000000000
+      internalID: 6700458972704022583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_36
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 299
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd158a245f598170800000000000000
+      internalID: 8181175013190475220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_37
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 299
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28a616ac789287f0800000000000000
+      internalID: -611758938239096789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_38
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 299
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a2442ad20119970800000000000000
+      internalID: 8759800538394274322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_39
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 299
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f5cd8436f1c77d0800000000000000
+      internalID: -2919423947158298865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_40
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 299
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcff9c3a05b60e300800000000000000
+      internalID: 279341170986450893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_41
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 268
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086f3c7779d73c6b0800000000000000
+      internalID: -5277236248845224320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_42
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 268
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed28044f3d18def00800000000000000
+      internalID: 1147716227385295582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_43
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 268
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1224ed42bb457650800000000000000
+      internalID: 6229968888720007711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_44
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 264
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87461c102ed3f53a0800000000000000
+      internalID: -6674548081838431112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_45
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 268
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2be2d0d50feb7020800000000000000
+      internalID: 2340727239606463277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_46
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 266
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e839942aa79cfad10800000000000000
+      internalID: 2139149876570198926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_47
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 266
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784ab3f70e35b0130800000000000000
+      internalID: 3534010556274680967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_48
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 268
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a440303978ce3cf70800000000000000
+      internalID: 9206462130306614346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_49
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 268
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff210a4a7db083870800000000000000
+      internalID: 8662686904054977279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_50
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 268
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923244d7f8cb54930800000000000000
+      internalID: 4126911958022890281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_51
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 268
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587a860941fd2b700800000000000000
+      internalID: 554750983535110021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 268
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52e5c0f4fd1990e0800000000000000
+      internalID: -2262744399928237473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_53
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5765ff7a44b9170800000000000000
+      internalID: 8186212236010092009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_54
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd93a674a5cbb060800000000000000
+      internalID: 6970382158441717184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_55
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 268
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a028c68c09595f5d0800000000000000
+      internalID: -3029350725266406902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_56
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c81ee09cba369c0800000000000000
+      internalID: -3935112769365242737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_57
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 268
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b6b410fff868280800000000000000
+      internalID: -9041380876498539650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_58
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 268
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1159b465c33aa20800000000000000
+      internalID: 3072365712129724919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_59
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f7178fbf767bdd0800000000000000
+      internalID: -2470391538686787831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_60
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 268
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17ce79755f8fa1c0800000000000000
+      internalID: -4490212706191751397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_61
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 268
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e00043550fef1e30800000000000000
+      internalID: 4476559360780140775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_62
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 266
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa3f45d5a762dcb0800000000000000
+      internalID: -4840692687523857670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_63
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0064fd1e57006860800000000000000
+      internalID: 7521019478519603213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_64
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73189746363bd740800000000000000
+      internalID: 5177791803349799803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_65
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 268
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee3b3020fdb25040800000000000000
+      internalID: 4634975805548216039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_66
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e455ff3fe0b47b50800000000000000
+      internalID: 6590086696366593255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_67
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 268
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3182b72add1cefb60800000000000000
+      internalID: 7781870363800709139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_68
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4004ca2f801ae560800000000000000
+      internalID: 7343700349464870987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_69
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 268
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f5445a6a19e5c20800000000000000
+      internalID: 3197152930402950946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_70
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 268
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea4639228a5ad710800000000000000
+      internalID: 1718785722878937829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_71
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 266
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0aa2dc733f591eb0800000000000000
+      internalID: -4748659657343325686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_72
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 264
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd012ba1d5478da20800000000000000
+      internalID: 3087345487791132895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_73
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 268
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2085665ac48c5b0800000000000000
+      internalID: -5347940284232105300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_74
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 268
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc8d0e94f5417960800000000000000
+      internalID: 7597930963276762297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_75
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 264
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43d0aeb37ac578b0800000000000000
+      internalID: -5154991599987403956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_76
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 266
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7376b54b3442c0640800000000000000
+      internalID: 5047449155582781239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_77
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 268
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae34b94fa5b98190800000000000000
+      internalID: -7959631101940187480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_78
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 268
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b1db5305978a280800000000000000
+      internalID: -9031835667285599485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_79
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 268
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37544d516e1ef1280800000000000000
+      internalID: -9070282746175928973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_80
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 268
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b62a8d875aa65a30800000000000000
+      internalID: 4203734595210454705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_81
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 268
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c5fc567a295e790800000000000000
+      internalID: -7501428356650410894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_82
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 268
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dc179294d4fe540800000000000000
+      internalID: 5039331484674149686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_83
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 268
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2829b629752ededa0800000000000000
+      internalID: -5913821869921037694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_84
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 268
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aebccb2a40ccddd0800000000000000
+      internalID: -2459879871656182108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_85
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 266
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0a9d043bb0f40c0800000000000000
+      internalID: -4589436630752190280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_86
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 268
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911eded4a1300a2a0800000000000000
+      internalID: -6728374431780052711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_87
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 268
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10bd17684d489a50800000000000000
+      internalID: 6528052633236516892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_88
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 268
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3928deb1793ca84d0800000000000000
+      internalID: -3131475537106730349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_89
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8beebceaea29261e0800000000000000
+      internalID: -2206039588503556424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_90
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 268
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f14134c8ef2d1670800000000000000
+      internalID: 8511011547570586105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_91
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 268
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7658fd184b5a5c90800000000000000
+      internalID: -7180326290590247301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_92
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 268
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b52d25f1a74d2bb0800000000000000
+      internalID: -4959228853736364619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_93
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 268
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7933c0f2dbbf7970800000000000000
+      internalID: 8754922715288385918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_94
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 268
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0c916fb3bdea3a0800000000000000
+      internalID: -6652138549001207616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_95
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 268
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf4889e9742d3d50800000000000000
+      internalID: 6718566325134315463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_96
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 268
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adef2867d1f1f10a0800000000000000
+      internalID: -6908769091960242470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_97
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 268
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74270e7edde83b030800000000000000
+      internalID: 3509305618380911175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_98
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 268
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a866bb07c93b84c70800000000000000
+      internalID: 8955605343513831050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_99
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 49
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c078670260c608ec0800000000000000
+      internalID: -3566732131307190516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_100
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 47
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b72e6b251d68bd0800000000000000
+      internalID: -2628183179338286231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blue_potion_mini
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 45
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedf707f1933721c0800000000000000
+      internalID: -4528594198289973782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_102
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 47
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3997815f194e5ad0800000000000000
+      internalID: -2711649526769804996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purple_potion_mini
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 46
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afae5bcc4924f430800000000000000
+      internalID: 3815720194095886245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-pixie_dust_flasks-alpha_104
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 41
+        width: 99
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08bedb2253ee6b00800000000000000
+      internalID: 823845723918219275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 264
+        width: 670
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51612e8ea36e72a00800000000000000
+      internalID: 731806605160617493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 264
+        width: 670
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bdd09b35c0eaa70800000000000000
+      internalID: 8840016672301374354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: potion_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 257
+        width: 609
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd05446bd101cc580800000000000000
+      internalID: -8805645451618135844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemFactor: 2
   itemDuration: 3
-  collectableType: 14
+  collectableType: 15
   collectableParticleEffect: {fileID: 4825728301956106568, guid: d1ce9735b395f4084b7a57822985da97, type: 3}
 --- !u!61 &5910609341358655214
 BoxCollider2D:
