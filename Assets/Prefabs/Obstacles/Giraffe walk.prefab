@@ -467,7 +467,7 @@ MonoBehaviour:
   - {fileID: 5182537352106378625}
   - {fileID: 6673030148546487816}
   m_Bounds:
-    m_Center: {x: -0.00000023841858, y: 0.0022792816, z: 0}
+    m_Center: {x: -0.00000047683716, y: 0.0022792816, z: 0}
     m_Extent: {x: 1.0750003, y: 2.5877194, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -830,7 +830,7 @@ MonoBehaviour:
   - {fileID: 2201265448728058712}
   - {fileID: 2730266569266919278}
   m_Bounds:
-    m_Center: {x: -0.00000017881393, y: -0.003223896, z: 0}
+    m_Center: {x: -0.00000011920929, y: -0.003223896, z: 0}
     m_Extent: {x: 0.7499999, y: 2.1395538, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -995,7 +995,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7508461004148061616}
   m_Bounds:
-    m_Center: {x: -0.00000023841858, y: -0.00027096272, z: 0}
+    m_Center: {x: 0, y: -0.00027096272, z: 0}
     m_Extent: {x: 0.65500003, y: 0.48599982, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1224,8 +1224,8 @@ MonoBehaviour:
   - {fileID: 1622137503661087974}
   - {fileID: 8690398120075687482}
   m_Bounds:
-    m_Center: {x: 0.00000029802322, y: -0.0005762577, z: 0}
-    m_Extent: {x: 0.7000001, y: 1.9867948, z: 0}
+    m_Center: {x: 0.0000004172325, y: -0.0005762577, z: 0}
+    m_Extent: {x: 0.70000017, y: 1.9867948, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &4801612985646818427
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 1864208921974426348}
   m_Bounds:
-    m_Center: {x: 0.00000023841858, y: 0.0019939542, z: 0}
+    m_Center: {x: 0.00000035762787, y: 0.0019939542, z: 0}
     m_Extent: {x: 0.81500006, y: 0.838005, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1466,7 +1466,8 @@ GameObject:
   - component: {fileID: 3440674643622128301}
   - component: {fileID: 1626383328366233709}
   - component: {fileID: 3957875486498365661}
-  m_Layer: 0
+  - component: {fileID: 1518788323223457517}
+  m_Layer: 3
   m_Name: Giraffe walk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1532,6 +1533,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkingSpeed: 0.12
+--- !u!60 &1518788323223457517
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6092972728506753069}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.974283, y: 5.5732913}
+      - {x: -0.12950921, y: 7.391386}
+      - {x: -0.4137086, y: 13.25263}
+      - {x: -2.1731026, y: 13.616067}
+      - {x: -4.995442, y: 9.484339}
+      - {x: -2.6004496, y: 6.861853}
+      - {x: -2.0013127, y: 0.41688776}
+      - {x: 3.637692, y: -0.024286091}
+      - {x: 5.1765337, y: 2.9046671}
 --- !u!1 &6300323881546363805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,8 +1760,8 @@ MonoBehaviour:
   - {fileID: 5645822249798576194}
   - {fileID: 4151590157080932325}
   m_Bounds:
-    m_Center: {x: 0.00000035762787, y: 0.002244234, z: 0}
-    m_Extent: {x: 1.0750006, y: 2.627755, z: 0}
+    m_Center: {x: 0.00000023841858, y: 0.002244234, z: 0}
+    m_Extent: {x: 1.0750005, y: 2.627755, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7643957150928182647
@@ -2164,7 +2199,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 230054371026034257}
   m_Bounds:
-    m_Center: {x: -0.000015676022, y: 0.0016751885, z: 0}
+    m_Center: {x: -0.000015437603, y: 0.0016751885, z: 0}
     m_Extent: {x: 0.73998487, y: 0.4583249, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1

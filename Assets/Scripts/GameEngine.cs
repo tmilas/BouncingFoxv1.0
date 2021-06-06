@@ -29,6 +29,7 @@ public class GameEngine : MonoBehaviour
 
     private UIHandler uiHandler;
     private StorageEngine storageEngine;
+    private ObstacleSpawner obstacleSpawner;
     private Fox fox;
 
     private bool isGameOver = false;
@@ -37,6 +38,7 @@ public class GameEngine : MonoBehaviour
     {
         uiHandler = FindObjectOfType<UIHandler>();
         storageEngine = FindObjectOfType<StorageEngine>();
+        obstacleSpawner = FindObjectOfType<ObstacleSpawner>();
 
         fox = FindObjectOfType<Fox>();
 
@@ -94,7 +96,7 @@ public class GameEngine : MonoBehaviour
 
     IEnumerator GoToGameOverScene()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.6f);
         SceneManager.LoadScene("Game Over Screen");
     }
 
@@ -142,6 +144,11 @@ public class GameEngine : MonoBehaviour
         bonusBeginTime = Time.time;
         isBonusActive = true;
 
+        if(collectableItem.collectableType == CollectableItem.CollectableType.RandomCollectable)
+        {
+            collectableItem = GetRandomBonus();
+        }
+
         if(collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x ||
            collectableItem.collectableType == CollectableItem.CollectableType.FastMotion3x ||
            collectableItem.collectableType == CollectableItem.CollectableType.SlowMotion2x ||
@@ -184,7 +191,25 @@ public class GameEngine : MonoBehaviour
         }
 
         if (uiHandler)
-            uiHandler.writeBonus("Bonus");
+            uiHandler.WriteBonus(collectableItem);
+    }
+
+    private CollectableItem GetRandomBonus()
+    {
+        LevelProps levelProps = obstacleSpawner.GetLevelProps();
+
+        int bonusCount = levelProps.levelParachutes.Length;
+
+        CollectableItem randomCollectable = levelProps.levelParachutes[UnityEngine.Random.Range(0, bonusCount)]
+                                                      .GetComponent<CollectableItem>();
+        
+        while (randomCollectable.collectableType==CollectableItem.CollectableType.RandomCollectable)
+        {
+            randomCollectable = levelProps.levelParachutes[UnityEngine.Random.Range(0, bonusCount)]
+                                                      .GetComponent<CollectableItem>();
+        }
+        
+        return randomCollectable;
     }
 
     public void IsBonusActive()
@@ -198,6 +223,12 @@ public class GameEngine : MonoBehaviour
             if((currentTime - bonusBeginTime)>=bonusDuration)
             {
                 SetDefaultFactors();
+            }
+            else
+            {
+                float bonusSliderValue = 1 - (currentTime - bonusBeginTime) / bonusDuration;
+                if (uiHandler)
+                    uiHandler.SetBonusSliderValue(bonusSliderValue);
             }
         }
     }
@@ -213,7 +244,7 @@ public class GameEngine : MonoBehaviour
         isBonusActive = false;
 
         if (uiHandler)
-            uiHandler.writeBonus("");
+            uiHandler.BonusRestart();
 
         if(fox)
         { 

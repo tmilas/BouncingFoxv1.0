@@ -161,7 +161,7 @@ MonoBehaviour:
   - {fileID: 2987995758591560261}
   - {fileID: 2116197178626418944}
   m_Bounds:
-    m_Center: {x: 0.0011248589, y: 0.014429927, z: 0}
+    m_Center: {x: 0.0011250973, y: 0.014429927, z: 0}
     m_Extent: {x: 3.342095, y: 1.97057, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -391,7 +391,7 @@ MonoBehaviour:
   - {fileID: 8479081610559565055}
   - {fileID: 430208771399432796}
   m_Bounds:
-    m_Center: {x: 0.0013405085, y: -0.003890276, z: 0}
+    m_Center: {x: 0.0013407469, y: -0.003890276, z: 0}
     m_Extent: {x: 1.5036603, y: 2.571111, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7778813654473451786}
   m_Bounds:
-    m_Center: {x: -0.0024804473, y: 0.002030015, z: 0}
+    m_Center: {x: -0.002480328, y: 0.002030015, z: 0}
     m_Extent: {x: 0.6175199, y: 0.8179697, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -693,8 +693,8 @@ MonoBehaviour:
   - {fileID: 884148443493022403}
   - {fileID: 782058540177233443}
   m_Bounds:
-    m_Center: {x: 0.0013637543, y: -0.00000023841858, z: 0}
-    m_Extent: {x: 1.3363646, y: 2.0950007, z: 0}
+    m_Center: {x: 0.0013641119, y: -0.00000023841858, z: 0}
+    m_Extent: {x: 1.3363647, y: 2.0950007, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &2755254029445026271
@@ -829,7 +829,7 @@ MonoBehaviour:
   - {fileID: 5182129014674877564}
   m_Bounds:
     m_Center: {x: -0.0020503998, y: 0.001635313, z: 0}
-    m_Extent: {x: 1.1979495, y: 1.7183661, z: 0}
+    m_Extent: {x: 1.1979494, y: 1.7183661, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &3536366092313093599
@@ -962,7 +962,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 399979404245604402}
   m_Bounds:
-    m_Center: {x: 0.030507743, y: -0.00612548, z: 0}
+    m_Center: {x: 0.030507863, y: -0.00612548, z: 0}
     m_Extent: {x: 0.6385897, y: 0.37595505, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1602,8 +1602,8 @@ MonoBehaviour:
   - {fileID: 1691294559572863497}
   - {fileID: 7681286737079660003}
   m_Bounds:
-    m_Center: {x: -0.00000059604645, y: 0.0012046099, z: 0}
-    m_Extent: {x: 1.3150003, y: 1.8787953, z: 0}
+    m_Center: {x: -0.00000047683716, y: 0.0012046099, z: 0}
+    m_Extent: {x: 1.3150002, y: 1.8787953, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &7663909245577470556
@@ -1709,7 +1709,7 @@ MonoBehaviour:
   - {fileID: 7150560005964416072}
   - {fileID: 5749382142930425736}
   m_Bounds:
-    m_Center: {x: -0.00000011920929, y: -0.00032520294, z: 0}
+    m_Center: {x: 0.00000035762787, y: -0.00032520294, z: 0}
     m_Extent: {x: 1.8550007, y: 1.9862359, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1812,7 +1812,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2713523142266776423}
   m_Bounds:
-    m_Center: {x: -0.000000059604645, y: 0, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.7549998, y: 0.87999976, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1864,7 +1864,8 @@ GameObject:
   - component: {fileID: 1551677389480310745}
   - component: {fileID: 5269736067440328416}
   - component: {fileID: 5555602222846472149}
-  m_Layer: 0
+  - component: {fileID: 5915911124857470985}
+  m_Layer: 3
   m_Name: Lion walk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1929,6 +1930,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkingSpeed: 0.12
+--- !u!60 &5915911124857470985
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8592146027172869489}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.76789284, y: 6.930256}
+      - {x: -0.14679116, y: 11.033533}
+      - {x: -3.3867972, y: 11.787576}
+      - {x: -6.721155, y: 9.528633}
+      - {x: -2.5866177, y: 1.3329238}
+      - {x: 3.1126044, y: 0.82166255}
+      - {x: 6.734195, y: 3.07953}
+      - {x: 4.08698, y: 6.580864}
 --- !u!1 &8673770751194056795
 GameObject:
   m_ObjectHideFlags: 0
