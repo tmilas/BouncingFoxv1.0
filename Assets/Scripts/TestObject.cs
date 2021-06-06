@@ -137,7 +137,7 @@ public class TestObject : MonoBehaviour
         else if (isSlow2x)
         {
             collectableItem = new CollectableItem();
-            collectableItem.itemDuration = 10;
+            collectableItem.itemDuration = 4;
             collectableItem.itemFactor = 0.7f;
             collectableItem.collectableType = CollectableItem.CollectableType.SlowMotion2x;
 
@@ -147,7 +147,7 @@ public class TestObject : MonoBehaviour
         else if (isSlow3x)
         {
             collectableItem = new CollectableItem();
-            collectableItem.itemDuration = 10;
+            collectableItem.itemDuration = 4;
             collectableItem.itemFactor = 0.4f;
             collectableItem.collectableType = CollectableItem.CollectableType.SlowMotion3x;
 

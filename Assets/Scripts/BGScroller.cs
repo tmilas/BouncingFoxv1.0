@@ -76,8 +76,8 @@ public class BGScroller : MonoBehaviour {
 
             if (gameObject.name.Equals("fg_path"))
             {
-                //Debug.Log("fg_path speed:" + currentSpeedFactor);
-                //Debug.Log("scroll speed:" + scrollSpeed);
+                Debug.Log("fg_path speed:" + currentSpeedFactor);
+                Debug.Log("scroll speed:" + scrollSpeed);
                 //Debug.Log("transformx=" + transform.position.x.ToString());
                 //Debug.Log("startposx=" + startPosition.x.ToString());
                 //Debug.Log("boundsx=" + bounds.size.x.ToString());

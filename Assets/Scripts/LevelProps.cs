@@ -7,6 +7,7 @@ public class LevelProps : MonoBehaviour
 
     [SerializeField] public GameObject[] levelObstacles;
 
+    [SerializeField] public float levelSpeedFactor = 1f;
     [SerializeField] public float obstacleCreateInSec = 5f;
     [SerializeField] public float levelStartSec;
 
