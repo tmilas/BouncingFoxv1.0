@@ -191,7 +191,7 @@ public class GameEngine : MonoBehaviour
         }
 
         if (uiHandler)
-            uiHandler.writeBonus(collectableItem.collectableType.ToString());
+            uiHandler.WriteBonus(collectableItem);
     }
 
     private CollectableItem GetRandomBonus()
@@ -224,6 +224,12 @@ public class GameEngine : MonoBehaviour
             {
                 SetDefaultFactors();
             }
+            else
+            {
+                float bonusSliderValue = 1 - (currentTime - bonusBeginTime) / bonusDuration;
+                if (uiHandler)
+                    uiHandler.SetBonusSliderValue(bonusSliderValue);
+            }
         }
     }
 
@@ -238,7 +244,7 @@ public class GameEngine : MonoBehaviour
         isBonusActive = false;
 
         if (uiHandler)
-            uiHandler.writeBonus("");
+            uiHandler.BonusRestart();
 
         if(fox)
         { 
