@@ -44,24 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelObstacles:
-  - {fileID: 3884957076631676251, guid: 93741655e00e846f5bf2d2c295b971e7, type: 3}
-  - {fileID: 3884957076631676251, guid: 93741655e00e846f5bf2d2c295b971e7, type: 3}
-  - {fileID: 3884957076631676251, guid: 93741655e00e846f5bf2d2c295b971e7, type: 3}
-  - {fileID: 5595732009830112102, guid: 3c4cede7519fe4da28fc256248227481, type: 3}
-  - {fileID: 1645012148824393586, guid: 6c82aff0377c146eba47ce5240f6b80b, type: 3}
-  obstacleCreateInSec: 7
+  - {fileID: 5802434864290283811, guid: a82aa58584ad941d39fded535b1f24e6, type: 3}
+  - {fileID: 4670744751788379720, guid: 18f729aa50ed943c9951751fa9f49723, type: 3}
+  levelSpeedFactor: 1
+  obstacleCreateInSec: 5
   levelStartSec: 0
-  levelParachutes:
-  - {fileID: 6106871115080299849, guid: a7da187ad71aa49c9a8f6a88f5ea100b, type: 3}
-  - {fileID: 6106871115080299849, guid: e0ae3043c199a47e99650628280aa3d1, type: 3}
-  - {fileID: 6106871115080299849, guid: d5c1adf6f2e2143c0b5d1be7b42d88e9, type: 3}
-  - {fileID: 6106871115080299849, guid: 6ccdc63ead9064122a731607c5cc55ef, type: 3}
-  - {fileID: 6106871115080299849, guid: a65e632b34d27461997c6a2642146b19, type: 3}
-  - {fileID: 6106871115080299849, guid: 9b2b3ba1a8b7346ca8ec88b6c8d3fac9, type: 3}
-  - {fileID: 6106871115080299849, guid: cec4fb5816e074011bb39d91b82d1e24, type: 3}
-  - {fileID: 6106871115080299849, guid: d88718cb4fdd74275b42603d73b0f677, type: 3}
-  - {fileID: 6106871115080299849, guid: 7724b7169edcf4b4996d008edd418968, type: 3}
-  - {fileID: 6106871115080299849, guid: 9a5ee417e073e4390a0a85018afaf4b9, type: 3}
-  - {fileID: 6106871115080299849, guid: 870ce43c49d784662a987425403998bd, type: 3}
-  - {fileID: 6106871115080299849, guid: a506526921fed4181a38de59c9782af0, type: 3}
-  parachuteCreateInSec: 100
+  levelParachutes: []
+  parachuteCreateInSec: 0

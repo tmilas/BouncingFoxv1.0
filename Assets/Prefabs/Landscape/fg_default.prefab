@@ -875,4 +875,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: 0.1
   screenWidth: 60
-  backGroundObject: {fileID: 8964057308698334529, guid: 94caec367c7954541a3e2ffba44e7a5b, type: 3}
+  backGroundObject: {fileID: 8964057308698334529}

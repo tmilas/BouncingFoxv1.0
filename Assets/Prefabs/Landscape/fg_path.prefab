@@ -1228,7 +1228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: 0.08
   screenWidth: 100
-  backGroundObject: {fileID: 3766123549967270397}
+  backGroundObject: {fileID: 3766123549967270397, guid: da8b08e22a4344ae5b3b32bd1fcde39f, type: 3}
 --- !u!61 &2986427399012473323
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1884,7 +1884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: 0.06
   screenWidth: 100
-  backGroundObject: {fileID: 562037400889876495}
+  backGroundObject: {fileID: 562037400889876495, guid: a22478893a2de4bbf9ed8ef7098bae8b, type: 3}
 --- !u!1 &562037400999733827
 GameObject:
   m_ObjectHideFlags: 0

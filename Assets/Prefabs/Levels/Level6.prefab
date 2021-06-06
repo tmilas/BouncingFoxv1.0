@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1224822629449417378
+--- !u!1 &6378477081598237888
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1224822629449417380}
-  - component: {fileID: 1224822629449417381}
+  - component: {fileID: 6378477081598237894}
+  - component: {fileID: 6378477081598237895}
   m_Layer: 0
-  m_Name: Level3
+  m_Name: Level6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1224822629449417380
+--- !u!4 &6378477081598237894
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224822629449417378}
+  m_GameObject: {fileID: 6378477081598237888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,27 +31,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1224822629449417381
+--- !u!114 &6378477081598237895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224822629449417378}
+  m_GameObject: {fileID: 6378477081598237888}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c21e24ead31ae4ee58c50072ad6c1af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levelObstacles:
+  - {fileID: 5802434864290283811, guid: a82aa58584ad941d39fded535b1f24e6, type: 3}
   - {fileID: 8068064675743919413, guid: 6ebe8ad71a3644d89b533c1dbf4bbc04, type: 3}
+  - {fileID: 6383805334952536594, guid: 65465a385e8014b9d8e4489f4bf6beb3, type: 3}
   - {fileID: 3597909489417349161, guid: 057f5a2ca10834e1db813e7384c0b34f, type: 3}
   - {fileID: 823813707100407999, guid: 8d0f34f7b55ff4bc2a5bb03d5311a46e, type: 3}
   - {fileID: 3012692632282259199, guid: 0315e74b9e61e4f349d29df6b556f115, type: 3}
+  - {fileID: 4968534577729520118, guid: 69dce702aa6c24015b76d80ddbed53b6, type: 3}
+  - {fileID: 4968534577729520118, guid: a1167d39a238c46aeab4f42793754b14, type: 3}
+  - {fileID: 6383805334952536594, guid: cd62028db42764299969d51a0fdce0fd, type: 3}
+  - {fileID: 5694245797746683824, guid: 81d866346cf314d4787cc7953c39e027, type: 3}
   - {fileID: 4670744751788379720, guid: 18f729aa50ed943c9951751fa9f49723, type: 3}
   levelSpeedFactor: 1
   obstacleCreateInSec: 5
-  levelStartSec: 45
+  levelStartSec: 135
   levelParachutes:
   - {fileID: 6106871115080299849, guid: a7da187ad71aa49c9a8f6a88f5ea100b, type: 3}
   - {fileID: 6106871115080299849, guid: e0ae3043c199a47e99650628280aa3d1, type: 3}
@@ -65,4 +71,4 @@ MonoBehaviour:
   - {fileID: 6106871115080299849, guid: 9a5ee417e073e4390a0a85018afaf4b9, type: 3}
   - {fileID: 6106871115080299849, guid: 870ce43c49d784662a987425403998bd, type: 3}
   - {fileID: 6106871115080299849, guid: a506526921fed4181a38de59c9782af0, type: 3}
-  parachuteCreateInSec: 15
+  parachuteCreateInSec: 10
