@@ -983,6 +983,7 @@ MonoBehaviour:
   powerSlider: {fileID: 896239854}
   bonusSlider: {fileID: 8410957763359375640}
   bonusImage: {fileID: 1991808485556952284}
+  bonusResourcesPath: Images/Bonus/
   waitSecondsForBar: 0.6
   incPowerBar: 0.01
   decPowerBar: 0.1
