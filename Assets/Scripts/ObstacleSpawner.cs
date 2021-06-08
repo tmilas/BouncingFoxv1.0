@@ -46,13 +46,25 @@ public class ObstacleSpawner : MonoBehaviour
 
     IEnumerator ObstacleCreation()
     {
-        Debug.Log("test0");
+        //Debug.Log("test0");
         WaitForSeconds waitForSeconds;
         while (true)
         {
             LevelProps currentLevel = levelList[GetCurrentLevel() - 1].GetComponent<LevelProps>();
             if (currentLevel)
-                waitForSeconds = new WaitForSeconds(currentLevel.obstacleCreateInSec);
+            {
+                float createSec = 0;
+                float randomSec = Random.Range(0, currentLevel.obstacleCreateInSec);
+
+                if (Mathf.CeilToInt(randomSec) % 2 == 0)
+                    createSec = currentLevel.obstacleCreateInSec + randomSec * 0.2f;
+                else
+                    createSec = currentLevel.obstacleCreateInSec - randomSec * 0.2f;
+
+                //Debug.Log("create sec: " + createSec);
+
+                waitForSeconds = new WaitForSeconds(createSec);
+            }
             else
                 waitForSeconds = new WaitForSeconds(defaultObsCreateInSeconds);
 
@@ -84,7 +96,17 @@ public class ObstacleSpawner : MonoBehaviour
         {
             LevelProps currentLevel = levelList[GetCurrentLevel() - 1].GetComponent<LevelProps>();
             if (currentLevel)
-                waitForSeconds = new WaitForSeconds(currentLevel.parachuteCreateInSec);
+            {
+                float createSec = 0;
+                float randomSec = Random.Range(0, currentLevel.parachuteCreateInSec);
+
+                if (Mathf.CeilToInt(randomSec) % 2 == 0)
+                    createSec = currentLevel.parachuteCreateInSec + randomSec * 0.2f;
+                else
+                    createSec = currentLevel.parachuteCreateInSec - randomSec * 0.2f;
+
+                waitForSeconds = new WaitForSeconds(createSec);
+            }
             else
                 waitForSeconds = new WaitForSeconds(defaultParachuteCreateInSeconds);
 
