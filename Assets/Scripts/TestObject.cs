@@ -197,7 +197,7 @@ public class TestObject : MonoBehaviour
         else if (isInvincible)
         {
             collectableItem = new CollectableItem();
-            collectableItem.itemDuration = 3;
+            collectableItem.itemDuration = 3000;
             collectableItem.itemFactor = 3;
             collectableItem.collectableType = CollectableItem.CollectableType.Invincibility5s;
 

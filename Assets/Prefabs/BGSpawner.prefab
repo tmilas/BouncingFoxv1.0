@@ -43,3 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 835db8d02bf6e42a3a4f44b9a7a00164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgoNearFG: {fileID: 8303518535843529049, guid: 1379ad1a7301e480086e9f16ecd6dd52, type: 3}
+  bgoFG: {fileID: 8964057308698334529, guid: cc996ad4b9933458a81319ac13a78fba, type: 3}
+  bgoFGPath: {fileID: 3766123549967270397, guid: 794dc08dc37b1449e91f4b25dea41cad, type: 3}
+  bgoMG: {fileID: 562037400889876495, guid: 1ad7fa3f757334c44b857abfa9e29880, type: 3}
+  bgoBG: {fileID: 5774537381815173581, guid: d468291b4a59749e0830e6659b4d437b, type: 3}
