@@ -6,7 +6,6 @@ public class BGScroller : MonoBehaviour {
 
     public float scrollSpeed;
     public float screenWidth;
-    public GameObject backGroundObject;
 
     private float tileSizeX;
     private Vector2 startPosition;
@@ -76,8 +75,8 @@ public class BGScroller : MonoBehaviour {
 
             if (gameObject.name.Equals("fg_path"))
             {
-                Debug.Log("fg_path speed:" + currentSpeedFactor);
-                Debug.Log("scroll speed:" + scrollSpeed);
+                //Debug.Log("fg_path speed:" + currentSpeedFactor);
+                //Debug.Log("scroll speed:" + scrollSpeed);
                 //Debug.Log("transformx=" + transform.position.x.ToString());
                 //Debug.Log("startposx=" + startPosition.x.ToString());
                 //Debug.Log("boundsx=" + bounds.size.x.ToString());
@@ -124,13 +123,13 @@ public class BGScroller : MonoBehaviour {
             {
                 isObjCreated = true;
                 Vector2 newObjPosition = new Vector2(transform.position.x + bounds.size.x, startPosition.y);
-                GameObject newBG = bgSpawner.initiateObject(backGroundObject, newObjPosition);
+                GameObject newBG = bgSpawner.initiateObject(gameObject.name.Substring(0, gameObject.name.IndexOf("(")>0 ? gameObject.name.IndexOf("(") : gameObject.name.Length), newObjPosition);
                 if (gameObject.name.StartsWith("fg_path"))
                 {
                     Debug.Log("main path set");
                     obstacleSpawner.SetMainPath(newBG);
                 }
-                GameObject.Destroy(gameObject, 60f);
+                GameObject.Destroy(gameObject, 140f);
 
             }
 
