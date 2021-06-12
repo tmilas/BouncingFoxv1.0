@@ -6,6 +6,8 @@ public class BGScroller : MonoBehaviour {
 
     public float scrollSpeed;
     public float screenWidth;
+    public float spawnPos;
+    public float destroyAfterSpawnInSec=10f;
 
     private float tileSizeX;
     private Vector2 startPosition;
@@ -119,7 +121,7 @@ public class BGScroller : MonoBehaviour {
             transform.position = transformTempPos;
 
 
-            if (Mathf.Abs((transform.position.x - startPosition.x)) > (bounds.size.x - screenWidth) && isObjCreated == false)
+            if (transform.position.x <= spawnPos && isObjCreated == false)
             {
                 isObjCreated = true;
                 Vector2 newObjPosition = new Vector2(transform.position.x + bounds.size.x, startPosition.y);
@@ -129,7 +131,7 @@ public class BGScroller : MonoBehaviour {
                     Debug.Log("main path set");
                     obstacleSpawner.SetMainPath(newBG);
                 }
-                GameObject.Destroy(gameObject, 140f);
+                GameObject.Destroy(gameObject, destroyAfterSpawnInSec);
 
             }
 
