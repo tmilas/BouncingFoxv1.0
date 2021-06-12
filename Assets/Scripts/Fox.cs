@@ -209,10 +209,15 @@ public class Fox : MonoBehaviour
                 Color temp = defaultColor;
                 temp.a = 0.5f;
                 mySpriteRenderer.color = temp;
+
+                Debug.Log("Invincible active");
+                Physics2D.IgnoreLayerCollision(3, 7, true);
             }
             else
             {
+                Debug.Log("Invincible inactive");
                 mySpriteRenderer.color = defaultColor;
+                Physics2D.IgnoreLayerCollision(3, 7, false);
             }
 
         }
