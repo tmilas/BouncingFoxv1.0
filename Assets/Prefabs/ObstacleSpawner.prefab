@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultObsCreateInSeconds: 5
   defaultParachuteCreateInSeconds: 5
+  firstObsCreateInSeconds: 1
   mainPath: {fileID: 0}
   levelList:
   - {fileID: 8189877197402596768, guid: 7ee24003fb8814bd98b97e5c31dbfc62, type: 3}
@@ -52,6 +53,3 @@ MonoBehaviour:
   - {fileID: 1224822629449417378, guid: fbe100eee25c446b2819d28846e69183, type: 3}
   - {fileID: 6378477081598237888, guid: a6d38e4acb4854dcd95088098b45ffea, type: 3}
   - {fileID: 6378477081598237888, guid: 21e9c0daf5d194c83ae7f5558d007a9e, type: 3}
-  - {fileID: 6378477081598237888, guid: e2e354ea0cebc425c8ad3341a7dfa335, type: 3}
-  - {fileID: 6378477081598237888, guid: 74dcc2d4fc90540c2b8fb75e7682c4eb, type: 3}
-  - {fileID: 6378477081598237888, guid: 4ed9631e91953488da72c1ae37b74b08, type: 3}

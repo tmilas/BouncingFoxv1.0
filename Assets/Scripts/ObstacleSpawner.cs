@@ -6,7 +6,7 @@ public class ObstacleSpawner : MonoBehaviour
 {
     public float defaultObsCreateInSeconds = 5f;
     public float defaultParachuteCreateInSeconds = 5f;
-
+    public float firstObsCreateInSeconds = 1f;
 
     public GameObject mainPath;
 
@@ -16,6 +16,8 @@ public class ObstacleSpawner : MonoBehaviour
     private int timeElapsedInSec;
     private List<float> levelsStartSec;
 
+    private bool isFirstRun = true;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -54,12 +56,24 @@ public class ObstacleSpawner : MonoBehaviour
             if (currentLevel)
             {
                 float createSec = 0;
-                float randomSec = Random.Range(0, currentLevel.obstacleCreateInSec);
+                float randomSec;
 
-                if (Mathf.CeilToInt(randomSec) % 2 == 0)
-                    createSec = currentLevel.obstacleCreateInSec + randomSec * 0.2f;
+                randomSec = Random.Range(0, currentLevel.obstacleCreateInSec);
+
+                
+                if (isFirstRun)
+                {
+                    createSec = firstObsCreateInSeconds;
+                    isFirstRun = false;
+                }
                 else
-                    createSec = currentLevel.obstacleCreateInSec - randomSec * 0.2f;
+                {
+                    if (Mathf.CeilToInt(randomSec) % 2 == 0)
+                        createSec = currentLevel.obstacleCreateInSec + randomSec * 0.2f;
+                    else
+                        createSec = currentLevel.obstacleCreateInSec - randomSec * 0.2f;
+
+                }
 
                 //Debug.Log("create sec: " + createSec);
 
