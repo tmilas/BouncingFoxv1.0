@@ -33,8 +33,11 @@ public class Fox : MonoBehaviour
     //Cache parameters
     Rigidbody2D myRigidBody;
     BoxCollider2D myBoxCollider;
+    BoxCollider2D myFootCollider;
     Animator myAnimator;
     SpriteRenderer mySpriteRenderer;
+
+    public GameObject footObject;
 
     //Global game cache parameters
     GameEngine gameEngine;
@@ -48,7 +51,9 @@ public class Fox : MonoBehaviour
         myBoxCollider = GetComponent<BoxCollider2D>();
         myAnimator = GetComponent<Animator>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
+        myFootCollider = footObject.GetComponent<BoxCollider2D>();
 
+       
         if(mySpriteRenderer)
             defaultColor = mySpriteRenderer.color;
 
@@ -123,7 +128,7 @@ public class Fox : MonoBehaviour
     {
         isPreviousTouched = isTouched;
 
-        if (!myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Path")))
+        if (!myFootCollider.IsTouchingLayers(LayerMask.GetMask("Path")))
         {
             isTouched = false;
             myAnimator.ResetTrigger("isTouched");
