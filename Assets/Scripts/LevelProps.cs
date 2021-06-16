@@ -14,5 +14,7 @@ public class LevelProps : MonoBehaviour
     [SerializeField] public GameObject[] levelParachutes;
     [SerializeField] public float parachuteCreateInSec = 5f;
 
+    [SerializeField] public GameObject[] levelPotions;
+    [SerializeField] public int potionsCreateTotal = 2;
 
 }

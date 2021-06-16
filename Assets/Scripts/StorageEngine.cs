@@ -6,20 +6,22 @@ public class StorageEngine : MonoBehaviour
 
     [Header("File properties")]
     public string fileName = "JumpingFoxProperties.txt";
-    public string filePath = "";
+    private string filePath = "";
 
     private void Awake()
     {
-        int numGameSessions = FindObjectsOfType<StorageEngine>().Length;
 
-        if (numGameSessions > 1)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            DontDestroyOnLoad(gameObject);
-        }
+        /* int numGameSessions = FindObjectsOfType<StorageEngine>().Length;
+
+         if (numGameSessions > 1)
+         {
+             Destroy(gameObject);
+         }
+         else
+         {
+             DontDestroyOnLoad(gameObject);
+         }*/
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
@@ -27,6 +29,7 @@ public class StorageEngine : MonoBehaviour
         SafeCreateDirectory(Application.persistentDataPath);
 
         filePath = Application.persistentDataPath + "/" + fileName;
+
     }
 
     private void SafeCreateDirectory(string path)

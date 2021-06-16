@@ -17,6 +17,8 @@ public class ObstacleSpawner : MonoBehaviour
     private List<float> levelsStartSec;
 
     private bool isFirstRun = true;
+
+    private Hashtable potionsCreated = new Hashtable();
     
     // Start is called before the first frame update
     void Start()
@@ -98,6 +100,44 @@ public class ObstacleSpawner : MonoBehaviour
         //Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.obstaclePosY[randomObstacleIndex]);
         Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.levelObstacles[randomObstacleIndex].transform.position.y);
         GameObject newObstacle = Instantiate(currentLevel.levelObstacles[randomObstacleIndex], creationPosition, Quaternion.identity);
+
+        bool createObstacleWithPotion = false;
+        Transform collectableItemPos = null;
+
+        if (currentLevel.levelPotions.Length>0 && currentLevel.potionsCreateTotal>0)
+        {
+            collectableItemPos = newObstacle.transform.Find("collectablepos");
+
+            if (collectableItemPos)
+            {
+                if (potionsCreated.ContainsKey(currentLevelIndex))
+                {
+                    if ((int)potionsCreated[currentLevelIndex] < currentLevel.potionsCreateTotal)
+                        createObstacleWithPotion = true;
+
+                }
+                else
+                {
+                    createObstacleWithPotion = true;
+                }
+
+            }
+
+        }
+
+        if (createObstacleWithPotion)
+        {
+            int randomPotionIndex = Random.Range(0, currentLevel.levelPotions.Length);
+            Vector2 potionCreationPosition = new Vector2(collectableItemPos.position.x, collectableItemPos.position.y);
+            GameObject newPotion = Instantiate(currentLevel.levelPotions[randomPotionIndex], potionCreationPosition, Quaternion.identity);
+            newPotion.transform.parent = newObstacle.transform;
+            if (potionsCreated.ContainsKey(currentLevelIndex))
+                potionsCreated[currentLevelIndex] = (int) potionsCreated[currentLevelIndex] + 1;
+            else
+                potionsCreated.Add(currentLevelIndex, (int) 1);
+            Debug.Log("xxxxx:" + potionsCreated[currentLevelIndex].ToString());
+        }
+
         newObstacle.transform.parent = mainPath.transform;
         return;
 

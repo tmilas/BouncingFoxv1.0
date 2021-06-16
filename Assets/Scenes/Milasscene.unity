@@ -283,7 +283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7520473449938771332, guid: c33e51feaf4a64182b6974350af48142, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7520473449938771332, guid: c33e51feaf4a64182b6974350af48142, type: 3}
       propertyPath: m_AnchorMax.x
@@ -726,7 +726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2499210840267288820, guid: de1ba71e2afe54e209feb7ad40d38f24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2499210840267288820, guid: de1ba71e2afe54e209feb7ad40d38f24, type: 3}
       propertyPath: m_LocalPosition.y
@@ -884,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ad7fa3f757334c44b857abfa9e29880, type: 3}
---- !u!1001 &1761881506
+--- !u!1001 &1741412505
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -897,7 +897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 967597659986335823, guid: 74817bf04caf646a9b2bd8fcb3b2452f, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 967597659986335823, guid: 74817bf04caf646a9b2bd8fcb3b2452f, type: 3}
       propertyPath: m_LocalPosition.x
