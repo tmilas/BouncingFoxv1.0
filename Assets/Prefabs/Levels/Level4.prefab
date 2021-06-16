@@ -50,9 +50,14 @@ MonoBehaviour:
   - {fileID: 4968534577729520118, guid: a1167d39a238c46aeab4f42793754b14, type: 3}
   - {fileID: 823813707100407999, guid: 8d0f34f7b55ff4bc2a5bb03d5311a46e, type: 3}
   - {fileID: 5694245797746683824, guid: 81d866346cf314d4787cc7953c39e027, type: 3}
-  - {fileID: 6383805334952536594, guid: cd62028db42764299969d51a0fdce0fd, type: 3}
+  - {fileID: 6383805334952536594, guid: 65465a385e8014b9d8e4489f4bf6beb3, type: 3}
   levelSpeedFactor: 1
   obstacleCreateInSec: 4
   levelStartSec: 75
   levelParachutes: []
   parachuteCreateInSec: 0
+  levelPotions:
+  - {fileID: 5892570979506159249, guid: 4ac1f6d5ed0b6460ba8f4805395d7495, type: 3}
+  - {fileID: 5892570979506159249, guid: bb380ffdd4c394dcfad7d137c60f1cd1, type: 3}
+  - {fileID: 5892570979506159249, guid: b9847825050174847857f78637ec4b11, type: 3}
+  potionsCreateTotal: 2

@@ -66,3 +66,7 @@ MonoBehaviour:
   - {fileID: 6106871115080299849, guid: 870ce43c49d784662a987425403998bd, type: 3}
   - {fileID: 6106871115080299849, guid: a506526921fed4181a38de59c9782af0, type: 3}
   parachuteCreateInSec: 15
+  levelPotions:
+  - {fileID: 5892570979506159249, guid: dbc19cbdcb80c4e61b91da8c5f2dca62, type: 3}
+  - {fileID: 5892570979506159249, guid: be8d2ba845fea44b48248f872e6d19e0, type: 3}
+  potionsCreateTotal: 2
