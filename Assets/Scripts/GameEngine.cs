@@ -13,6 +13,7 @@ public class GameEngine : MonoBehaviour
     public float keyPressedMinValue = 0.1f;
     public float maxJumpLimit = 30f;
     public float jumpSpeedFactor = 30f;
+    public int scoreUnitFactor = 100;
 
 
     [Header("Bonus Effects")]
@@ -78,8 +79,8 @@ public class GameEngine : MonoBehaviour
     {
         int newTimePoints = Mathf.FloorToInt(Time.timeSinceLevelLoad) - totalTimePoints;
         totalTimePoints += newTimePoints;
-        totalPoints += newTimePoints * scoreFactor;
-
+        totalPoints += newTimePoints * scoreFactor * scoreUnitFactor;
+        
         if (uiHandler)
             uiHandler.writeScore(totalPoints);
     }

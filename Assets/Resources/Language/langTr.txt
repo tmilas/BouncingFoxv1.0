@@ -1,0 +1,5 @@
+power=Güç
+startnewgame=Yeni Oyuna Başla
+tryagain=Tekrar Dene
+language=Dil
+gameover=Oyun Bitti

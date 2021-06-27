@@ -1,0 +1,5 @@
+power=Power
+startnewgame=Start New Game
+tryagain=Try Again 
+language=Language
+gameover=Game Over
