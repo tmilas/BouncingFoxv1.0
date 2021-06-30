@@ -41,7 +41,7 @@ public class GameEngine : MonoBehaviour
         storageEngine = FindObjectOfType<StorageEngine>();
         obstacleSpawner = FindObjectOfType<ObstacleSpawner>();
 
-        fox = FindObjectOfType<Fox>();
+        //fox = FindObjectOfType<Fox>();
 
         SetDefaultFactors();
 
