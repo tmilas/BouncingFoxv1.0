@@ -9,12 +9,11 @@ public class Fox : MonoBehaviour
 
     //Jump parameters
     public float jumpSpeed = 5f;
-    private float jumpConstantSpeed = 5f;
 
     private float jumpBeginTime = 0;
     private float jumpPrevTime = 0;
     private bool isTouched = false;
-    private bool isPreviousTouched = false;
+    private bool isJumped = false;
 
     //Key press parameters
     private bool isKeyPressed = false;
@@ -53,8 +52,8 @@ public class Fox : MonoBehaviour
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         myFootCollider = footObject.GetComponent<BoxCollider2D>();
 
-       
-        if(mySpriteRenderer)
+
+        if (mySpriteRenderer)
             defaultColor = mySpriteRenderer.color;
 
         gameEngine = FindObjectOfType<GameEngine>();
@@ -67,7 +66,7 @@ public class Fox : MonoBehaviour
         if (isAlive)
             IsObstacleTouched();
 
-        if(isAlive)
+        if (isAlive)
         {
             KeyDetect();
             JumpAuto();
@@ -79,7 +78,6 @@ public class Fox : MonoBehaviour
         //Get general game parameters
         if (gameEngine)
         {
-            jumpConstantSpeed = gameEngine.jumpConstantSpeed;
             keyPressedMaxValue = gameEngine.keyPressedMaxValue;
             keyPressedMinValue = gameEngine.keyPressedMinValue;
         }
@@ -115,7 +113,7 @@ public class Fox : MonoBehaviour
         }
 
         if (isPowerActive)
-        { 
+        {
             float keyPressedTime = Time.time - keyPressedBeginTime;
             if (keyPressedTime > keyPressedMaxValue)
                 keyPressedTime = keyPressedMaxValue;
@@ -126,48 +124,41 @@ public class Fox : MonoBehaviour
 
     private void JumpAuto()
     {
-        isPreviousTouched = isTouched;
-
         if (!myFootCollider.IsTouchingLayers(LayerMask.GetMask("Path")))
         {
-            isTouched = false;
-            myAnimator.ResetTrigger("isTouched");
             return;
         }
-
-        isTouched = true;
 
         jumpPrevTime = jumpBeginTime;
         jumpBeginTime = Time.time;
 
-        if (isTouched != isPreviousTouched)
+        if(isJumped && myRigidBody.velocity.y==0)
         {
+            isJumped = false;
+            isTouched = true;
             myAnimator.SetTrigger("isTouched");
-            
-            if (isKeyPressed)
+        }
+
+        if (isKeyPressed)
+        {
+            myAnimator.SetTrigger("isJumped");
+
+            float keyPressedTime = keyPressedEndTime - keyPressedBeginTime;
+
+            isKeyPressed = false;
+            isTouched = false;
+            isJumped = true;
+               
+            if (keyPressedEndTime >= jumpPrevTime && keyPressedEndTime <= jumpBeginTime)
             {
+                if (keyPressedTime > keyPressedMaxValue)
+                    keyPressedTime = keyPressedMaxValue;
+                else if (keyPressedTime < keyPressedMinValue)
+                    keyPressedTime = keyPressedMinValue;
 
-                float keyPressedTime = keyPressedEndTime - keyPressedBeginTime;
+                jumpSpeed = keyPressedTime * gameEngine.jumpSpeedFactor;
 
-                isKeyPressed = false;
-
-                if (keyPressedEndTime >= jumpPrevTime && keyPressedEndTime <= jumpBeginTime)
-                {
-                    if (keyPressedTime > keyPressedMaxValue)
-                        keyPressedTime = keyPressedMaxValue;
-                    else if (keyPressedTime < keyPressedMinValue)
-                        keyPressedTime = keyPressedMinValue;
-
-                    jumpSpeed = jumpConstantSpeed + keyPressedTime * gameEngine.jumpSpeedFactor;
-
-                    gameEngine.SetPower(keyPressedTime,true);
-                }
-
-                isKeyPressed = false;
-            }
-            else
-            {
-                jumpSpeed = jumpConstantSpeed;
+                gameEngine.SetPower(keyPressedTime, true);
             }
 
             //Set jump bonus factor
@@ -180,10 +171,6 @@ public class Fox : MonoBehaviour
             myRigidBody.velocity = jumpVelocityToAdd;
 
             AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position, jumpSoundVolume);
-        }
-        else
-        {
-            myAnimator.ResetTrigger("isTouched");
         }
     }
 

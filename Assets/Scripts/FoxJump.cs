@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FoxTest : MonoBehaviour
+public class FoxJump : MonoBehaviour
 {
     //parameters
     private bool isAlive = true;
@@ -53,8 +53,8 @@ public class FoxTest : MonoBehaviour
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         myFootCollider = footObject.GetComponent<BoxCollider2D>();
 
-
-        if (mySpriteRenderer)
+       
+        if(mySpriteRenderer)
             defaultColor = mySpriteRenderer.color;
 
         gameEngine = FindObjectOfType<GameEngine>();
@@ -67,7 +67,7 @@ public class FoxTest : MonoBehaviour
         if (isAlive)
             IsObstacleTouched();
 
-        if (isAlive)
+        if(isAlive)
         {
             KeyDetect();
             JumpAuto();
@@ -115,7 +115,7 @@ public class FoxTest : MonoBehaviour
         }
 
         if (isPowerActive)
-        {
+        { 
             float keyPressedTime = Time.time - keyPressedBeginTime;
             if (keyPressedTime > keyPressedMaxValue)
                 keyPressedTime = keyPressedMaxValue;
@@ -126,12 +126,64 @@ public class FoxTest : MonoBehaviour
 
     private void JumpAuto()
     {
-        
-        if (isKeyPressed)
+        isPreviousTouched = isTouched;
+
+        if (!myFootCollider.IsTouchingLayers(LayerMask.GetMask("Path")))
         {
-            isKeyPressed = false;
+            isTouched = false;
+            myAnimator.ResetTrigger("isTouched");
+            return;
+        }
+
+        isTouched = true;
+
+        jumpPrevTime = jumpBeginTime;
+        jumpBeginTime = Time.time;
+
+        if (isTouched != isPreviousTouched)
+        {
+            myAnimator.SetTrigger("isTouched");
+            
+            if (isKeyPressed)
+            {
+
+                float keyPressedTime = keyPressedEndTime - keyPressedBeginTime;
+
+                isKeyPressed = false;
+
+                if (keyPressedEndTime >= jumpPrevTime && keyPressedEndTime <= jumpBeginTime)
+                {
+                    if (keyPressedTime > keyPressedMaxValue)
+                        keyPressedTime = keyPressedMaxValue;
+                    else if (keyPressedTime < keyPressedMinValue)
+                        keyPressedTime = keyPressedMinValue;
+
+                    jumpSpeed = jumpConstantSpeed + keyPressedTime * gameEngine.jumpSpeedFactor;
+
+                    gameEngine.SetPower(keyPressedTime,true);
+                }
+
+                isKeyPressed = false;
+            }
+            else
+            {
+                jumpSpeed = jumpConstantSpeed;
+            }
+
+            //Set jump bonus factor
+            jumpSpeed = jumpSpeed * gameEngine.GetJumpBonusFactor();
+
+            if (jumpSpeed > gameEngine.maxJumpLimit)
+                jumpSpeed = gameEngine.maxJumpLimit;
+
+            Vector2 jumpVelocityToAdd = new Vector2(myRigidBody.velocity.x, jumpSpeed);
+            myRigidBody.velocity = jumpVelocityToAdd;
+
             AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position, jumpSoundVolume);
-            myAnimator.SetTrigger("isJumped");
+        }
+        else
+        {
+            myAnimator.ResetTrigger("isTouched");
         }
     }
 
