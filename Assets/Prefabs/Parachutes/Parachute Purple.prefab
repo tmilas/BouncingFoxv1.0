@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 6106871115080299851}
   - component: {fileID: 3350951852936508595}
   - component: {fileID: 5910609341358655214}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Parachute Purple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8d4ee9f4b19348588aa2173409f7d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemFactor: 3
+  itemFactor: 0.3
   itemDuration: 5
   collectableType: 14
   collectableParticleEffect: {fileID: 4825728301956106568, guid: d1ce9735b395f4084b7a57822985da97, type: 3}
