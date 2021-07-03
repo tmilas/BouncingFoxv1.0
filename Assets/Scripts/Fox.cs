@@ -126,9 +126,7 @@ public class Fox : MonoBehaviour
     {
         if (!myFootCollider.IsTouchingLayers(LayerMask.GetMask("Path")))
         {
-            if (isTouched)
-                isJumped = true;
-
+            
             isTouched = false;
             return;
         }
@@ -183,6 +181,11 @@ public class Fox : MonoBehaviour
 
             AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position, jumpSoundVolume);
         }
+    }
+
+    public void SetJump()
+    {
+        isJumped = true;
     }
 
     private void IsObstacleTouched()
