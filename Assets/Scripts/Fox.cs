@@ -12,11 +12,11 @@ public class Fox : MonoBehaviour
 
     private float jumpBeginTime = 0;
     private float jumpPrevTime = 0;
-    private bool isTouched = false;
-    private bool isJumped = false;
+    public bool isTouched = true;
+    public bool isJumped = false;
 
     //Key press parameters
-    private bool isKeyPressed = false;
+    public bool isKeyPressed = false;
     private float keyPressedBeginTime = 0f;
     private float keyPressedEndTime = 0f;
     private float keyPressedMaxValue = 0.8f;
@@ -126,46 +126,57 @@ public class Fox : MonoBehaviour
     {
         if (!myFootCollider.IsTouchingLayers(LayerMask.GetMask("Path")))
         {
+            if (isTouched)
+                isJumped = true;
+
+            isTouched = false;
             return;
+        }
+        else
+        {
+            //Debug.Log("istouched, isjumped: " + isJumped);
+            isTouched = true;
+
+            if (isJumped)
+            {
+                myAnimator.SetTrigger("isTouched");
+                isJumped = false;
+            }
         }
 
         jumpPrevTime = jumpBeginTime;
         jumpBeginTime = Time.time;
 
-        if(isJumped && myRigidBody.velocity.y==0)
+        //if (isJumped && myRigidBody.velocity.y==0)
+        /*if (isJumped && !isTouched)
         {
-            isJumped = false;
-            isTouched = true;
             myAnimator.SetTrigger("isTouched");
-        }
+            isJumped = false;
+        }*/
 
-        if (isKeyPressed)
+        if (isKeyPressed && keyPressedEndTime >= jumpPrevTime && keyPressedEndTime <= jumpBeginTime)
         {
-            myAnimator.SetTrigger("isJumped");
-
             float keyPressedTime = keyPressedEndTime - keyPressedBeginTime;
 
             isKeyPressed = false;
-            isTouched = false;
-            isJumped = true;
-               
-            if (keyPressedEndTime >= jumpPrevTime && keyPressedEndTime <= jumpBeginTime)
-            {
-                if (keyPressedTime > keyPressedMaxValue)
-                    keyPressedTime = keyPressedMaxValue;
-                else if (keyPressedTime < keyPressedMinValue)
-                    keyPressedTime = keyPressedMinValue;
+            //isJumped = true;
 
-                jumpSpeed = keyPressedTime * gameEngine.jumpSpeedFactor;
+            if (keyPressedTime > keyPressedMaxValue)
+                keyPressedTime = keyPressedMaxValue;
+            else if (keyPressedTime < keyPressedMinValue)
+                keyPressedTime = keyPressedMinValue;
 
-                gameEngine.SetPower(keyPressedTime, true);
-            }
+            jumpSpeed = keyPressedTime * gameEngine.jumpSpeedFactor;
+
+            gameEngine.SetPower(keyPressedTime, true);
 
             //Set jump bonus factor
             jumpSpeed = jumpSpeed * gameEngine.GetJumpBonusFactor();
 
             if (jumpSpeed > gameEngine.maxJumpLimit)
                 jumpSpeed = gameEngine.maxJumpLimit;
+
+            myAnimator.SetTrigger("isJumped");
 
             Vector2 jumpVelocityToAdd = new Vector2(myRigidBody.velocity.x, jumpSpeed);
             myRigidBody.velocity = jumpVelocityToAdd;
