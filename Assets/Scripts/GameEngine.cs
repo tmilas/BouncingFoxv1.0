@@ -31,15 +31,21 @@ public class GameEngine : MonoBehaviour
     private UIHandler uiHandler;
     private StorageEngine storageEngine;
     private ObstacleSpawner obstacleSpawner;
+    private TextSpawner textSpawner;
     private Fox fox;
 
     private bool isGameOver = false;
+
+    private string collectableText;
+    private int cloneTextIndex;
 
     void Start()
     {
         uiHandler = FindObjectOfType<UIHandler>();
         storageEngine = FindObjectOfType<StorageEngine>();
         obstacleSpawner = FindObjectOfType<ObstacleSpawner>();
+        textSpawner = FindObjectOfType<TextSpawner>();
+        DontDestroyOnLoad(textSpawner);
 
         fox = FindObjectOfType<Fox>();
 
@@ -144,7 +150,12 @@ public class GameEngine : MonoBehaviour
         bonusDuration = collectableItem.itemDuration;
         bonusBeginTime = Time.time;
         isBonusActive = true;
-
+        collectableText = collectableItem.name;
+        cloneTextIndex = collectableText.IndexOf("(Clone)");
+        if (cloneTextIndex > 0)
+            collectableText = collectableText.Substring(0, cloneTextIndex);
+     
+        textSpawner.spawnText(collectableText);
         if(collectableItem.collectableType == CollectableItem.CollectableType.RandomCollectable)
         {
             collectableItem = GetRandomBonus();
