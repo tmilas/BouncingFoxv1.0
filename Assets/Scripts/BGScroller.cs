@@ -117,7 +117,7 @@ public class BGScroller : MonoBehaviour {
 
             transformTempPos.x = transform.position.x;
             transformTempPos.y = transform.position.y;
-            transformTempPos.x = transformTempPos.x + -1 * scrollSpeed * currentSpeedFactor;
+            transformTempPos.x = transformTempPos.x + -1 * scrollSpeed * currentSpeedFactor * Time.deltaTime;
             transform.position = transformTempPos;
 
 

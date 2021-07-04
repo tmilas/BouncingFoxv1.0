@@ -155,5 +155,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemFactor: 0.8
   itemDuration: 5
-  collectableType: 9
+  collectableType: 8
   collectableParticleEffect: {fileID: 4825728301956106568, guid: a0f1bff5f48af48a4bf10ff024205091, type: 3}

@@ -5,7 +5,7 @@ using UnityEngine;
 public class WalkingAnimal : MonoBehaviour
 {
 
-    public float walkingSpeed=0.12f;
+    public float walkingSpeed=8f;
     private Vector2 animalPosition= new Vector2();
 
     private GameEngine gameEngine;
@@ -20,7 +20,7 @@ public class WalkingAnimal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animalPosition.x -= walkingSpeed * gameEngine.speedFactor;
+        animalPosition.x -= walkingSpeed * gameEngine.speedFactor * Time.deltaTime;
         transform.position = animalPosition;
     }
 }

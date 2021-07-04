@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da5f7fadc91dc240971888b70ef3e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.04
+  scrollSpeed: 1
   screenWidth: 40
   spawnPos: -130
   destroyAfterSpawnInSec: 19

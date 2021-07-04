@@ -150,7 +150,8 @@ public class GameEngine : MonoBehaviour
         bonusDuration = collectableItem.itemDuration;
         bonusBeginTime = Time.time;
         isBonusActive = true;
-        collectableText = collectableItem.name;
+        //collectableText = collectableItem.name;
+        collectableText = collectableItem.collectableType.ToString();
         cloneTextIndex = collectableText.IndexOf("(Clone)");
         if (cloneTextIndex > 0)
             collectableText = collectableText.Substring(0, cloneTextIndex);
