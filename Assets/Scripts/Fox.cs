@@ -145,13 +145,6 @@ public class Fox : MonoBehaviour
         jumpPrevTime = jumpBeginTime;
         jumpBeginTime = Time.time;
 
-        //if (isJumped && myRigidBody.velocity.y==0)
-        /*if (isJumped && !isTouched)
-        {
-            myAnimator.SetTrigger("isTouched");
-            isJumped = false;
-        }*/
-
         if (isKeyPressed && keyPressedEndTime >= jumpPrevTime && keyPressedEndTime <= jumpBeginTime)
         {
             float keyPressedTime = keyPressedEndTime - keyPressedBeginTime;
