@@ -19,7 +19,7 @@ public class GameEngine : MonoBehaviour
     [Header("Bonus Effects")]
     public float jumpFactor = 1;
     public int scoreFactor = 1;
-    public float speedFactor = 1;
+    public float speedFactor = 1.5f;
     public float scaleFactor = 1;
     public float obstacleGenerationFactor = 1;
     public float bonusDuration = 0;
@@ -32,6 +32,7 @@ public class GameEngine : MonoBehaviour
     private StorageEngine storageEngine;
     private ObstacleSpawner obstacleSpawner;
     private TextSpawner textSpawner;
+    LanguageSupport langSupport;
     private Fox fox;
 
     private bool isGameOver = false;
@@ -45,6 +46,7 @@ public class GameEngine : MonoBehaviour
         storageEngine = FindObjectOfType<StorageEngine>();
         obstacleSpawner = FindObjectOfType<ObstacleSpawner>();
         textSpawner = FindObjectOfType<TextSpawner>();
+        langSupport = FindObjectOfType<LanguageSupport>();
         DontDestroyOnLoad(textSpawner);
 
         fox = FindObjectOfType<Fox>();
@@ -146,12 +148,19 @@ public class GameEngine : MonoBehaviour
 
     public void SetGameBonus(CollectableItem collectableItem)
     {
+        //first turn to default
+        SetDefaultFactors();
+
         //get type of bonus, amount, duration
         bonusDuration = collectableItem.itemDuration;
         bonusBeginTime = Time.time;
         isBonusActive = true;
-        //collectableText = collectableItem.name;
-        collectableText = collectableItem.collectableType.ToString();
+
+        if (langSupport)
+            collectableText = langSupport.GetText(collectableItem.collectableType.ToString());
+        else
+            collectableText = collectableItem.collectableType.ToString();
+
         cloneTextIndex = collectableText.IndexOf("(Clone)");
         if (cloneTextIndex > 0)
             collectableText = collectableText.Substring(0, cloneTextIndex);
@@ -250,7 +259,7 @@ public class GameEngine : MonoBehaviour
     {
         jumpFactor = 1;
         scoreFactor = 1;
-        speedFactor = 1.3f;
+        speedFactor = 1.5f;
         scaleFactor = 1;
         obstacleGenerationFactor = 1;
         bonusDuration = 0;

@@ -49,6 +49,8 @@ MonoBehaviour:
   - {fileID: 823813707100407999, guid: 8d0f34f7b55ff4bc2a5bb03d5311a46e, type: 3}
   - {fileID: 3012692632282259199, guid: 0315e74b9e61e4f349d29df6b556f115, type: 3}
   - {fileID: 4670744751788379720, guid: 18f729aa50ed943c9951751fa9f49723, type: 3}
+  - {fileID: 5595732009830112102, guid: f8185c28c1d084eacb2b53ba460b1124, type: 3}
+  - {fileID: 8592146027172869489, guid: 0f8320fdb24494095810bf16ae89e2fd, type: 3}
   levelSpeedFactor: 1
   obstacleCreateInSec: 4
   levelStartSec: 45
@@ -65,6 +67,7 @@ MonoBehaviour:
   - {fileID: 6106871115080299849, guid: 9a5ee417e073e4390a0a85018afaf4b9, type: 3}
   - {fileID: 6106871115080299849, guid: 870ce43c49d784662a987425403998bd, type: 3}
   - {fileID: 6106871115080299849, guid: a506526921fed4181a38de59c9782af0, type: 3}
+  - {fileID: 5595732009830112102, guid: f8185c28c1d084eacb2b53ba460b1124, type: 3}
   parachuteCreateInSec: 15
   levelPotions:
   - {fileID: 5892570979506159249, guid: dbc19cbdcb80c4e61b91da8c5f2dca62, type: 3}

@@ -194,7 +194,15 @@ public class Fox : MonoBehaviour
 
     public void ScaleFox(float scaleFactor)
     {
+        Vector3 foxPosition = transform.position;
+        float changeFactor = (scaleFactor - transform.localScale.y);
+
+        if(changeFactor>0)
+            transform.position = new Vector3(foxPosition.x, foxPosition.y + 1, foxPosition.z);
+
         transform.localScale = new Vector3(scaleFactor, scaleFactor, 1);
+
+        //Debug.Log("after pos y: " + transform.position.y);
     }
 
     public void InvincibleFox(bool value)
