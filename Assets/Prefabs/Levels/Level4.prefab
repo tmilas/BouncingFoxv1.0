@@ -51,6 +51,9 @@ MonoBehaviour:
   - {fileID: 823813707100407999, guid: 8d0f34f7b55ff4bc2a5bb03d5311a46e, type: 3}
   - {fileID: 5694245797746683824, guid: 81d866346cf314d4787cc7953c39e027, type: 3}
   - {fileID: 6383805334952536594, guid: 65465a385e8014b9d8e4489f4bf6beb3, type: 3}
+  - {fileID: 6092972728506753069, guid: 93a138329f1084d1f8027885e8312247, type: 3}
+  - {fileID: 1645012148824393586, guid: 76bb64a3298134750a27dad5fcb8e160, type: 3}
+  - {fileID: 3884957076631676251, guid: ce66666e823b54293b546c21aea9d7f8, type: 3}
   levelSpeedFactor: 1
   obstacleCreateInSec: 4
   levelStartSec: 75

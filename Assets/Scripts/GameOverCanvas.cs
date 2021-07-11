@@ -10,8 +10,8 @@ public class GameOverCanvas : MonoBehaviour
     {
         LanguageSupport langSupport = FindObjectOfType<LanguageSupport>();
 
-        //gameOverText.text = langSupport.GetText("gameover");
+        gameOverText.text = langSupport.GetText("gameover");
 
-        //tryAgainText.text = langSupport.GetText("tryagain");
+        tryAgainText.text = langSupport.GetText("tryagain");
     }
 }

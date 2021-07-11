@@ -344,7 +344,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02129078, y: 1.3909369}
+  m_Offset: {x: -0.6155019, y: 1.5088614}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -355,7 +355,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.3868732, y: 0.8981266}
+  m_Size: {x: 3.113288, y: 1.1339757}
   m_EdgeRadius: 0
 --- !u!1 &4968534577729520118
 GameObject:
@@ -367,7 +367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344686097260870724}
   m_Layer: 0
-  m_Name: Blocks-5
+  m_Name: Blocks-5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -464,6 +464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8421567401769443896}
   - component: {fileID: 1444025531343180297}
+  - component: {fileID: 8440986777207148641}
   m_Layer: 6
   m_Name: plank (1)
   m_TagString: Untagged
@@ -536,6 +537,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &8440986777207148641
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210215640453001094}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.96, y: 1.24}
+    newSize: {x: 9.96, y: 1.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.96, y: 1.24}
+  m_EdgeRadius: 0
 --- !u!1 &6675182838366847357
 GameObject:
   m_ObjectHideFlags: 0
