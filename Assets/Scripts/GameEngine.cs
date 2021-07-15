@@ -14,6 +14,7 @@ public class GameEngine : MonoBehaviour
     public float maxJumpLimit = 30f;
     public float jumpSpeedFactor = 40f;
     public int scoreUnitFactor = 100;
+    public int remainingLives = 1;
 
 
     [Header("Bonus Effects")]
@@ -98,9 +99,38 @@ public class GameEngine : MonoBehaviour
         isGameOver = status;
         speedFactor = 0;
 
-        SetHighScore();
+        if(remainingLives>0)
+        {
+            if (uiHandler)
+                uiHandler.ShowContinueGame(true);
 
-        StartCoroutine(GoToGameOverScene());
+            remainingLives--;
+        }
+        else
+        {
+            SetHighScore();
+
+            StartCoroutine(GoToGameOverScene());
+        }
+    }
+
+    public void ContinueGame()
+    {
+        isGameOver = false;
+
+        SetDefaultFactors();
+
+        if (uiHandler)
+            uiHandler.ShowContinueGame(false);
+
+        CollectableItem collectableItem = new CollectableItem();
+        collectableItem.itemDuration = 3;
+        collectableItem.itemFactor = 3;
+        collectableItem.collectableType = CollectableItem.CollectableType.Invincibility5s;
+
+        SetGameBonus(collectableItem);
+
+        fox.ContinueFox();
     }
 
     IEnumerator GoToGameOverScene()

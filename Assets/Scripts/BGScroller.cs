@@ -11,13 +11,13 @@ public class BGScroller : MonoBehaviour {
 
     private float tileSizeX;
     private Vector2 startPosition;
-    private bool objCreationControl;
+    //private bool objCreationControl;
     private bool isObjCreated;
     private BGSpawner bgSpawner;
     private ObstacleSpawner obstacleSpawner;
     private Bounds bounds;
-    private float scrollDividend = 15f;
-    private float destroyObjectFactor = 25f;
+    //private float scrollDividend = 15f;
+    //private float destroyObjectFactor = 25f;
     private GameEngine gameEngine;
     private float currentSpeedFactor;
 
@@ -38,7 +38,7 @@ public class BGScroller : MonoBehaviour {
         Transform startTransform = GetComponent<Transform>();
         startPosition.x = startTransform.position.x;
         startPosition.y = startTransform.position.y;
-        objCreationControl = true;
+        //objCreationControl = true;
         isObjCreated = false;
         bgSpawner=FindObjectOfType<BGSpawner>();
         obstacleSpawner = FindObjectOfType<ObstacleSpawner>();

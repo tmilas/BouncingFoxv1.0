@@ -3,6 +3,7 @@ startnewgame=Start New Game
 tryagain=Try Again 
 language=Language
 gameover=Game Over
+continue=Continue Game?
 Invincibility5s=Immortal
 Invincibility8s=Immortal
 JumpPower2x=Jump power
