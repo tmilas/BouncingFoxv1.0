@@ -83,6 +83,13 @@ public class Fox : MonoBehaviour
         }
     }
 
+    public void ContinueFox()
+    {
+        myAnimator.SetTrigger("isContinued");
+
+        isAlive = true;
+    }
+
     private void KeyDetect()
     {
         if (Input.touchCount > 0)

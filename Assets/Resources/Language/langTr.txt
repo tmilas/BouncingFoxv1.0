@@ -3,6 +3,7 @@ startnewgame=Yeni Oyuna Başla
 tryagain=Tekrar Dene
 language=Dil
 gameover=Oyun Bitti
+continue=Devam Et?
 Invincibility5s=Ölümsüz
 Invincibility8s=Ölümsüz
 JumpPower2x=Daha Yükseğeee

@@ -19,6 +19,21 @@ public class UIHandler : MonoBehaviour
     public float incPowerBar = 0.01f;
     public float decPowerBar = 0.1f;
 
+    [Header("Game Properties")]
+    public Button continueButton;
+    public Text continueText;
+
+    private LanguageSupport langSupport;
+
+    void Start()
+    {
+        langSupport = FindObjectOfType<LanguageSupport>();
+
+        continueText.text = langSupport.GetText("continue");
+
+        continueButton.gameObject.SetActive(false);
+    }
+
     public void BonusRestart()
     {
         bonusText.text = "";
@@ -74,5 +89,18 @@ public class UIHandler : MonoBehaviour
         }
 
         powerSlider.value = 0;
+    }
+
+    public void ContinueGame()
+    {
+        GameEngine gameEngine = FindObjectOfType<GameEngine>();
+
+        if(gameEngine)
+            gameEngine.ContinueGame();
+    }
+
+    public void ShowContinueGame(bool isShow)
+    {
+        continueButton.gameObject.SetActive(isShow);
     }
 }
