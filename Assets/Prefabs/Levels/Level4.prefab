@@ -55,7 +55,7 @@ MonoBehaviour:
   - {fileID: 1645012148824393586, guid: 76bb64a3298134750a27dad5fcb8e160, type: 3}
   - {fileID: 3884957076631676251, guid: ce66666e823b54293b546c21aea9d7f8, type: 3}
   levelSpeedFactor: 1
-  obstacleCreateInSec: 4
+  obstacleCreateInSec: 2
   levelStartSec: 75
   levelParachutes: []
   parachuteCreateInSec: 0

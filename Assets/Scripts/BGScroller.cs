@@ -8,6 +8,7 @@ public class BGScroller : MonoBehaviour {
     public float screenWidth;
     public float spawnPos;
     public float destroyAfterSpawnInSec=10f;
+    public float destroyXPos = -240f;
 
     private float tileSizeX;
     private Vector2 startPosition;
@@ -49,112 +50,123 @@ public class BGScroller : MonoBehaviour {
 
     void Update () {
 
-        if (!gameEngine.IsGameOver())
+        if (transform.position.x<=destroyXPos)
         {
-            //test2
-            //scroll the object according to the defined speed, loop when running out of width
-            float tempNewPostion = Time.time * scrollSpeed;
-            float newPosition = Mathf.Repeat(tempNewPostion, tileSizeX);
-            Vector2 transformTempPos = new Vector2();
-
-            if (gameEngine.speedFactor > 1)
-            {
-                if (currentSpeedFactor < gameEngine.speedFactor)
-                    currentSpeedFactor +=  0.01f;
-                 else
-                    currentSpeedFactor = gameEngine.speedFactor;
-
-            }
-            else if(gameEngine.speedFactor<1)
-            {
-                if (currentSpeedFactor > gameEngine.speedFactor)
-                    currentSpeedFactor -= 0.01f;
-                else
-                    currentSpeedFactor = gameEngine.speedFactor;
-            }
-            else
-                currentSpeedFactor = gameEngine.speedFactor;
-
-            if (gameObject.name.Equals("fg_path"))
-            {
-                //Debug.Log("fg_path speed:" + currentSpeedFactor);
-                //Debug.Log("scroll speed:" + scrollSpeed);
-                //Debug.Log("transformx=" + transform.position.x.ToString());
-                //Debug.Log("startposx=" + startPosition.x.ToString());
-                //Debug.Log("boundsx=" + bounds.size.x.ToString());
-            }
-
-            
-            /*if (newPosition >= 0f && newPosition <= 1f && objCreationControl == false && isObjCreated == false)
-            {
-                //Debug.Log(newPosition.ToString());
-                //Debug.Log(gameObject.name);
-                objCreationControl = true;
-                isObjCreated = true;
-                Vector2 newObjPosition = new Vector2(startPosition.x + bounds.size.x, startPosition.y);
-                GameObject newBG = bgSpawner.initiateObject(backGroundObject, newObjPosition);
-                if (gameObject.name.StartsWith("fg_path"))
-                {
-                    Debug.Log("main path set");
-                    obstacleSpawner.SetMainPath(newBG);
-                }
-                GameObject.Destroy(gameObject, scrollDividend / scrollSpeed * destroyObjectFactor);
-            }
-            else
-            {
-                if (!(newPosition >= 0f && newPosition <= 1f))
-                    objCreationControl = false;
-            }*/
-
-
-            /*if (gameObject.name.StartsWith("fg_path"))
-                Debug.Log("speedfactor=" + currentSpeedFactor.ToString());
-
-            if (gameObject.name.StartsWith("fg_path"))
-                Debug.Log("gameengspeedfactor=" + gameEngine.speedFactor.ToString());*/
-
-            //transformTempPos = startPosition + Vector2.left * tempNewPostion * currentSpeedFactor;
-
-            transformTempPos.x = transform.position.x;
-            transformTempPos.y = transform.position.y;
-            transformTempPos.x = transformTempPos.x + -1 * scrollSpeed * currentSpeedFactor * Time.deltaTime;
-            transform.position = transformTempPos;
-
-
-            if (transform.position.x <= spawnPos && isObjCreated == false)
-            {
-                isObjCreated = true;
-                Vector2 newObjPosition = new Vector2(transform.position.x + bounds.size.x, startPosition.y);
-                GameObject newBG = bgSpawner.initiateObject(gameObject.name.Substring(0, gameObject.name.IndexOf("(")>0 ? gameObject.name.IndexOf("(") : gameObject.name.Length), newObjPosition);
-                if (gameObject.name.StartsWith("fg_path"))
-                {
-                    Debug.Log("main path set");
-                    obstacleSpawner.SetMainPath(newBG);
-                }
-                GameObject.Destroy(gameObject, destroyAfterSpawnInSec);
-
-            }
-
-            /*if (transform.position.x<transformTempPos.x)
-            {
-                if (gameObject.name.StartsWith("fg_path"))
-                    Debug.Log("transformx=" + transform.position.x.ToString());
-                if (gameObject.name.StartsWith("fg_path"))
-                    Debug.Log("transformTempPos=" + transformTempPos.x.ToString());
-                startPosition.x = startPosition.x - Mathf.Abs((Mathf.Abs(transformTempPos.x) - Mathf.Abs(transform.position.x)));
-
-                transformTempPos = startPosition + Vector2.left * tempNewPostion * currentSpeedFactor;
-
-                //transformTempPos.x = transform.position.x - Mathf.Abs((Mathf.Abs(transformTempPos.x) - Mathf.Abs(transform.position.x)));
-                if (gameObject.name.StartsWith("fg_path"))
-                    Debug.Log("newtransformTempPos=" + transformTempPos.x.ToString());
-
-                transform.position = transformTempPos;
-            }
-            else
-                transform.position = transformTempPos;*/
+            GameObject.Destroy(gameObject);
 
         }
+        else
+        {
+
+            if (!gameEngine.IsGameOver())
+            {
+                //test2
+                //scroll the object according to the defined speed, loop when running out of width
+                float tempNewPostion = Time.time * scrollSpeed;
+                float newPosition = Mathf.Repeat(tempNewPostion, tileSizeX);
+                Vector2 transformTempPos = new Vector2();
+
+                if (gameEngine.speedFactor > 1)
+                {
+                    if (currentSpeedFactor < gameEngine.speedFactor)
+                        currentSpeedFactor += 0.01f;
+                    else
+                        currentSpeedFactor = gameEngine.speedFactor;
+
+                }
+                else if (gameEngine.speedFactor < 1)
+                {
+                    if (currentSpeedFactor > gameEngine.speedFactor)
+                        currentSpeedFactor -= 0.01f;
+                    else
+                        currentSpeedFactor = gameEngine.speedFactor;
+                }
+                else
+                    currentSpeedFactor = gameEngine.speedFactor;
+
+                if (gameObject.name.Equals("fg_path"))
+                {
+                    //Debug.Log("fg_path speed:" + currentSpeedFactor);
+                    //Debug.Log("scroll speed:" + scrollSpeed);
+                    //Debug.Log("transformx=" + transform.position.x.ToString());
+                    //Debug.Log("startposx=" + startPosition.x.ToString());
+                    //Debug.Log("boundsx=" + bounds.size.x.ToString());
+                }
+
+
+                /*if (newPosition >= 0f && newPosition <= 1f && objCreationControl == false && isObjCreated == false)
+                {
+                    //Debug.Log(newPosition.ToString());
+                    //Debug.Log(gameObject.name);
+                    objCreationControl = true;
+                    isObjCreated = true;
+                    Vector2 newObjPosition = new Vector2(startPosition.x + bounds.size.x, startPosition.y);
+                    GameObject newBG = bgSpawner.initiateObject(backGroundObject, newObjPosition);
+                    if (gameObject.name.StartsWith("fg_path"))
+                    {
+                        Debug.Log("main path set");
+                        obstacleSpawner.SetMainPath(newBG);
+                    }
+                    GameObject.Destroy(gameObject, scrollDividend / scrollSpeed * destroyObjectFactor);
+                }
+                else
+                {
+                    if (!(newPosition >= 0f && newPosition <= 1f))
+                        objCreationControl = false;
+                }*/
+
+
+                /*if (gameObject.name.StartsWith("fg_path"))
+                    Debug.Log("speedfactor=" + currentSpeedFactor.ToString());
+
+                if (gameObject.name.StartsWith("fg_path"))
+                    Debug.Log("gameengspeedfactor=" + gameEngine.speedFactor.ToString());*/
+
+                //transformTempPos = startPosition + Vector2.left * tempNewPostion * currentSpeedFactor;
+
+                transformTempPos.x = transform.position.x;
+                transformTempPos.y = transform.position.y;
+                transformTempPos.x = transformTempPos.x + -1 * scrollSpeed * currentSpeedFactor * Time.deltaTime;
+                transform.position = transformTempPos;
+
+
+                if (transform.position.x <= spawnPos && isObjCreated == false)
+                {
+                    isObjCreated = true;
+                    Vector2 newObjPosition = new Vector2(transform.position.x + bounds.size.x, startPosition.y);
+                    GameObject newBG = bgSpawner.initiateObject(gameObject.name.Substring(0, gameObject.name.IndexOf("(") > 0 ? gameObject.name.IndexOf("(") : gameObject.name.Length), newObjPosition);
+                    if (gameObject.name.StartsWith("fg_path"))
+                    {
+                        Debug.Log("main path set");
+                        obstacleSpawner.SetMainPath(newBG);
+                    }
+                    //GameObject.Destroy(gameObject, destroyAfterSpawnInSec);
+
+                }
+
+                /*if (transform.position.x<transformTempPos.x)
+                {
+                    if (gameObject.name.StartsWith("fg_path"))
+                        Debug.Log("transformx=" + transform.position.x.ToString());
+                    if (gameObject.name.StartsWith("fg_path"))
+                        Debug.Log("transformTempPos=" + transformTempPos.x.ToString());
+                    startPosition.x = startPosition.x - Mathf.Abs((Mathf.Abs(transformTempPos.x) - Mathf.Abs(transform.position.x)));
+
+                    transformTempPos = startPosition + Vector2.left * tempNewPostion * currentSpeedFactor;
+
+                    //transformTempPos.x = transform.position.x - Mathf.Abs((Mathf.Abs(transformTempPos.x) - Mathf.Abs(transform.position.x)));
+                    if (gameObject.name.StartsWith("fg_path"))
+                        Debug.Log("newtransformTempPos=" + transformTempPos.x.ToString());
+
+                    transform.position = transformTempPos;
+                }
+                else
+                    transform.position = transformTempPos;*/
+
+            }
+
+        }
+
 
     }
 }

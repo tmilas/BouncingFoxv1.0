@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ea563837b8244c1ab31ed0b3d8f4bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultObsCreateInSeconds: 5
+  defaultObsCreateInSeconds: 3
   defaultParachuteCreateInSeconds: 5
   firstObsCreateInSeconds: 1
   mainPath: {fileID: 0}

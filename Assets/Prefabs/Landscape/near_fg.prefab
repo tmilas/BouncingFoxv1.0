@@ -362,6 +362,7 @@ MonoBehaviour:
   screenWidth: 40
   spawnPos: -25
   destroyAfterSpawnInSec: 5
+  destroyXPos: -90
 --- !u!1 &8303518535909948237
 GameObject:
   m_ObjectHideFlags: 0
