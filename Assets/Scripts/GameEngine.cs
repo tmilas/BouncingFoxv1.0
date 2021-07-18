@@ -101,6 +101,8 @@ public class GameEngine : MonoBehaviour
 
         if(remainingLives>0)
         {
+            Time.timeScale = 0;
+
             if (uiHandler)
                 uiHandler.ShowContinueGame(true);
 
@@ -117,6 +119,8 @@ public class GameEngine : MonoBehaviour
     public void ContinueGame()
     {
         isGameOver = false;
+
+        Time.timeScale = 1;
 
         SetDefaultFactors();
 

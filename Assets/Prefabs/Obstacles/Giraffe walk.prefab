@@ -834,6 +834,69 @@ MonoBehaviour:
     m_Extent: {x: 0.7499999, y: 2.1395538, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
+--- !u!1 &2495288477596707339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344661872797410470}
+  - component: {fileID: 388214250823582424}
+  m_Layer: 6
+  m_Name: Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &344661872797410470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2495288477596707339}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.9799999, y: 6.0199995, z: 0}
+  m_LocalScale: {x: 0.85714275, y: 0.85714275, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3440674643622128301}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &388214250823582424
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2495288477596707339}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.6694281, y: 0.19801968}
+      - {x: 0.6365369, y: 0.22718218}
+      - {x: -0.23046029, y: 0.4552189}
+      - {x: -0.8143752, y: 0.9034018}
+      - {x: -1.1278939, y: 0.76220953}
+      - {x: 0.6205193, y: -0.023403704}
+      - {x: 2.456815, y: -0.23109168}
 --- !u!1 &2665850819457662321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1561,7 @@ Transform:
   - {fileID: 3932881462948134451}
   - {fileID: 8604261836697467198}
   - {fileID: 1548084182035776855}
+  - {fileID: 344661872797410470}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1559,9 +1623,9 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 3.974283, y: 5.5732913}
-      - {x: -0.12950921, y: 7.391386}
-      - {x: -0.4137086, y: 13.25263}
-      - {x: -2.1731026, y: 13.616067}
+      - {x: -0.39310533, y: 6.186375}
+      - {x: -0.0963767, y: 13.433962}
+      - {x: -2.5357678, y: 13.752067}
       - {x: -4.995442, y: 9.484339}
       - {x: -2.6004496, y: 6.861853}
       - {x: -2.0013127, y: 0.41688776}
