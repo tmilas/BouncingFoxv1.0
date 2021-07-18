@@ -178,6 +178,11 @@ public class GameEngine : MonoBehaviour
 
     public void SetGameBonus(CollectableItem collectableItem)
     {
+        if(fox && fox.isFoxInvincible())
+        {
+            return;
+        }
+
         //first turn to default
         SetDefaultFactors();
 
