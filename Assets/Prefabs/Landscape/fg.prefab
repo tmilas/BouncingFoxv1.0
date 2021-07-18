@@ -877,3 +877,4 @@ MonoBehaviour:
   screenWidth: 40
   spawnPos: -115
   destroyAfterSpawnInSec: 8
+  destroyXPos: -182
