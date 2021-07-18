@@ -1230,6 +1230,7 @@ MonoBehaviour:
   screenWidth: 40
   spawnPos: -150
   destroyAfterSpawnInSec: 9
+  destroyXPos: -219
 --- !u!61 &2986427399012473323
 BoxCollider2D:
   m_ObjectHideFlags: 0
