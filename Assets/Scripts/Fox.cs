@@ -212,6 +212,11 @@ public class Fox : MonoBehaviour
         //Debug.Log("after pos y: " + transform.position.y);
     }
 
+    public bool isFoxInvincible()
+    {
+        return isInvincible;
+    }
+
     public void InvincibleFox(bool value)
     {
         if (mySpriteRenderer)

@@ -1549,7 +1549,7 @@ MonoBehaviour:
   scrollSpeed: 1
   screenWidth: 40
   spawnPos: -130
-  destroyAfterSpawnInSec: 19
+  destroyAfterSpawnInSec: 23
 --- !u!1 &5774537381821689289
 GameObject:
   m_ObjectHideFlags: 0

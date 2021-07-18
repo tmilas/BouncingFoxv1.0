@@ -43,7 +43,7 @@ public class UIHandler : MonoBehaviour
 
     public void WriteBonus(CollectableItem bonus)
     {
-        bonusText.text = bonus.collectableType.ToString();
+        bonusText.text = langSupport.GetText(bonus.collectableType.ToString());
         bonusImage.enabled = true;
         bonusImage.sprite = Resources.Load<Sprite>(bonusResourcesPath + bonus.collectableType.ToString());
 
