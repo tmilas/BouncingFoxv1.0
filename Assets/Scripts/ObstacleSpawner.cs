@@ -6,9 +6,12 @@ public class ObstacleSpawner : MonoBehaviour
 {
     public float defaultObsCreateInSeconds = 5f;
     public float defaultParachuteCreateInSeconds = 5f;
+    public float defaultCoinCreateInSeconds = 1f;
     public float firstObsCreateInSeconds = 1f;
 
     public GameObject mainPath;
+
+    public GameObject coin;
 
     public GameObject[] levelList;
 
@@ -19,7 +22,7 @@ public class ObstacleSpawner : MonoBehaviour
     private bool isFirstRun = true;
 
     private Hashtable potionsCreated = new Hashtable();
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +37,7 @@ public class ObstacleSpawner : MonoBehaviour
 
         StartCoroutine("ObstacleCreation");
         StartCoroutine("ParachuteCreation");
-
+        //StartCoroutine("CoinCreation");
     }
 
     // Update is called once per frame
@@ -62,7 +65,7 @@ public class ObstacleSpawner : MonoBehaviour
 
                 randomSec = Random.Range(0, currentLevel.obstacleCreateInSec);
 
-                
+
                 if (isFirstRun)
                 {
                     createSec = firstObsCreateInSeconds;
@@ -86,7 +89,7 @@ public class ObstacleSpawner : MonoBehaviour
 
             // Place your method calls
             yield return waitForSeconds;
-            if (currentLevel.levelObstacles.Length>0)
+            if (currentLevel.levelObstacles.Length > 0)
                 CreateObstacle(GetCurrentLevel());
         }
     }
@@ -95,7 +98,7 @@ public class ObstacleSpawner : MonoBehaviour
     {
         int randomObstacleIndex;
         Debug.Log("CreateObsCurrLevel:" + currentLevelIndex.ToString());
-        LevelProps  currentLevel= levelList[currentLevelIndex - 1].GetComponent<LevelProps>();
+        LevelProps currentLevel = levelList[currentLevelIndex - 1].GetComponent<LevelProps>();
         randomObstacleIndex = Random.Range(0, currentLevel.levelObstacles.Length);
         //Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.obstaclePosY[randomObstacleIndex]);
         Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.levelObstacles[randomObstacleIndex].transform.position.y);
@@ -104,7 +107,7 @@ public class ObstacleSpawner : MonoBehaviour
         bool createObstacleWithPotion = false;
         Transform collectableItemPos = null;
 
-        if (currentLevel.levelPotions.Length>0 && currentLevel.potionsCreateTotal>0)
+        if (currentLevel.levelPotions.Length > 0 && currentLevel.potionsCreateTotal > 0)
         {
             collectableItemPos = newObstacle.transform.Find("collectablepos");
 
@@ -132,9 +135,9 @@ public class ObstacleSpawner : MonoBehaviour
             GameObject newPotion = Instantiate(currentLevel.levelPotions[randomPotionIndex], potionCreationPosition, Quaternion.identity);
             newPotion.transform.parent = newObstacle.transform;
             if (potionsCreated.ContainsKey(currentLevelIndex))
-                potionsCreated[currentLevelIndex] = (int) potionsCreated[currentLevelIndex] + 1;
+                potionsCreated[currentLevelIndex] = (int)potionsCreated[currentLevelIndex] + 1;
             else
-                potionsCreated.Add(currentLevelIndex, (int) 1);
+                potionsCreated.Add(currentLevelIndex, (int)1);
             Debug.Log("xxxxx:" + potionsCreated[currentLevelIndex].ToString());
         }
 
@@ -166,7 +169,7 @@ public class ObstacleSpawner : MonoBehaviour
 
             // Place your method calls
             yield return waitForSeconds;
-            if (currentLevel.levelParachutes.Length>0)
+            if (currentLevel.levelParachutes.Length > 0)
                 CreateParachute(GetCurrentLevel());
         }
     }
@@ -180,7 +183,6 @@ public class ObstacleSpawner : MonoBehaviour
         Object.Destroy(newParachute, 5f);
         //newParachute.transform.parent = mainPath.transform;
         return;
-
     }
 
     public LevelProps GetLevelProps()
@@ -195,7 +197,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     private int GetCurrentLevel()
     {
-        int currentLevel=0;
+        int currentLevel = 0;
 
         foreach (float levelStartSec in levelsStartSec)
         {
@@ -207,6 +209,22 @@ public class ObstacleSpawner : MonoBehaviour
             currentLevel = levelsStartSec.Count;
 
         return currentLevel;
+    }
 
+    IEnumerator CoinCreation()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(defaultCoinCreateInSeconds);
+
+            CreateCoin();
+        }
+    }
+
+    private void CreateCoin()
+    {
+        GameObject newCoin = Instantiate(coin);
+        newCoin.transform.parent = mainPath.transform;
+        Object.Destroy(newCoin, 5f);
     }
 }

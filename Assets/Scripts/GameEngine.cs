@@ -15,6 +15,7 @@ public class GameEngine : MonoBehaviour
     public float jumpSpeedFactor = 40f;
     public int scoreUnitFactor = 100;
     public int remainingLives = 1;
+    public bool isPaused = false;
 
 
     [Header("Bonus Effects")]
@@ -57,6 +58,15 @@ public class GameEngine : MonoBehaviour
         GetHighScore();
     }
 
+    void Update()
+    {
+        if(!isGameOver)
+        {
+            IsBonusActive();
+            CalculateScore();
+        }
+    }
+
     private void GetHighScore()
     {
         string highScoreText = storageEngine.LoadData();
@@ -75,15 +85,6 @@ public class GameEngine : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if(!isGameOver)
-        {
-            IsBonusActive();
-            CalculateScore();
-        }
-    }
-
     private void CalculateScore()
     {
         int newTimePoints = Mathf.FloorToInt(Time.timeSinceLevelLoad) - totalTimePoints;
@@ -94,13 +95,25 @@ public class GameEngine : MonoBehaviour
             uiHandler.writeScore(totalPoints);
     }
 
-    public void setGameOver(bool status)
+    public void PauseGame()
+    {
+        isPaused = true;
+
+        Time.timeScale = 0;
+
+        if (uiHandler)
+            uiHandler.ShowContinueGame(true);
+    }
+
+    public void SetGameOver(bool status)
     {
         isGameOver = status;
         speedFactor = 0;
 
         if(remainingLives>0)
         {
+            Time.timeScale = 0;
+
             if (uiHandler)
                 uiHandler.ShowContinueGame(true);
 
@@ -116,21 +129,30 @@ public class GameEngine : MonoBehaviour
 
     public void ContinueGame()
     {
-        isGameOver = false;
+        if(isPaused)
+        {
+            isPaused = false;
+        }
+        else
+        {
+            //Continue game after die
+            isGameOver = false;
+            SetDefaultFactors();
 
-        SetDefaultFactors();
+            CollectableItem collectableItem = new CollectableItem();
+            collectableItem.itemDuration = 3;
+            collectableItem.itemFactor = 3;
+            collectableItem.collectableType = CollectableItem.CollectableType.Invincibility5s;
+
+            SetGameBonus(collectableItem);
+
+            fox.ContinueFox();
+        }
+        
+        Time.timeScale = 1;
 
         if (uiHandler)
             uiHandler.ShowContinueGame(false);
-
-        CollectableItem collectableItem = new CollectableItem();
-        collectableItem.itemDuration = 3;
-        collectableItem.itemFactor = 3;
-        collectableItem.collectableType = CollectableItem.CollectableType.Invincibility5s;
-
-        SetGameBonus(collectableItem);
-
-        fox.ContinueFox();
     }
 
     IEnumerator GoToGameOverScene()
@@ -245,6 +267,10 @@ public class GameEngine : MonoBehaviour
         {
             if (fox)
                 fox.InvincibleFox(true);
+        }
+        else if(collectableItem.collectableType == CollectableItem.CollectableType.CoinScore)
+        {
+
         }
 
         if (uiHandler)

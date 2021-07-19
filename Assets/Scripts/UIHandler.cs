@@ -43,12 +43,15 @@ public class UIHandler : MonoBehaviour
 
     public void WriteBonus(CollectableItem bonus)
     {
-        bonusText.text = langSupport.GetText(bonus.collectableType.ToString());
-        bonusImage.enabled = true;
-        bonusImage.sprite = Resources.Load<Sprite>(bonusResourcesPath + bonus.collectableType.ToString());
+        if(bonus.collectableType!=CollectableItem.CollectableType.CoinScore)
+        { 
+            bonusText.text = langSupport.GetText(bonus.collectableType.ToString());
+            bonusImage.enabled = true;
+            bonusImage.sprite = Resources.Load<Sprite>(bonusResourcesPath + bonus.collectableType.ToString());
 
-        bonusSlider.value = 1;
-        bonusSlider.gameObject.SetActive(true);
+            bonusSlider.value = 1;
+            bonusSlider.gameObject.SetActive(true);
+        }
     }
 
     public void SetBonusSliderValue(float value)

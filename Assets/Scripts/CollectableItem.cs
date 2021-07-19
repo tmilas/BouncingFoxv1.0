@@ -7,6 +7,7 @@ public class CollectableItem : MonoBehaviour
         GravityIncrease2x, GravityIncrease3x, ObstacleIncrease2x,
         ObstacleIncrease3x, ScoreIncrease2x, ScoreIncrease3x,
         BiggerCharacter2x, BiggerCharacter3x, SmallerCharacter2x, SmallerCharacter3x,
+        CoinScore,
         RandomCollectable }
 
     [Header("Bonus Parameters")]

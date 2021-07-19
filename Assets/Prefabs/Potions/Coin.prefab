@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemFactor: 2
   itemDuration: 0.1
-  collectableType: 12
+  collectableType: 18
   collectableParticleEffect: {fileID: 4825728301956106568, guid: d1ce9735b395f4084b7a57822985da97, type: 3}
   collectibleSound: {fileID: 8300000, guid: 27c48b238645e4476a40f3940fb43e86, type: 3}
   collectibleSoundVolume: 0.8

@@ -23,3 +23,4 @@ BiggerCharacter3x=Mega fox
 SmallerCharacter2x=Mini fox
 SmallerCharacter3x=Mini fox
 RandomCollectable=Random bonus
+CoinScore=25
