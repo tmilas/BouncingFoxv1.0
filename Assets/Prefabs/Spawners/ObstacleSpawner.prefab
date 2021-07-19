@@ -45,8 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultObsCreateInSeconds: 3
   defaultParachuteCreateInSeconds: 5
+  defaultCoinCreateInSeconds: 2
   firstObsCreateInSeconds: 1
   mainPath: {fileID: 0}
+  coin: {fileID: 5970955187456295184, guid: a3a401e18ed9947c0ba5139c11b48e7f, type: 3}
   levelList:
   - {fileID: 8189877197402596768, guid: 7ee24003fb8814bd98b97e5c31dbfc62, type: 3}
   - {fileID: 2843652726019083167, guid: 60b6250169f4545be9dd5d92c35c01e9, type: 3}

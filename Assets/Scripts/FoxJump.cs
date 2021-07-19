@@ -192,7 +192,7 @@ public class FoxJump : MonoBehaviour
         if (!isInvincible && myBoxCollider.IsTouchingLayers(LayerMask.GetMask("Obstacle")))
         {
             isAlive = false;
-            gameEngine.setGameOver(true);
+            gameEngine.SetGameOver(true);
             myAnimator.SetTrigger("isAlive");
             AudioSource.PlayClipAtPoint(stunSound, Camera.main.transform.position, stunSoundVolume);
         }
