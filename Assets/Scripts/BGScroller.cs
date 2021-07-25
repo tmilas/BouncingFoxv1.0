@@ -16,6 +16,7 @@ public class BGScroller : MonoBehaviour {
     private bool isObjCreated;
     private BGSpawner bgSpawner;
     private ObstacleSpawner obstacleSpawner;
+    private CoinSpawner coinSpawner;
     private Bounds bounds;
     //private float scrollDividend = 15f;
     //private float destroyObjectFactor = 25f;
@@ -43,6 +44,7 @@ public class BGScroller : MonoBehaviour {
         isObjCreated = false;
         bgSpawner=FindObjectOfType<BGSpawner>();
         obstacleSpawner = FindObjectOfType<ObstacleSpawner>();
+        coinSpawner = FindObjectOfType<CoinSpawner>();
         gameEngine = FindObjectOfType<GameEngine>();
         currentSpeedFactor = gameEngine.speedFactor;
 
@@ -139,6 +141,9 @@ public class BGScroller : MonoBehaviour {
                     {
                         Debug.Log("main path set");
                         obstacleSpawner.SetMainPath(newBG);
+                        coinSpawner.SetMainPath(newBG);
+
+
                     }
                     //GameObject.Destroy(gameObject, destroyAfterSpawnInSec);
 

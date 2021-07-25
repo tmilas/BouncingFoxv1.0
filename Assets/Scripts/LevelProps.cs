@@ -9,6 +9,7 @@ public class LevelProps : MonoBehaviour
 
     [SerializeField] public float levelSpeedFactor = 1f;
     [SerializeField] public float obstacleCreateInSec = 5f;
+    [SerializeField] public float coinCreateInSec = 0.5f;
     [SerializeField] public float levelStartSec;
 
     [SerializeField] public GameObject[] levelParachutes;
@@ -16,5 +17,7 @@ public class LevelProps : MonoBehaviour
 
     [SerializeField] public GameObject[] levelPotions;
     [SerializeField] public int potionsCreateTotal = 2;
+    [SerializeField] public int coinsCreateTotal = 10;
+
 
 }

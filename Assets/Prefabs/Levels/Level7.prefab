@@ -51,6 +51,7 @@ MonoBehaviour:
   - {fileID: 3884957076631676251, guid: 93741655e00e846f5bf2d2c295b971e7, type: 3}
   levelSpeedFactor: 1
   obstacleCreateInSec: 2
+  coinCreateInSec: 0.5
   levelStartSec: 195
   levelParachutes:
   - {fileID: 6106871115080299849, guid: a7da187ad71aa49c9a8f6a88f5ea100b, type: 3}
@@ -71,3 +72,4 @@ MonoBehaviour:
   - {fileID: 5892570979506159249, guid: d35439792bbba43b393f77e74dca4232, type: 3}
   - {fileID: 5892570979506159249, guid: bb380ffdd4c394dcfad7d137c60f1cd1, type: 3}
   potionsCreateTotal: 2
+  coinsCreateTotal: 30
