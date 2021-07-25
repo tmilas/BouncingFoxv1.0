@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4915832705268777102
+--- !u!1 &6675095125821789752
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4915832705268777100}
-  - component: {fileID: 4915832705268777103}
+  - component: {fileID: 6675095125821789758}
+  - component: {fileID: 6675095125821789759}
   m_Layer: 0
-  m_Name: ObstacleSpawner
+  m_Name: CoinSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4915832705268777100
+--- !u!4 &6675095125821789758
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4915832705268777102}
+  m_GameObject: {fileID: 6675095125821789752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.8, y: -3.84, z: 0}
+  m_LocalPosition: {x: 23.5, y: -3.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4915832705268777103
+--- !u!114 &6675095125821789759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4915832705268777102}
+  m_GameObject: {fileID: 6675095125821789752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39ea563837b8244c1ab31ed0b3d8f4bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 365d596e0ff7940fa9c2a2daa7644760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultObsCreateInSeconds: 3
-  defaultParachuteCreateInSeconds: 5
-  defaultCoinCreateInSeconds: 0.5
-  firstObsCreateInSeconds: 1
-  mainPath: {fileID: 0}
-  coin: {fileID: 5970955187456295184, guid: a3a401e18ed9947c0ba5139c11b48e7f, type: 3}
   levelList:
   - {fileID: 8189877197402596768, guid: 7ee24003fb8814bd98b97e5c31dbfc62, type: 3}
   - {fileID: 2843652726019083167, guid: 60b6250169f4545be9dd5d92c35c01e9, type: 3}
@@ -58,3 +52,6 @@ MonoBehaviour:
   - {fileID: 6378477081598237888, guid: e2e354ea0cebc425c8ad3341a7dfa335, type: 3}
   - {fileID: 6378477081598237888, guid: 74dcc2d4fc90540c2b8fb75e7682c4eb, type: 3}
   - {fileID: 6378477081598237888, guid: 4ed9631e91953488da72c1ae37b74b08, type: 3}
+  coin: {fileID: 5970955187456295184, guid: a3a401e18ed9947c0ba5139c11b48e7f, type: 3}
+  defaultCoinCreateInSeconds: 0.5
+  mainPath: {fileID: 0}

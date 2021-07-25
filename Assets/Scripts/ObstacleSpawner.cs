@@ -101,7 +101,10 @@ public class ObstacleSpawner : MonoBehaviour
         LevelProps currentLevel = levelList[currentLevelIndex - 1].GetComponent<LevelProps>();
         randomObstacleIndex = Random.Range(0, currentLevel.levelObstacles.Length);
         //Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.obstaclePosY[randomObstacleIndex]);
-        Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.levelObstacles[randomObstacleIndex].transform.position.y);
+        int posYChange = 0;
+        if (currentLevel.levelObstacles[randomObstacleIndex].name.Equals("Bird"))
+            posYChange = Random.Range(-3, 4);
+        Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.levelObstacles[randomObstacleIndex].transform.position.y + posYChange);
         GameObject newObstacle = Instantiate(currentLevel.levelObstacles[randomObstacleIndex], creationPosition, Quaternion.identity);
 
         bool createObstacleWithPotion = false;
@@ -223,8 +226,37 @@ public class ObstacleSpawner : MonoBehaviour
 
     private void CreateCoin()
     {
-        GameObject newCoin = Instantiate(coin);
-        newCoin.transform.parent = mainPath.transform;
-        Object.Destroy(newCoin, 5f);
+        //var ray = new Ray(this.transform.position, this.transform.bac);
+        //RaycastHit hit;
+        ContactFilter2D xxx = new ContactFilter2D();
+        RaycastHit2D[] yyy=new RaycastHit2D[10];
+        int totalObjectsHit = Physics2D.Raycast(transform.position, Vector2.down, xxx, yyy, 2f);
+        if (totalObjectsHit >0)
+        {
+            Debug.Log("raycast");
+            for (int i=0;i<totalObjectsHit;i++)
+            {
+                Debug.Log(yyy[i].transform.tag);
+                Debug.Log(yyy[i].transform.parent.tag);
+                Debug.Log(yyy[i].transform.name);
+                Debug.Log(yyy[i].transform.ToString());
+
+
+            }
+            Vector2 coinCreationPosition = new Vector2(transform.position.x, transform.position.y);
+            GameObject newCoin = Instantiate(coin, coinCreationPosition, Quaternion.identity);
+            newCoin.transform.parent = mainPath.transform;
+
+        }
+        /*if (Physics.Raycast(ray, out hit))
+        {
+            objectHit = hit.transform.gameObject;
+        }
+
+        Physics.Raycast()*/
+        //GameObject newCoin = Instantiate(coin);
+        //newCoin.transform.parent = mainPath.transform;
+        //Object.Destroy(newCoin, 5f);
     }
+
 }
