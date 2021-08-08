@@ -51,6 +51,7 @@ MonoBehaviour:
   - {fileID: 4670744751788379720, guid: 18f729aa50ed943c9951751fa9f49723, type: 3}
   - {fileID: 1645012148824393586, guid: 76bb64a3298134750a27dad5fcb8e160, type: 3}
   - {fileID: 3884957076631676251, guid: ce66666e823b54293b546c21aea9d7f8, type: 3}
+  - {fileID: 2844245286577892856, guid: 394d09fb362c04314bf2597f51622529, type: 3}
   levelSpeedFactor: 1
   obstacleCreateInSec: 2
   coinCreateInSec: 0.5
@@ -62,4 +63,4 @@ MonoBehaviour:
   - {fileID: 5892570979506159249, guid: b9847825050174847857f78637ec4b11, type: 3}
   - {fileID: 5892570979506159249, guid: bb380ffdd4c394dcfad7d137c60f1cd1, type: 3}
   potionsCreateTotal: 1
-  coinsCreateTotal: 30
+  coinsCreateTotal: 40
