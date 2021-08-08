@@ -8,6 +8,7 @@ public class GameEngine : MonoBehaviour
     [Header("Game Parameters")]
     public int totalPoints = 0;
     public int totalTimePoints = 0;
+    public int totalCoins = 0;
     public float jumpConstantSpeed = 7f;
     public float keyPressedMaxValue = 0.6f;
     public float keyPressedMinValue = 0.1f;
@@ -16,7 +17,6 @@ public class GameEngine : MonoBehaviour
     public int scoreUnitFactor = 100;
     public int remainingLives = 1;
     public bool isPaused = false;
-
 
     [Header("Bonus Effects")]
     public float jumpFactor = 1;
@@ -33,23 +33,15 @@ public class GameEngine : MonoBehaviour
     private UIHandler uiHandler;
     private StorageEngine storageEngine;
     private ObstacleSpawner obstacleSpawner;
-    private TextSpawner textSpawner;
-    LanguageSupport langSupport;
     private Fox fox;
 
     private bool isGameOver = false;
-
-    private string collectableText;
-    private int cloneTextIndex;
 
     void Start()
     {
         uiHandler = FindObjectOfType<UIHandler>();
         storageEngine = FindObjectOfType<StorageEngine>();
         obstacleSpawner = FindObjectOfType<ObstacleSpawner>();
-        textSpawner = FindObjectOfType<TextSpawner>();
-        langSupport = FindObjectOfType<LanguageSupport>();
-        DontDestroyOnLoad(textSpawner);
 
         fox = FindObjectOfType<Fox>();
 
@@ -200,7 +192,20 @@ public class GameEngine : MonoBehaviour
 
     public void SetGameBonus(CollectableItem collectableItem)
     {
-        if(fox && fox.isFoxInvincible())
+        if (fox && collectableItem.collectableType == CollectableItem.CollectableType.CoinScore)
+        {
+            totalCoins++;
+
+            if (uiHandler)
+            {
+                uiHandler.WriteCoin(totalCoins);
+                uiHandler.WriteBonus(collectableItem);
+            }
+
+            return;
+        }
+
+        if (fox && fox.isFoxInvincible())
         {
             return;
         }
@@ -213,17 +218,7 @@ public class GameEngine : MonoBehaviour
         bonusBeginTime = Time.time;
         isBonusActive = true;
 
-        if (langSupport)
-            collectableText = langSupport.GetText(collectableItem.collectableType.ToString());
-        else
-            collectableText = collectableItem.collectableType.ToString();
-
-        cloneTextIndex = collectableText.IndexOf("(Clone)");
-        if (cloneTextIndex > 0)
-            collectableText = collectableText.Substring(0, cloneTextIndex);
-     
-        textSpawner.spawnText(collectableText);
-        if(collectableItem.collectableType == CollectableItem.CollectableType.RandomCollectable)
+        if (collectableItem.collectableType == CollectableItem.CollectableType.RandomCollectable)
         {
             collectableItem = GetRandomBonus();
         }
@@ -268,11 +263,7 @@ public class GameEngine : MonoBehaviour
             if (fox)
                 fox.InvincibleFox(true);
         }
-        else if(collectableItem.collectableType == CollectableItem.CollectableType.CoinScore)
-        {
-
-        }
-
+        
         if (uiHandler)
             uiHandler.WriteBonus(collectableItem);
     }

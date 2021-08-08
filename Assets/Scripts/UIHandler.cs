@@ -7,6 +7,10 @@ public class UIHandler : MonoBehaviour
     //cached parameters
     public Text scoreText;
 
+    //Text Spawner parameters
+    private TextSpawner textSpawner;
+    private int cloneTextIndex;
+
     [Header("Bonus Properties")]
     public Text bonusText;
     public Slider powerSlider;
@@ -23,11 +27,16 @@ public class UIHandler : MonoBehaviour
     public Button continueButton;
     public Text continueText;
 
+    public Text coinText;
+
     private LanguageSupport langSupport;
 
     void Start()
     {
         langSupport = FindObjectOfType<LanguageSupport>();
+
+        textSpawner = FindObjectOfType<TextSpawner>();
+        DontDestroyOnLoad(textSpawner);
 
         continueText.text = langSupport.GetText("continue");
 
@@ -43,15 +52,29 @@ public class UIHandler : MonoBehaviour
 
     public void WriteBonus(CollectableItem bonus)
     {
-        if(bonus.collectableType!=CollectableItem.CollectableType.CoinScore)
-        { 
-            bonusText.text = langSupport.GetText(bonus.collectableType.ToString());
+        string collectableText = langSupport.GetText(bonus.collectableType.ToString());
+
+        if (bonus.collectableType!=CollectableItem.CollectableType.CoinScore)
+        {
+            bonusText.text = collectableText;
             bonusImage.enabled = true;
             bonusImage.sprite = Resources.Load<Sprite>(bonusResourcesPath + bonus.collectableType.ToString());
 
             bonusSlider.value = 1;
             bonusSlider.gameObject.SetActive(true);
         }
+
+        cloneTextIndex = collectableText.IndexOf("(Clone)");
+        if (cloneTextIndex > 0)
+            collectableText = collectableText.Substring(0, cloneTextIndex);
+
+        textSpawner.spawnText(collectableText);
+    }
+
+    public void WriteCoin(int value)
+    {
+        if (coinText)
+            coinText.text = value.ToString();
     }
 
     public void SetBonusSliderValue(float value)

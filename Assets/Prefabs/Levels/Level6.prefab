@@ -77,4 +77,4 @@ MonoBehaviour:
   - {fileID: 5892570979506159249, guid: bb380ffdd4c394dcfad7d137c60f1cd1, type: 3}
   - {fileID: 5892570979506159249, guid: b9847825050174847857f78637ec4b11, type: 3}
   potionsCreateTotal: 2
-  coinsCreateTotal: 30
+  coinsCreateTotal: 40
