@@ -6,6 +6,8 @@ public class Fox : MonoBehaviour
     private bool isAlive = true;
     private bool isPowerActive = false;
     private bool isInvincible = false;
+    private bool isRunningFast = false;
+    private bool isSliding = false;
 
     //Jump parameters
     public float jumpSpeed = 5f;
@@ -29,20 +31,44 @@ public class Fox : MonoBehaviour
     [SerializeField] AudioClip stunSound;
     [SerializeField] [Range(0, 1)] float stunSoundVolume = 0.8f;
 
+    [SerializeField] AudioClip slideSound;
+    [SerializeField] [Range(0, 1)] float slideSoundVolume = 0.8f;
+
+    [SerializeField] AudioClip fastRunSound;
+    [SerializeField] [Range(0, 1)] float fastRunSoundVolume = 0.8f;
+
     //Cache parameters
     Rigidbody2D myRigidBody;
     BoxCollider2D myBoxCollider;
     BoxCollider2D myFootCollider;
     Animator myAnimator;
     SpriteRenderer mySpriteRenderer;
+    AudioSource myAudioSource;
 
     public GameObject footObject;
 
     //Global game cache parameters
     GameEngine gameEngine;
 
-
     private Color defaultColor;
+
+    //box collider on run
+    //  ofset: x:0.4, y:0.3
+    //  size : x:2.5, y:4.7
+    private Vector2 colliderDefaultOfset = new Vector2(0.4f, 0.3f);
+    private Vector2 colliderDefaultSize  = new Vector2(2.5f, 4.7f);
+
+    //box collider on slide
+    //  offset: x: 0.7 y:-1
+    //  size  : x: 4.8 y:1.8
+    private Vector2 colliderSlidingOfset = new Vector2(0.7f, -1f);
+    private Vector2 colliderSlidingSize = new Vector2(4.8f, 1.8f);
+
+    //Touch tap or slide parameters
+    private float minSwipeLength = 200f;
+    private Vector2 firstPressPos;
+    private Vector2 secondPressPos;
+    private Vector2 currentSwipe;
 
     void Start()
     {
@@ -51,7 +77,7 @@ public class Fox : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         myFootCollider = footObject.GetComponent<BoxCollider2D>();
-
+        myAudioSource = GetComponent<AudioSource>();
 
         if (mySpriteRenderer)
             defaultColor = mySpriteRenderer.color;
@@ -70,6 +96,7 @@ public class Fox : MonoBehaviour
         {
             KeyDetect();
             JumpAuto();
+            Slide();
         }
     }
 
@@ -83,6 +110,14 @@ public class Fox : MonoBehaviour
         }
     }
 
+    public void SlidingEnd()
+    {
+        myBoxCollider.size = colliderDefaultSize;
+        myBoxCollider.offset = colliderDefaultOfset;
+
+        myAudioSource.Stop();
+    }
+
     public void ContinueFox()
     {
         myAnimator.SetTrigger("isContinued");
@@ -92,23 +127,44 @@ public class Fox : MonoBehaviour
 
     private void KeyDetect()
     {
+        //For Phone Play - Touch Screen 
         if (Input.touchCount > 0)
         {
+            Touch t = Input.GetTouch(0);
+
             if (Input.touches[0].phase == TouchPhase.Began)
             {
+                firstPressPos = new Vector2(t.position.x, t.position.y);
+
                 keyPressedBeginTime = Time.time;
                 isPowerActive = true;
             }
             else if (Input.touches[0].phase == TouchPhase.Ended)
             {
-                keyPressedEndTime = Time.time;
-                isKeyPressed = true;
-                isPowerActive = false;
+                secondPressPos = new Vector2(t.position.x, t.position.y);
+                currentSwipe = new Vector3(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
+
+                // Make sure it was a legit swipe, not a tap
+                if (currentSwipe.magnitude < minSwipeLength)
+                {
+                    keyPressedEndTime = Time.time;
+                    isKeyPressed = true;
+                    isPowerActive = false;
+                }
+
+                currentSwipe.Normalize();
+
+                if (currentSwipe.y < 0 && currentSwipe.x > -0.5f && currentSwipe.x < 0.5f)
+                {
+                    isSliding = true;
+                }
             }
         }
 
+        //For Laptop Play - Keyboard
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            //Jump
             keyPressedBeginTime = Time.time;
             isPowerActive = true;
         }
@@ -117,6 +173,11 @@ public class Fox : MonoBehaviour
             keyPressedEndTime = Time.time;
             isKeyPressed = true;
             isPowerActive = false;
+        }
+        else if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            //Slide
+            isSliding = true;
         }
 
         if (isPowerActive)
@@ -146,6 +207,11 @@ public class Fox : MonoBehaviour
             {
                 myAnimator.SetTrigger("isTouched");
                 isJumped = false;
+
+                if(isRunningFast)
+                {
+                    myAnimator.SetTrigger("isRunFast"); 
+                }
             }
         }
 
@@ -179,13 +245,36 @@ public class Fox : MonoBehaviour
             Vector2 jumpVelocityToAdd = new Vector2(myRigidBody.velocity.x, jumpSpeed);
             myRigidBody.velocity = jumpVelocityToAdd;
 
-            AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position, jumpSoundVolume);
+            //AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position, jumpSoundVolume);
+            myAudioSource.PlayOneShot(jumpSound, jumpSoundVolume);
         }
     }
 
     public void SetJump()
     {
         isJumped = true;
+    }
+
+    public void Slide()
+    {
+        if (!myFootCollider.IsTouchingLayers(LayerMask.GetMask("Path")))
+        {
+            return;
+        }
+
+        if(isSliding)
+        { 
+            isSliding = false;
+
+            myAnimator.SetTrigger("isSlide");
+
+            //arrange collider size and offset
+            myBoxCollider.size = colliderSlidingSize;
+            myBoxCollider.offset = colliderSlidingOfset;
+
+            //AudioSource.PlayClipAtPoint(slideSound, Camera.main.transform.position, slideSoundVolume);
+            myAudioSource.PlayOneShot(slideSound, slideSoundVolume);
+        }
     }
 
     private void IsObstacleTouched()
@@ -195,7 +284,8 @@ public class Fox : MonoBehaviour
             isAlive = false;
             gameEngine.SetGameOver(true);
             myAnimator.SetTrigger("isAlive");
-            AudioSource.PlayClipAtPoint(stunSound, Camera.main.transform.position, stunSoundVolume);
+            //AudioSource.PlayClipAtPoint(stunSound, Camera.main.transform.position, stunSoundVolume);
+            myAudioSource.PlayOneShot(stunSound, stunSoundVolume);
         }
     }
 
@@ -240,5 +330,23 @@ public class Fox : MonoBehaviour
             }
 
         }
+    }
+
+    public void RunFast()
+    {
+        isRunningFast = true;
+        myAnimator.SetTrigger("isRunFast");
+
+        //AudioSource.PlayClipAtPoint(fastRunSound, Camera.main.transform.position, fastRunSoundVolume);
+        myAudioSource.clip = fastRunSound;
+        myAudioSource.Play(); 
+        myAudioSource.loop = true;
+    }
+
+    public void RunNormal()
+    {
+        isRunningFast = false;
+        myAnimator.SetTrigger("isRunNormal");
+        myAudioSource.loop = false;
     }
 }
