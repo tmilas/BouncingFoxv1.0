@@ -229,6 +229,13 @@ public class GameEngine : MonoBehaviour
            collectableItem.collectableType == CollectableItem.CollectableType.SlowMotion3x)
         {
             speedFactor = collectableItem.itemFactor;
+
+            //Fast run animation
+            if(collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x ||
+               collectableItem.collectableType == CollectableItem.CollectableType.FastMotion3x)
+            {
+                fox.RunFast();  
+            }
         }
         else if (collectableItem.collectableType == CollectableItem.CollectableType.JumpPower2x ||
                  collectableItem.collectableType == CollectableItem.CollectableType.JumpPower3x ||
@@ -324,6 +331,7 @@ public class GameEngine : MonoBehaviour
         { 
             fox.ScaleFox(scaleFactor);
             fox.InvincibleFox(false);
+            fox.RunNormal();
         }
     }
 }
