@@ -44,11 +44,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelObstacles:
-  - {fileID: 7641293651057028990, guid: 866cf714a40c549d786eb1c29172aa5a, type: 3}
-  - {fileID: 5595732009830112102, guid: f8185c28c1d084eacb2b53ba460b1124, type: 3}
-  - {fileID: 6092972728506753069, guid: 93a138329f1084d1f8027885e8312247, type: 3}
+  - {fileID: 4968534577729520118, guid: 69dce702aa6c24015b76d80ddbed53b6, type: 3}
   - {fileID: 7641293651057028990, guid: 4cd9cd698439d4bc195edc94daa3001e, type: 3}
+  - {fileID: 7641293651057028990, guid: 866cf714a40c549d786eb1c29172aa5a, type: 3}
+  - {fileID: 4968534577729520118, guid: a1167d39a238c46aeab4f42793754b14, type: 3}
+  - {fileID: 823813707100407999, guid: 8d0f34f7b55ff4bc2a5bb03d5311a46e, type: 3}
+  - {fileID: 4670744751788379720, guid: 18f729aa50ed943c9951751fa9f49723, type: 3}
+  - {fileID: 7641293651057028990, guid: 866cf714a40c549d786eb1c29172aa5a, type: 3}
   - {fileID: 3884957076631676251, guid: ce66666e823b54293b546c21aea9d7f8, type: 3}
+  - {fileID: 7641293651057028990, guid: 4cd9cd698439d4bc195edc94daa3001e, type: 3}
+  - {fileID: 7641293651057028990, guid: 866cf714a40c549d786eb1c29172aa5a, type: 3}
+  - {fileID: 2844245286577892856, guid: 394d09fb362c04314bf2597f51622529, type: 3}
   levelSpeedFactor: 1
   obstacleCreateInSec: 2
   coinCreateInSec: 0.5
@@ -68,8 +74,12 @@ MonoBehaviour:
   - {fileID: 6106871115080299849, guid: a506526921fed4181a38de59c9782af0, type: 3}
   parachuteCreateInSec: 10
   levelPotions:
-  - {fileID: 5892570979506159249, guid: d35439792bbba43b393f77e74dca4232, type: 3}
   - {fileID: 5892570979506159249, guid: 53ba3f150ef71423eaea72e4c15f6b16, type: 3}
+  - {fileID: 5892570979506159249, guid: d35439792bbba43b393f77e74dca4232, type: 3}
   - {fileID: 5892570979506159249, guid: dbc19cbdcb80c4e61b91da8c5f2dca62, type: 3}
+  - {fileID: 5892570979506159249, guid: be8d2ba845fea44b48248f872e6d19e0, type: 3}
+  - {fileID: 5892570979506159249, guid: b9847825050174847857f78637ec4b11, type: 3}
+  - {fileID: 5892570979506159249, guid: bb380ffdd4c394dcfad7d137c60f1cd1, type: 3}
+  - {fileID: 5892570979506159249, guid: 4ac1f6d5ed0b6460ba8f4805395d7495, type: 3}
   potionsCreateTotal: 2
   coinsCreateTotal: 40

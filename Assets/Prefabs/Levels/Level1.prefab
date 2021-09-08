@@ -58,4 +58,4 @@ MonoBehaviour:
   levelPotions:
   - {fileID: 5892570979506159249, guid: d35439792bbba43b393f77e74dca4232, type: 3}
   potionsCreateTotal: 1
-  coinsCreateTotal: 40
+  coinsCreateTotal: 30

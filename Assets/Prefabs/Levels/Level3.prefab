@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelObstacles:
-  - {fileID: 8068064675743919413, guid: 6ebe8ad71a3644d89b533c1dbf4bbc04, type: 3}
+  - {fileID: 7641293651057028990, guid: 866cf714a40c549d786eb1c29172aa5a, type: 3}
   - {fileID: 3597909489417349161, guid: 057f5a2ca10834e1db813e7384c0b34f, type: 3}
   - {fileID: 7641293651057028990, guid: 866cf714a40c549d786eb1c29172aa5a, type: 3}
   - {fileID: 3012692632282259199, guid: 0315e74b9e61e4f349d29df6b556f115, type: 3}
@@ -69,10 +69,14 @@ MonoBehaviour:
   - {fileID: 6106871115080299849, guid: 9a5ee417e073e4390a0a85018afaf4b9, type: 3}
   - {fileID: 6106871115080299849, guid: 870ce43c49d784662a987425403998bd, type: 3}
   - {fileID: 6106871115080299849, guid: a506526921fed4181a38de59c9782af0, type: 3}
-  - {fileID: 5595732009830112102, guid: f8185c28c1d084eacb2b53ba460b1124, type: 3}
   parachuteCreateInSec: 15
   levelPotions:
+  - {fileID: 5892570979506159249, guid: 53ba3f150ef71423eaea72e4c15f6b16, type: 3}
+  - {fileID: 5892570979506159249, guid: d35439792bbba43b393f77e74dca4232, type: 3}
   - {fileID: 5892570979506159249, guid: dbc19cbdcb80c4e61b91da8c5f2dca62, type: 3}
   - {fileID: 5892570979506159249, guid: be8d2ba845fea44b48248f872e6d19e0, type: 3}
+  - {fileID: 5892570979506159249, guid: b9847825050174847857f78637ec4b11, type: 3}
+  - {fileID: 5892570979506159249, guid: bb380ffdd4c394dcfad7d137c60f1cd1, type: 3}
+  - {fileID: 5892570979506159249, guid: 4ac1f6d5ed0b6460ba8f4805395d7495, type: 3}
   potionsCreateTotal: 2
   coinsCreateTotal: 40

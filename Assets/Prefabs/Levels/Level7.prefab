@@ -70,6 +70,10 @@ MonoBehaviour:
   levelPotions:
   - {fileID: 5892570979506159249, guid: 53ba3f150ef71423eaea72e4c15f6b16, type: 3}
   - {fileID: 5892570979506159249, guid: d35439792bbba43b393f77e74dca4232, type: 3}
+  - {fileID: 5892570979506159249, guid: dbc19cbdcb80c4e61b91da8c5f2dca62, type: 3}
+  - {fileID: 5892570979506159249, guid: be8d2ba845fea44b48248f872e6d19e0, type: 3}
+  - {fileID: 5892570979506159249, guid: b9847825050174847857f78637ec4b11, type: 3}
   - {fileID: 5892570979506159249, guid: bb380ffdd4c394dcfad7d137c60f1cd1, type: 3}
+  - {fileID: 5892570979506159249, guid: 4ac1f6d5ed0b6460ba8f4805395d7495, type: 3}
   potionsCreateTotal: 2
   coinsCreateTotal: 40
