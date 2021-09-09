@@ -72,7 +72,7 @@ MonoBehaviour:
   - {fileID: 6106871115080299849, guid: 9a5ee417e073e4390a0a85018afaf4b9, type: 3}
   - {fileID: 6106871115080299849, guid: 870ce43c49d784662a987425403998bd, type: 3}
   - {fileID: 6106871115080299849, guid: a506526921fed4181a38de59c9782af0, type: 3}
-  parachuteCreateInSec: 0
+  parachuteCreateInSec: 10
   levelPotions:
   - {fileID: 5892570979506159249, guid: 53ba3f150ef71423eaea72e4c15f6b16, type: 3}
   - {fileID: 5892570979506159249, guid: d35439792bbba43b393f77e74dca4232, type: 3}
