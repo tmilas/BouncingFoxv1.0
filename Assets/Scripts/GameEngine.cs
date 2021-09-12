@@ -9,6 +9,7 @@ public class GameEngine : MonoBehaviour
     public int totalPoints = 0;
     public int totalTimePoints = 0;
     public int totalCoins = 0;
+    public int coinBasePoint = 25;
     public float jumpConstantSpeed = 7f;
     public float keyPressedMaxValue = 0.6f;
     public float keyPressedMinValue = 0.1f;
@@ -113,10 +114,17 @@ public class GameEngine : MonoBehaviour
         }
         else
         {
+            CalculateFinalScore();
+
             SetHighScore();
 
             StartCoroutine(GoToGameOverScene());
         }
+    }
+
+    public void CalculateFinalScore()
+    {
+        totalPoints += totalCoins * coinBasePoint;
     }
 
     public void ContinueGame()

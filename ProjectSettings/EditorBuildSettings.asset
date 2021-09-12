@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Spine 2D Foxy Character Assets/Scenes/Character Sprite Demo.unity
-    guid: aa161f6f4330a6d4b9881c70a38a3418
+    path: Assets/Scenes/Start Screen.unity
+    guid: 58763e8640ebe4695be110e5113b778a
+  - enabled: 1
+    path: Assets/Scenes/Main Scene.unity
+    guid: 528fe9ee7666945d7a9b74cf37885643
+  - enabled: 1
+    path: Assets/Scenes/Game Over Screen.unity
+    guid: 8b0bdeefbca6044d49ea0dc2d71c361b
   m_configObjects: {}

@@ -336,6 +336,7 @@ public class Fox : MonoBehaviour
     {
         isRunningFast = true;
         myAnimator.SetTrigger("isRunFast");
+        myAnimator.SetBool("fastOrNormal", false);
 
         //AudioSource.PlayClipAtPoint(fastRunSound, Camera.main.transform.position, fastRunSoundVolume);
         myAudioSource.clip = fastRunSound;
@@ -347,6 +348,7 @@ public class Fox : MonoBehaviour
     {
         isRunningFast = false;
         myAnimator.SetTrigger("isRunNormal");
+        myAnimator.SetBool("fastOrNormal", true);
         myAudioSource.loop = false;
     }
 }
