@@ -267,7 +267,7 @@ public class Fox : MonoBehaviour
             isSliding = false;
 
             myAnimator.SetTrigger("isSlide");
-
+            myAnimator.SetBool("fastOrNormal", !isRunningFast);
             //arrange collider size and offset
             myBoxCollider.size = colliderSlidingSize;
             myBoxCollider.offset = colliderSlidingOfset;
@@ -347,8 +347,13 @@ public class Fox : MonoBehaviour
     public void RunNormal()
     {
         isRunningFast = false;
-        myAnimator.SetTrigger("isRunNormal");
-        myAnimator.SetBool("fastOrNormal", true);
-        myAudioSource.loop = false;
+        if(myAnimator)
+        { 
+            myAnimator.SetTrigger("isRunNormal");
+            myAnimator.SetBool("fastOrNormal", true);
+        }
+
+        if(myAudioSource)
+            myAudioSource.loop = false;
     }
 }

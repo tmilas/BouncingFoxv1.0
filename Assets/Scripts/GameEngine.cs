@@ -242,7 +242,8 @@ public class GameEngine : MonoBehaviour
             if(collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x ||
                collectableItem.collectableType == CollectableItem.CollectableType.FastMotion3x)
             {
-                fox.RunFast();  
+                fox.RunFast();
+                scoreFactor = 2;
             }
         }
         else if (collectableItem.collectableType == CollectableItem.CollectableType.JumpPower2x ||
