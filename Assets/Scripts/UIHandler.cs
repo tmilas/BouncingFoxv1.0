@@ -26,6 +26,7 @@ public class UIHandler : MonoBehaviour
     [Header("Game Properties")]
     public Button continueButton;
     public Text continueText;
+    public GameObject continueCanvas;
 
     public Text coinText;
 
@@ -40,7 +41,7 @@ public class UIHandler : MonoBehaviour
 
         continueText.text = langSupport.GetText("continue");
 
-        continueButton.gameObject.SetActive(false);
+        continueCanvas.gameObject.SetActive(false);
     }
 
     public void BonusRestart()
@@ -127,6 +128,6 @@ public class UIHandler : MonoBehaviour
 
     public void ShowContinueGame(bool isShow)
     {
-        continueButton.gameObject.SetActive(isShow);
+        continueCanvas.gameObject.SetActive(isShow);
     }
 }
