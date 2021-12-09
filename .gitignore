@@ -21,6 +21,8 @@
 /[Aa]ssets/DamageNumbersPro/
 /[Aa]ssets/TextMesh Pro/
 /[Aa]ssets/Traps-Obstacles/
+/[Aa]ssets/dreamlo/
+/[Aa]ssets/LeaderBoard_Component/
 
 
 
@@ -85,3 +87,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 spine-unity-editor.csproj
 spine-unity.csproj
+.DS_Store
+Assets/.DS_Store
