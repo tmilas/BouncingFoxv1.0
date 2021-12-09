@@ -26,6 +26,7 @@
 
 
 
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
@@ -85,3 +86,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 spine-unity-editor.csproj
 spine-unity.csproj
+.DS_Store
+Assets/.DS_Store
+Assets/.DS_Store
+.DS_Store
