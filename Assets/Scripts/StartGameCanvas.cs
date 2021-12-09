@@ -7,8 +7,8 @@ public class StartGameCanvas : MonoBehaviour
 
     void Start()
     {
-        LanguageSupport langSupport = FindObjectOfType<LanguageSupport>();
-        if (langSupport)
-            startGameText.text = langSupport.GetText("startnewgame");
+        //LanguageSupport langSupport = FindObjectOfType<LanguageSupport>();
+
+        //startGameText.text = langSupport.GetText("startnewgame");
     }
 }
