@@ -85,3 +85,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 spine-unity-editor.csproj
 spine-unity.csproj
+Assets/.DS_Store
+.DS_Store
