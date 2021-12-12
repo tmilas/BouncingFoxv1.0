@@ -26,4 +26,15 @@ public class NavigationHandler : MonoBehaviour
     {
         SceneManager.LoadScene("Main Scene");
     }
+
+    public void LoadLeaderBoard()
+    {
+        SceneManager.LoadScene("Leaderboard");
+    }
+
+    public void LoadStartScreen()
+    {
+        SceneManager.LoadScene("Start Screen");
+    }
+
 }
