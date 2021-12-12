@@ -180,7 +180,7 @@ public class Fox : MonoBehaviour
             isSliding = true;
         }
 
-        if (isPowerActive)
+        if (isPowerActive && !isSliding)
         {
             float keyPressedTime = Time.time - keyPressedBeginTime;
             if (keyPressedTime > keyPressedMaxValue)

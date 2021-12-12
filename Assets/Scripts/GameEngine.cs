@@ -32,6 +32,7 @@ public class GameEngine : MonoBehaviour
     private float bonusBeginTime = 0f;
 
     private UIHandler uiHandler;
+    private OptionsUIHandler optionsUIHandler;
     private StorageEngine storageEngine;
     private ObstacleSpawner obstacleSpawner;
     private Fox fox;
@@ -41,6 +42,7 @@ public class GameEngine : MonoBehaviour
     void Start()
     {
         uiHandler = FindObjectOfType<UIHandler>();
+        optionsUIHandler = FindObjectOfType<OptionsUIHandler>();
         storageEngine = FindObjectOfType<StorageEngine>();
         obstacleSpawner = FindObjectOfType<ObstacleSpawner>();
 
@@ -49,6 +51,15 @@ public class GameEngine : MonoBehaviour
         SetDefaultFactors();
 
         GetHighScore();
+
+        //test için
+        highScore = 0;
+
+        //Show help screen on first play
+        if(highScore == 0)
+        {
+            StartCoroutine(ShowHelpOnStart());
+        }
     }
 
     void Update()
@@ -96,6 +107,22 @@ public class GameEngine : MonoBehaviour
 
         if (uiHandler)
             uiHandler.ShowContinueGame(true);
+    }
+
+    IEnumerator ShowHelpOnStart()
+    {
+        yield return new WaitForSeconds(1f);
+        ShowHelp();
+    }
+
+    public void ShowHelp()
+    {
+        isPaused = true;
+
+        Time.timeScale = 0;
+
+        if (optionsUIHandler)
+            optionsUIHandler.ShowHelp(true);
     }
 
     public void SetGameOver(bool status)
