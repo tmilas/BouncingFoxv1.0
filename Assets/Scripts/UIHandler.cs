@@ -28,6 +28,7 @@ public class UIHandler : MonoBehaviour
     public Text continueText;
     public GameObject continueCanvas;
 
+
     public Text coinText;
 
     private LanguageSupport langSupport;
