@@ -5,9 +5,25 @@ using UnityEngine.UI;
 
 public class LoadBoard : MonoBehaviour
 {
+
+    private StorageEngine storageEngine;
+
     // Start is called before the first frame update
     void Start()
     {
+        GameObject userRow;
+
+        storageEngine = FindObjectOfType<StorageEngine>();
+        string scoreText = storageEngine.LoadData();
+        if (scoreText == "")
+           scoreText = "0";
+
+        userRow = GameObject.Find("LBRow99");
+        userRow.transform.Find("Rank").GetComponent<Text>().text = "Next Time";
+        userRow.transform.Find("Player").GetComponent<Text>().text = "Profile";
+        userRow.transform.Find("Score").GetComponent<Text>().text = scoreText;
+
+
         if (LB_Controller.instance != null)
         {
             LB_Controller.OnUpdatedScores += OnLeaderboardUpdated;
