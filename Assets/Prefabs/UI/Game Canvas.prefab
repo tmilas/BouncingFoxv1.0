@@ -1760,11 +1760,6 @@ MonoBehaviour:
   continueButton: {fileID: 1431437766}
   continueText: {fileID: 1742554386}
   continueCanvas: {fileID: 1694130896321430887}
-  helpCanvas: {fileID: 0}
-  helpNextButton: {fileID: 0}
-  helpPrevButton: {fileID: 0}
-  helpImage: {fileID: 0}
-  helpResourcesPath: Images/Game/
   coinText: {fileID: 1385857076}
 --- !u!1 &7520473450032830219
 GameObject:
