@@ -122,7 +122,7 @@ public class GameEngine : MonoBehaviour
         Time.timeScale = 0;
 
         if (optionsUIHandler)
-            optionsUIHandler.ShowHelp(true);
+            optionsUIHandler.ShowHelp();
     }
 
     public void SetGameOver(bool status)

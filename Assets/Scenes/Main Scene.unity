@@ -765,6 +765,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!20 &1375061243 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2499210840267288821, guid: de1ba71e2afe54e209feb7ad40d38f24, type: 3}
+  m_PrefabInstance: {fileID: 1375061240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1490602881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1492,6 +1497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionsCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 9200919961912244837, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_TargetCamera
+      value: 
+      objectReference: {fileID: 1375061243}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
 --- !u!1001 &2527078068144859545

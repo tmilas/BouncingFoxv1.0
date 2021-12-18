@@ -127,6 +127,11 @@ public class Fox : MonoBehaviour
 
     private void KeyDetect()
     {
+        if(gameEngine && gameEngine.isPaused)
+        {
+            return;
+        }
+
         //For Phone Play - Touch Screen 
         if (Input.touchCount > 0)
         {
