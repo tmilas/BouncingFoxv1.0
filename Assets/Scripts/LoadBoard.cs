@@ -50,6 +50,7 @@ public class LoadBoard : MonoBehaviour
             {
                 Debug.Log("Rank: " + entry.rank + "; Name: " + entry.name + "; Points: " + entry.points);
                 newRow = GameObject.Find("LBRow" + i.ToString());
+                newRow.GetComponent<Animator>().enabled=false;
                 newRow.transform.Find("Rank").GetComponent<Text>().text = entry.rank.ToString();
                 newRow.transform.Find("Player").GetComponent<Text>().text = entry.name.ToString();
                 newRow.transform.Find("Score").GetComponent<Text>().text = entry.points.ToString();
