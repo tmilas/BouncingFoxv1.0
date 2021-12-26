@@ -6,6 +6,12 @@ using UnityEngine.Video;
 public class OptionsUIHandler : MonoBehaviour
 {
     private LanguageSupport langSupport;
+    private GameEngine gameEngine;
+    private AudioSource audioSource;
+
+    [Header("Options Properties")]
+    public GameObject optionsMainCanvas;
+    public Slider musicSoundSlider;
 
     [Header("Help Properties")]
     public GameObject helpCanvas;
@@ -18,21 +24,74 @@ public class OptionsUIHandler : MonoBehaviour
     private int helpScreen = 1;
 
     private UIHandler gameCanvas;
+    private StartGameCanvas startGameCanvas;
+    private GameOverCanvas gameOverCanvas;
 
     void Start()
     {
+        optionsMainCanvas.gameObject.SetActive(false);
+
+        helpCanvas.gameObject.SetActive(false);
+
+        helpVideo.gameObject.SetActive(false);
+
+        bgObject.gameObject.SetActive(false);
+
         langSupport = FindObjectOfType<LanguageSupport>();
 
         helpCanvas.gameObject.SetActive(false);
 
         gameCanvas = FindObjectOfType<UIHandler>();
+
+        startGameCanvas = FindObjectOfType<StartGameCanvas>();
+
+        gameOverCanvas = FindObjectOfType<GameOverCanvas>();
+
+        gameEngine = FindObjectOfType<GameEngine>();
+
+        audioSource = Camera.main.GetComponent<AudioSource>();
     }
+
+    #region options
+
+    public void ShowOptions()
+    {
+        optionsMainCanvas.gameObject.SetActive(true);
+
+        helpCanvas.gameObject.SetActive(false);
+
+        helpVideo.gameObject.SetActive(false);
+
+        bgObject.gameObject.SetActive(true);
+
+        musicSoundSlider.value = audioSource.volume;
+    }
+
+    public void CloseOptions()
+    {
+        optionsMainCanvas.gameObject.SetActive(false);
+        bgObject.gameObject.SetActive(false);
+
+        if (gameEngine)
+            gameEngine.ContinueGame();
+    }
+
+    public void MusicSoundChange()
+    {
+        audioSource.volume = musicSoundSlider.value;
+    }
+
+    #endregion
 
     #region help
 
     public void ShowHelp()
     {
+        helpScreen = 1;
+
         ShowHelpVideo();
+
+        optionsMainCanvas.gameObject.SetActive(false);
 
         helpCanvas.gameObject.SetActive(true);
 
@@ -66,8 +125,7 @@ public class OptionsUIHandler : MonoBehaviour
         else if (helpScreen == 4)
         {
             helpCanvas.gameObject.SetActive(false);
-
-            GameEngine gameEngine = FindObjectOfType<GameEngine>();
+            bgObject.gameObject.SetActive(false);
 
             if (gameEngine)
                 gameEngine.ContinueGame();
@@ -103,6 +161,16 @@ public class OptionsUIHandler : MonoBehaviour
             gameCanvas.gameObject.SetActive(false);
         }
 
+        if(startGameCanvas)
+        {
+            startGameCanvas.gameObject.SetActive(false);
+        }
+
+        if (gameOverCanvas)
+        {
+            gameOverCanvas.gameObject.SetActive(false);
+        }
+
         bgObject.gameObject.SetActive(false);
         helpVideo.gameObject.SetActive(true);
         helpImage.gameObject.SetActive(false);
@@ -113,6 +181,16 @@ public class OptionsUIHandler : MonoBehaviour
         if (gameCanvas)
         {
             gameCanvas.gameObject.SetActive(true);
+        }
+
+        if (startGameCanvas)
+        {
+            startGameCanvas.gameObject.SetActive(true);
+        }
+
+        if (gameOverCanvas)
+        {
+            gameOverCanvas.gameObject.SetActive(true);
         }
 
         helpVideo.gameObject.SetActive(false);

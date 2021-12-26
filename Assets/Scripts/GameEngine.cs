@@ -125,6 +125,16 @@ public class GameEngine : MonoBehaviour
             optionsUIHandler.ShowHelp();
     }
 
+    public void ShowOptions()
+    {
+        isPaused = true;
+
+        Time.timeScale = 0;
+
+        if (optionsUIHandler)
+            optionsUIHandler.ShowOptions();
+    }
+
     public void SetGameOver(bool status)
     {
         isGameOver = status;
