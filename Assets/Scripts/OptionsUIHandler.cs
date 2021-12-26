@@ -8,6 +8,7 @@ public class OptionsUIHandler : MonoBehaviour
     private LanguageSupport langSupport;
     private GameEngine gameEngine;
     private AudioSource audioSource;
+    private StorageEngine storageEngine;
 
     [Header("Options Properties")]
     public GameObject optionsMainCanvas;
@@ -21,6 +22,7 @@ public class OptionsUIHandler : MonoBehaviour
     public Image helpImage;
     public VideoPlayer helpVideo;
     public string helpResourcesPath = "Images/Game/";
+    public GameObject nickNameField;
     private int helpScreen = 1;
 
     private UIHandler gameCanvas;
@@ -50,12 +52,19 @@ public class OptionsUIHandler : MonoBehaviour
         gameEngine = FindObjectOfType<GameEngine>();
 
         audioSource = Camera.main.GetComponent<AudioSource>();
+
+        storageEngine = FindObjectOfType<StorageEngine>();
+
     }
 
     #region options
 
     public void ShowOptions()
     {
+        InputField nickInputField= nickNameField.GetComponent<InputField>();
+        string nickName = storageEngine.LoadDataNick();
+        nickInputField.text = nickName;
+
         optionsMainCanvas.gameObject.SetActive(true);
 
         helpCanvas.gameObject.SetActive(false);
@@ -71,9 +80,14 @@ public class OptionsUIHandler : MonoBehaviour
     {
         optionsMainCanvas.gameObject.SetActive(false);
         bgObject.gameObject.SetActive(false);
+        string nickName = nickNameField.GetComponent<InputField>().text;
+        storageEngine.SaveDataNick(nickName);
 
         if (gameEngine)
+        {
             gameEngine.ContinueGame();
+        }
+            
     }
 
     public void MusicSoundChange()

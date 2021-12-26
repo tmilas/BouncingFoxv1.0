@@ -73,7 +73,7 @@ public class GameEngine : MonoBehaviour
 
     private void GetHighScore()
     {
-        string highScoreText = storageEngine.LoadData();
+        string highScoreText = storageEngine.LoadDataScore();
         if (highScoreText != "")
         {
             highScore = Int32.Parse(highScoreText);
@@ -85,7 +85,13 @@ public class GameEngine : MonoBehaviour
         if (totalPoints > highScore)
         {
             highScore = totalPoints;
-            storageEngine.SaveData(totalPoints.ToString());
+            storageEngine.SaveDataScore(totalPoints.ToString());
+            
+            if (LB_Controller.instance != null)
+            {
+                LB_Controller.instance.StoreScore((float)totalPoints, storageEngine.LoadDataNick());
+            }
+
         }
     }
 
