@@ -14,7 +14,7 @@ public class NavigationHandler : MonoBehaviour
         if(highScoreText)
         {
             storageEngine = FindObjectOfType<StorageEngine>();
-            string scoreText = storageEngine.LoadData();
+            string scoreText = storageEngine.LoadDataScore();
             if (scoreText == "")
                 highScoreText.text = "High Score: 0";
             else
