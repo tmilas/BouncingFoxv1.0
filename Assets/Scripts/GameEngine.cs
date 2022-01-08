@@ -53,7 +53,7 @@ public class GameEngine : MonoBehaviour
         GetHighScore();
 
         //test için
-        highScore = 0;
+        //highScore = 0;
 
         //Show help screen on first play
         if(highScore == 0)
