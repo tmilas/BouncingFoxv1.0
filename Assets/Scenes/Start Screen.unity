@@ -347,7 +347,6 @@ GameObject:
   - component: {fileID: 144585338}
   - component: {fileID: 144585337}
   - component: {fileID: 144585341}
-  - component: {fileID: 144585342}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -454,21 +453,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6175cce58f4664d719e228553a3a5891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startGameText: {fileID: 0}
---- !u!114 &144585342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144585336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe9403ef88654f588bab1f672543e47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   lifeText: {fileID: 1705261814}
   timesLeftTexT: {fileID: 108305439}
+  startButton: {fileID: 1134083618}
 --- !u!1 &506612584
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,9 +981,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 144585342}
-        m_TargetAssemblyTypeName: LifeEngine, Assembly-CSharp
-        m_MethodName: DecideStart
+      - m_Target: {fileID: 144585341}
+        m_TargetAssemblyTypeName: StartGameCanvas, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2294,3 +2281,60 @@ PrefabInstance:
       objectReference: {fileID: 725914500}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 001f4021245c2456a8b1234ae44aa9cc, type: 3}
+--- !u!1001 &5155805433342729418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560320, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155805434931560322, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}
+      propertyPath: m_Name
+      value: LifeEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67ec11b9903b6490f92c211fe30ee436, type: 3}

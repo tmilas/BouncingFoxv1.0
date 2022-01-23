@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class LanguageSupport : MonoBehaviour
 {
+    public static LanguageSupport instance;
+
     public int language;
     private string langResourcesPath = "Language/";
     private string langTrText = "langTr";
@@ -13,9 +15,13 @@ public class LanguageSupport : MonoBehaviour
     
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-
-        Debug.Log("Language awake");
+        if (instance != null && instance != this)
+            Destroy(this.gameObject);
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
 
         SetLanguage();
 
@@ -24,7 +30,7 @@ public class LanguageSupport : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Language start");
+        //Debug.Log("Language start");
     }
 
     public string GetText(string key)

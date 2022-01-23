@@ -27,7 +27,7 @@ public class OptionsUIHandler : MonoBehaviour
 
     private UIHandler gameCanvas;
     private StartGameCanvas startGameCanvas;
-    private GameOverCanvas gameOverCanvas;
+    //private GameOverCanvas gameOverCanvas;
 
     void Start()
     {
@@ -47,7 +47,7 @@ public class OptionsUIHandler : MonoBehaviour
 
         startGameCanvas = FindObjectOfType<StartGameCanvas>();
 
-        gameOverCanvas = FindObjectOfType<GameOverCanvas>();
+        //gameOverCanvas = FindObjectOfType<GameOverCanvas>();
 
         gameEngine = FindObjectOfType<GameEngine>();
 
@@ -179,12 +179,12 @@ public class OptionsUIHandler : MonoBehaviour
         {
             startGameCanvas.gameObject.SetActive(false);
         }
-
+        /*
         if (gameOverCanvas)
         {
             gameOverCanvas.gameObject.SetActive(false);
         }
-
+        */
         bgObject.gameObject.SetActive(false);
         helpVideo.gameObject.SetActive(true);
         helpImage.gameObject.SetActive(false);
@@ -201,12 +201,12 @@ public class OptionsUIHandler : MonoBehaviour
         {
             startGameCanvas.gameObject.SetActive(true);
         }
-
+        /*
         if (gameOverCanvas)
         {
             gameOverCanvas.gameObject.SetActive(true);
         }
-
+        */
         helpVideo.gameObject.SetActive(false);
         bgObject.gameObject.SetActive(true);
         helpImage.gameObject.SetActive(true);

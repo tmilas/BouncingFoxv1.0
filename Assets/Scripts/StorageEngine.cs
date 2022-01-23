@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class StorageEngine : MonoBehaviour
 {
+    public static StorageEngine instance;
 
     [Header("File properties")]
     public string scoreFileName = "GFoxScore.txt";
@@ -14,14 +15,21 @@ public class StorageEngine : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (instance != null && instance != this)
+            Destroy(this.gameObject);
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+
         SafeCreateDirectory(Application.persistentDataPath);
 
         filePathScore = Application.persistentDataPath + "/" + scoreFileName;
         filePathNick = Application.persistentDataPath + "/" + nickFileName;
         filePathLife = Application.persistentDataPath + "/" + lifeFileName;
         //Debug.Log("ffff");
-        Debug.Log(filePathNick);
+        //Debug.Log(filePathNick);
 
     }
 

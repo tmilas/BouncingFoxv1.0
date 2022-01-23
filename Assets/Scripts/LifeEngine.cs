@@ -1,34 +1,43 @@
 using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class LifeEngine : MonoBehaviour
 {
-    public Text lifeText;
-    public Text timesLeftTexT;
+    public static LifeEngine instance;
 
     private const int MAX_LIVES = 5;
+    private static TimeSpan newLifeInterval = new TimeSpan(0, 2, 0);
 
     private StorageEngine storageEngine;
     private NavigationHandler navHandler;
-
-    private static TimeSpan newLifeInterval = new TimeSpan(0, 1, 0);
+    private StartGameCanvas startGameCanvas;
 
     private DateTime lostLifeTimeStamp;
     private int livesLeft = MAX_LIVES;
+    private bool isLimitless = false;
+    private DateTime limitEndDate = DateTime.Now;
+
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+            Destroy(this.gameObject);
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+    }
 
     void Start()
     {
         storageEngine = FindObjectOfType<StorageEngine>();
-
-        navHandler = FindObjectOfType<NavigationHandler>();
 
         GetLivesFromStorage();
     }
 
     void Update()
     {
-        if (livesLeft < MAX_LIVES)
+        if (livesLeft < MAX_LIVES || (isLimitless && DateTime.Now <= limitEndDate))
         {
             TimeSpan t = DateTime.Now - lostLifeTimeStamp;
             int amountOfIntervalsPassed = 0;
@@ -62,9 +71,34 @@ public class LifeEngine : MonoBehaviour
             {
                 FullLives();
             }
-        }
 
-        lifeText.text = livesLeft.ToString();
+            ShowLives();    
+        }
+    }
+
+    public void SetActiveScene(string scene)
+    {
+        if(scene.Equals("start"))
+        {
+            startGameCanvas = FindObjectOfType<StartGameCanvas>();
+
+            navHandler = FindObjectOfType<NavigationHandler>();
+        }
+    }
+
+    private void ShowLives()
+    {
+        if(startGameCanvas)
+        {
+            startGameCanvas.ShowLife(livesLeft.ToString());
+
+            startGameCanvas.EnableStartButton(true);
+
+            if (livesLeft <= 0)
+            {
+                startGameCanvas.EnableStartButton(false);
+            }
+        }
     }
 
     public void DecideStart()
@@ -73,9 +107,15 @@ public class LifeEngine : MonoBehaviour
         {
             livesLeft--;
 
-            if (livesLeft < MAX_LIVES && !timesLeftTexT.IsActive())
+            Debug.Log(livesLeft + "1");
+            if (livesLeft < MAX_LIVES)
             {
-                lostLifeTimeStamp = DateTime.Now;
+                Debug.Log(livesLeft + "2");
+                if (startGameCanvas && !startGameCanvas.IsLifeTimesLeftActive())
+                {
+                    Debug.Log(livesLeft + "3");
+                    lostLifeTimeStamp = DateTime.Now;
+                }
             }
 
             if (navHandler)
@@ -83,25 +123,33 @@ public class LifeEngine : MonoBehaviour
                 navHandler.StartGame();
             }
 
+            Debug.Log(livesLeft + "4");
+
             SaveLivesToStorage();
         }
     }
 
     private void ShowTime(TimeSpan timeSpan)
     {
-        if(!timesLeftTexT.IsActive())
-        { 
-            timesLeftTexT.gameObject.SetActive(true);
-        }
+        if(startGameCanvas)
+        {
+            if (!startGameCanvas.IsLifeTimesLeftActive())
+            {
+                startGameCanvas.SetLifeTimesLeftActive(true);
+            }
 
-        timesLeftTexT.text = timeSpan.Minutes.ToString("00") + ":" + timeSpan.Seconds.ToString("00");
+            startGameCanvas.ShowLifeCounter(timeSpan);
+        }
     }
 
     private void FullLives()
     {
         livesLeft = MAX_LIVES;
 
-        timesLeftTexT.gameObject.SetActive(false);
+        if(startGameCanvas)
+        {
+            startGameCanvas.SetLifeTimesLeftActive(false);
+        }
     }
 
     private void GetLivesFromStorage()
@@ -119,6 +167,10 @@ public class LifeEngine : MonoBehaviour
 
                 lostLifeTimeStamp = DateTime.Parse(livesArray[1]);
 
+                isLimitless = Boolean.Parse(livesArray[2]);
+
+                limitEndDate = DateTime.Parse(livesArray[3]);
+
                 //Debug.Log("Load from storage : Lives left: " + livesLeft.ToString() + "time left: " + lostLifeTimeStamp.ToString());
             }
             catch (Exception ex)
@@ -130,10 +182,19 @@ public class LifeEngine : MonoBehaviour
 
     private void SaveLivesToStorage()
     {
-        string livesTempText = livesLeft.ToString() + ";" + lostLifeTimeStamp.ToString();
+        string livesTempText = livesLeft.ToString() + ";" + lostLifeTimeStamp.ToString() + ";" + isLimitless + ";" + limitEndDate.ToShortDateString();
 
         storageEngine.SaveLifeCount(livesTempText);
 
         //Debug.Log("Save to storage : Lives left: " + livesLeft.ToString() + "time left: " + lostLifeTimeStamp.ToString());
+    }
+
+    public void NoLimitsUntil(DateTime endDate)
+    {
+        isLimitless = true;
+
+        limitEndDate = endDate;
+
+        SaveLivesToStorage();
     }
 }

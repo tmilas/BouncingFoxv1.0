@@ -280,9 +280,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 526646713}
-        m_TargetAssemblyTypeName: LifeEngine, Assembly-CSharp
-        m_MethodName: DecideStart
+      - m_Target: {fileID: 526646708}
+        m_TargetAssemblyTypeName: StartGameCanvas, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -780,7 +780,6 @@ GameObject:
   - component: {fileID: 526646710}
   - component: {fileID: 526646709}
   - component: {fileID: 526646708}
-  - component: {fileID: 526646713}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -800,7 +799,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6175cce58f4664d719e228553a3a5891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startGameText: {fileID: 0}
+  lifeText: {fileID: 1767838297}
+  timesLeftTexT: {fileID: 720204670}
+  startButton: {fileID: 229167812}
 --- !u!114 &526646709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,20 +889,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &526646713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526646707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe9403ef88654f588bab1f672543e47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeText: {fileID: 1767838297}
-  timesLeftTexT: {fileID: 720204670}
 --- !u!1 &558543948
 GameObject:
   m_ObjectHideFlags: 0
