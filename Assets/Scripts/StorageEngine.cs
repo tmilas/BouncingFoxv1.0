@@ -7,34 +7,21 @@ public class StorageEngine : MonoBehaviour
     [Header("File properties")]
     public string scoreFileName = "GFoxScore.txt";
     public string nickFileName = "GFoxNick.txt";
+    public string lifeFileName = "GFoxLife.txt";
     private string filePathScore = "";
     private string filePathNick = "";
+    private string filePathLife = "";
 
     private void Awake()
     {
-
-        /* int numGameSessions = FindObjectsOfType<StorageEngine>().Length;
-
-         if (numGameSessions > 1)
-         {
-             Destroy(gameObject);
-         }
-         else
-         {
-             DontDestroyOnLoad(gameObject);
-         }*/
         DontDestroyOnLoad(gameObject);
         SafeCreateDirectory(Application.persistentDataPath);
 
         filePathScore = Application.persistentDataPath + "/" + scoreFileName;
         filePathNick = Application.persistentDataPath + "/" + nickFileName;
-        Debug.Log("ffff");
+        filePathLife = Application.persistentDataPath + "/" + lifeFileName;
+        //Debug.Log("ffff");
         Debug.Log(filePathNick);
-
-    }
-
-    void Start()
-    {
 
     }
 
@@ -90,6 +77,29 @@ public class StorageEngine : MonoBehaviour
             Debug.Log("yyyyy");
 
             var reader = new StreamReader(filePathNick);
+            string data = reader.ReadToEnd();
+            reader.Close();
+            return data;
+        }
+
+        return "";
+    }
+
+    public void SaveLifeCount(string data)
+    {
+        //Data storage
+        var Writer = new StreamWriter(filePathLife);
+        Writer.Write(data);
+        Writer.Flush();
+        Writer.Close();
+    }
+
+    public string LoadLifeCount()
+    {
+        //Data acquisition
+        if (File.Exists(filePathLife))
+        {
+            var reader = new StreamReader(filePathLife);
             string data = reader.ReadToEnd();
             reader.Close();
             return data;
