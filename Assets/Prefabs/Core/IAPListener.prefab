@@ -48,7 +48,7 @@ MonoBehaviour:
   onPurchaseComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 915139209115396902, guid: e66e92b6fbc8c4f4fad276de2ae4e5be, type: 3}
         m_TargetAssemblyTypeName: IAPEventHandler, Assembly-CSharp
         m_MethodName: UnlockGameGranted
         m_Mode: 1
@@ -63,7 +63,7 @@ MonoBehaviour:
   onPurchaseFailed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 915139209115396902, guid: e66e92b6fbc8c4f4fad276de2ae4e5be, type: 3}
         m_TargetAssemblyTypeName: IAPEventHandler, Assembly-CSharp
         m_MethodName: UnlockGameNotGranted
         m_Mode: 1
