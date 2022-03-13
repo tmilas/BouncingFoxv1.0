@@ -80,8 +80,16 @@ public class OptionsUIHandler : MonoBehaviour
     {
         optionsMainCanvas.gameObject.SetActive(false);
         bgObject.gameObject.SetActive(false);
+        string currentNickName = storageEngine.LoadDataNick(false);
         string nickName = nickNameField.GetComponent<InputField>().text;
-        storageEngine.SaveDataNick(nickName);
+        if (!currentNickName.Equals(nickName))
+        {
+            storageEngine.SaveDataNick(nickName);
+            storageEngine.SaveDataScore("0");
+            GameObject highScoreText = GameObject.Find("HighScore Text");
+            highScoreText.GetComponent<Text>().text = "High Score: 0";
+        }
+
 
         if (gameEngine)
         {

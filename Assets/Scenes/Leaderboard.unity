@@ -807,11 +807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752561075175997261, guid: d969e8c627d074483b0323b1cc5e0a25, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 217.8203
+      value: 294.049
       objectReference: {fileID: 0}
     - target: {fileID: 4752561075175997261, guid: d969e8c627d074483b0323b1cc5e0a25, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1
+      value: -39.114376
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d969e8c627d074483b0323b1cc5e0a25, type: 3}
