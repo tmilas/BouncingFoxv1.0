@@ -10,13 +10,17 @@ public class LoadBoard : MonoBehaviour
     private string nickNameWithId;
     private bool userInTop10 = false;
 
+    private void Start()
+    {
+
+    }
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         GameObject userRow;
 
-        Debug.Log("LoadBoard - start");
-
+        Debug.Log("LoadBoard - awake");
         storageEngine = FindObjectOfType<StorageEngine>();
         string scoreText = storageEngine.LoadDataScore();
         nickNameWithId= storageEngine.LoadDataNick(false);
@@ -28,7 +32,7 @@ public class LoadBoard : MonoBehaviour
             nickNameWithId = "User";
 
         userRow = GameObject.Find("LBRow99");
-        userRow.transform.Find("Rank").GetComponent<Text>().text = "Next Time";
+        userRow.transform.Find("Rank").GetComponent<Text>().text = "Player Score";
         userRow.transform.Find("Player").GetComponent<Text>().text = nickNameWithId;
         userRow.transform.Find("Score").GetComponent<Text>().text = scoreText;
 
@@ -40,10 +44,9 @@ public class LoadBoard : MonoBehaviour
             {
                 LB_Controller.OnUpdatedScores += OnLeaderboardUpdated;
             }
-            LB_Controller.instance.ReloadLeaderboard();
-            Destroy(this);
+            //LB_Controller.instance.ReloadLeaderboard();
 
-            //StartCoroutine(DownloadScores());
+            StartCoroutine(DownloadScores());
         }
 
     }
@@ -56,7 +59,7 @@ public class LoadBoard : MonoBehaviour
 
     private void OnLeaderboardUpdated(LB_Entry[] entries)
     {
-        Debug.Log("test1");
+        Debug.Log("OnLeaderboardUpdated");
         GameObject newRow;
         GameObject userRow;
 
@@ -102,12 +105,14 @@ public class LoadBoard : MonoBehaviour
         {
             Debug.Log("ups something went wrong");
         }
+
+
     }
 
     IEnumerator DownloadScores()
     {
         Debug.Log("LoadBoard - downloadscores1");
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7);
         LB_Controller.instance.ReloadLeaderboard();
         Debug.Log("LoadBoard - downloadscores2");
 

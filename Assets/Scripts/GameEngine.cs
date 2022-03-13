@@ -82,8 +82,8 @@ public class GameEngine : MonoBehaviour
 
     private void SetHighScore()
     {
-        //if (totalPoints > highScore)
-        //{
+        if (totalPoints > highScore)
+        {
             highScore = totalPoints;
             storageEngine.SaveDataScore(totalPoints.ToString());
             
@@ -94,9 +94,9 @@ public class GameEngine : MonoBehaviour
                 LB_Controller.instance.StoreScore((float)totalPoints, storageEngine.LoadDataNick(true));
 
                 Debug.Log("Sethighscore NickWithId:" + storageEngine.LoadDataNick(true));
-        }
+             }
 
-        //}
+        }
     }
 
     private void CalculateScore()
