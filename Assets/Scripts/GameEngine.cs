@@ -82,17 +82,21 @@ public class GameEngine : MonoBehaviour
 
     private void SetHighScore()
     {
-        if (totalPoints > highScore)
-        {
+        //if (totalPoints > highScore)
+        //{
             highScore = totalPoints;
             storageEngine.SaveDataScore(totalPoints.ToString());
             
             if (LB_Controller.instance != null)
             {
-                LB_Controller.instance.StoreScore((float)totalPoints, storageEngine.LoadDataNick());
-            }
+                Debug.Log("Sethighscore");
 
+                LB_Controller.instance.StoreScore((float)totalPoints, storageEngine.LoadDataNick(true));
+
+                Debug.Log("Sethighscore NickWithId:" + storageEngine.LoadDataNick(true));
         }
+
+        //}
     }
 
     private void CalculateScore()
@@ -141,12 +145,12 @@ public class GameEngine : MonoBehaviour
             optionsUIHandler.ShowOptions();
     }
 
-    public void SetGameOver(bool status)
+    public void SetGameOver(bool status,bool checkLives)
     {
         isGameOver = status;
         speedFactor = 0;
 
-        if(remainingLives>0)
+        if(checkLives && remainingLives>0)
         {
             Time.timeScale = 0;
 
@@ -161,7 +165,18 @@ public class GameEngine : MonoBehaviour
 
             SetHighScore();
 
-            StartCoroutine(GoToGameOverScene());
+            Debug.Log("jjj");
+
+
+            if (checkLives)
+                StartCoroutine(GoToGameOverScene());
+            else
+            {
+                SceneManager.LoadScene("Game Over Screen");
+                Time.timeScale = 1;
+            }
+                
+
         }
     }
 

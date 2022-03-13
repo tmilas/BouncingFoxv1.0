@@ -103,8 +103,11 @@ public class LifeEngine : MonoBehaviour
 
     public void DecideStart()
     {
+        Debug.Log("TOLGA11");
         if(livesLeft>0)
         {
+            Debug.Log("TOLGA22");
+
             livesLeft--;
 
             Debug.Log(livesLeft + "1");
@@ -120,6 +123,8 @@ public class LifeEngine : MonoBehaviour
 
             if (navHandler)
             {
+                Debug.Log("TOLGA33");
+                Time.timeScale = 1;
                 navHandler.StartGame();
             }
 

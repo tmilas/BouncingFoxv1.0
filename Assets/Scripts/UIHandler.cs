@@ -127,6 +127,16 @@ public class UIHandler : MonoBehaviour
             gameEngine.ContinueGame();
     }
 
+    public void EndGame()
+    {
+        GameEngine gameEngine = FindObjectOfType<GameEngine>();
+
+        if (gameEngine)
+            gameEngine.SetGameOver(true, false);
+
+        Debug.Log("hhh");
+    }
+
     public void ShowContinueGame(bool isShow)
     {
         continueCanvas.gameObject.SetActive(isShow);

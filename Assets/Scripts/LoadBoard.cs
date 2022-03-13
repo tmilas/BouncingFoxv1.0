@@ -7,7 +7,7 @@ public class LoadBoard : MonoBehaviour
 {
 
     private StorageEngine storageEngine;
-    private string nickName;
+    private string nickNameWithId;
     private bool userInTop10 = false;
 
     // Start is called before the first frame update
@@ -15,29 +15,35 @@ public class LoadBoard : MonoBehaviour
     {
         GameObject userRow;
 
+        Debug.Log("LoadBoard - start");
+
         storageEngine = FindObjectOfType<StorageEngine>();
         string scoreText = storageEngine.LoadDataScore();
-        nickName= storageEngine.LoadDataNick();
+        nickNameWithId= storageEngine.LoadDataNick(false);
 
         if (scoreText == "")
            scoreText = "0";
 
-        if (nickName == "")
-            nickName = "User";
+        if (nickNameWithId == "")
+            nickNameWithId = "User";
 
         userRow = GameObject.Find("LBRow99");
         userRow.transform.Find("Rank").GetComponent<Text>().text = "Next Time";
-        userRow.transform.Find("Player").GetComponent<Text>().text = nickName;
+        userRow.transform.Find("Player").GetComponent<Text>().text = nickNameWithId;
         userRow.transform.Find("Score").GetComponent<Text>().text = scoreText;
 
        
         if (LB_Controller.instance != null)
         {
+            Debug.Log("LoadBoard - lbcontroller not null");
             if (LB_Controller.OnUpdatedScores==null)
             {
                 LB_Controller.OnUpdatedScores += OnLeaderboardUpdated;
             }
-            StartCoroutine(DownloadScores());
+            LB_Controller.instance.ReloadLeaderboard();
+            Destroy(this);
+
+            //StartCoroutine(DownloadScores());
         }
 
     }
@@ -57,7 +63,7 @@ public class LoadBoard : MonoBehaviour
         int i = 1;
         int maxRow = 11;
         userInTop10 = false;
-        nickName = storageEngine.LoadDataNick();
+        nickNameWithId = storageEngine.LoadDataNick(true);
 
         if (entries != null && entries.Length > 0)
         {
@@ -66,8 +72,9 @@ public class LoadBoard : MonoBehaviour
                 Debug.Log("Rank: " + entry.rank + "; Name: " + entry.name + "; Points: " + entry.points);
                 newRow = GameObject.Find("LBRow" + i.ToString());
                 newRow.transform.Find("Rank").GetComponent<Text>().text = entry.rank.ToString();
-                newRow.transform.Find("Player").GetComponent<Text>().text = entry.name.ToString();
-                if (nickName.Equals(newRow.transform.Find("Player").GetComponent<Text>().text))
+                newRow.transform.Find("PlayerWithId").GetComponent<Text>().text = entry.name.ToString();
+                newRow.transform.Find("Player").GetComponent<Text>().text = entry.name.ToString().Substring(0, entry.name.ToString().IndexOf(StorageEngine.userIdSeperator));
+                if (nickNameWithId.Equals(newRow.transform.Find("PlayerWithId").GetComponent<Text>().text))
                 {
                     newRow.GetComponent<Animator>().enabled = true;
                     userInTop10 = true;
@@ -99,8 +106,11 @@ public class LoadBoard : MonoBehaviour
 
     IEnumerator DownloadScores()
     {
+        Debug.Log("LoadBoard - downloadscores1");
         yield return new WaitForSeconds(5);
         LB_Controller.instance.ReloadLeaderboard();
+        Debug.Log("LoadBoard - downloadscores2");
+
     }
 
 }

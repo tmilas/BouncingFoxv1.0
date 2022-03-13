@@ -15,6 +15,11 @@ public class InitializeAdsScript : MonoBehaviour,IUnityAdsListener
 
     void Start()
     {
+
+    }
+    
+    public void ShowAds()
+    {
         //Unity Ads
         Advertisement.Initialize(gameId, testMode);
         Advertisement.AddListener(this);
@@ -22,15 +27,16 @@ public class InitializeAdsScript : MonoBehaviour,IUnityAdsListener
         //Google Ads
         MobileAds.Initialize((InitializationStatus obj) => { });
         googleAd = new InterstitialAd("ca-app-pub-3940256099942544/1033173712");
-        AdRequest request = new AdRequest.Builder().Build();
-        // Load the interstitial with the request.
         googleAd.OnAdLoaded += GoogleAdLoaded;
         googleAd.OnAdDidRecordImpression += GoogleAdRecImp;
         googleAd.OnAdClosed += GoogleAdClosed;
-
+        AdRequest request = new AdRequest.Builder().Build();
+        // Load the interstitial with the request.
         googleAd.LoadAd(request);
 
         StartCoroutine(ShowAdsWhenReady());
+
+        Debug.Log(SystemInfo.deviceUniqueIdentifier);
 
     }
 
@@ -47,9 +53,12 @@ public class InitializeAdsScript : MonoBehaviour,IUnityAdsListener
     private void GoogleAdClosed(object sender, System.EventArgs e)
     {
         Debug.Log("Google Ad Closed");
+        GameEngine gameEngine = FindObjectOfType<GameEngine>();
+        gameEngine.ContinueGame();
+
     }
 
-    public void ShowAds()
+    public void ShowUnityTestAds()
     {
         //Debug.Log(Advertisement.IsReady("Interstitial_Android"));
         Advertisement.Show("Interstitial_Android");
@@ -77,7 +86,10 @@ public class InitializeAdsScript : MonoBehaviour,IUnityAdsListener
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
         Debug.Log("Ads Finish");
-       
+        GameEngine gameEngine = FindObjectOfType<GameEngine>();
+        gameEngine.ContinueGame();
+
+
     }
 
     IEnumerator ShowAdsWhenReady()
