@@ -62,7 +62,7 @@ public class OptionsUIHandler : MonoBehaviour
     public void ShowOptions()
     {
         InputField nickInputField= nickNameField.GetComponent<InputField>();
-        string nickName = storageEngine.LoadDataNick();
+        string nickName = storageEngine.LoadDataNick(false);
         nickInputField.text = nickName;
 
         optionsMainCanvas.gameObject.SetActive(true);
