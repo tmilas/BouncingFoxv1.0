@@ -724,6 +724,7 @@ PlayerSettings:
   vrEditorSettings: {}
   cloudServicesEnabled:
     Analytics: 1
+    Collab: 1
     Purchasing: 1
     Unity Ads: 0
   luminIcon:
