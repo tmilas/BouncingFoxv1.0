@@ -36,6 +36,8 @@ public class GameEngine : MonoBehaviour
     private StorageEngine storageEngine;
     private ObstacleSpawner obstacleSpawner;
     private Fox fox;
+    private RestAPIClient restAPIClient;
+
 
     private bool isGameOver = false;
 
@@ -87,16 +89,44 @@ public class GameEngine : MonoBehaviour
             highScore = totalPoints;
             storageEngine.SaveDataScore(totalPoints.ToString());
             
-            if (LB_Controller.instance != null)
+            /*if (LB_Controller.instance != null)
             {
                 Debug.Log("Sethighscore");
 
                 LB_Controller.instance.StoreScore((float)totalPoints, storageEngine.LoadDataNick(true));
 
                 Debug.Log("Sethighscore NickWithId:" + storageEngine.LoadDataNick(true));
-             }
+             }*/
+
+            restAPIClient = GameObject.FindObjectOfType<RestAPIClient>();
+            if (restAPIClient != null)
+            {
+                Debug.Log("rest not null");
+                RestAPIClient.OnSuccessLBPost += OnLBPost;
+                LeaderBoardEntry leaderBoardEntry = new LeaderBoardEntry();
+                leaderBoardEntry.gameid = "gfox";
+                leaderBoardEntry.playerid = storageEngine.LoadDataNick(true);
+                leaderBoardEntry.playerscore = totalPoints;
+                restAPIClient.SendPlayerScore(leaderBoardEntry);
+
+            }
+            else
+            {
+                Debug.Log("rest null");
+            }
+
+
+            /*for (int i=1;i<300;i++)
+            {
+                StartCoroutine(Setscore());
+            }*/
 
         }
+    }
+
+    private void OnLBPost(string test)
+    {
+        Debug.Log("yupppi post" + test);
     }
 
     private void CalculateScore()
@@ -123,6 +153,21 @@ public class GameEngine : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         ShowHelp();
+    }
+
+    IEnumerator Setscore()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (LB_Controller.instance != null)
+        {
+            string temp = storageEngine.LoadDataNick(true) + UnityEngine.Random.Range(1, 900000).ToString();
+            LB_Controller.instance.StoreScore(1f, temp);
+            Debug.Log(temp);
+        }
+        else
+            Debug.Log("lbcontroller null");
+
+
     }
 
     public void ShowHelp()

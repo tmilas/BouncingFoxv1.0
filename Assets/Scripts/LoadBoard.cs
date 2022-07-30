@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,10 +10,10 @@ public class LoadBoard : MonoBehaviour
     private StorageEngine storageEngine;
     private string nickNameWithId;
     private bool userInTop10 = false;
+    private RestAPIClient restAPIClient;
 
     private void Start()
     {
-
     }
 
     // Start is called before the first frame update
@@ -36,17 +37,30 @@ public class LoadBoard : MonoBehaviour
         userRow.transform.Find("Player").GetComponent<Text>().text = nickNameWithId;
         userRow.transform.Find("Score").GetComponent<Text>().text = scoreText;
 
-       
-        if (LB_Controller.instance != null)
-        {
-            Debug.Log("LoadBoard - lbcontroller not null");
-            if (LB_Controller.OnUpdatedScores==null)
-            {
-                LB_Controller.OnUpdatedScores += OnLeaderboardUpdated;
-            }
-            //LB_Controller.instance.ReloadLeaderboard();
+        
+        /* if (LB_Controller.instance != null)
+         {
+             Debug.Log("LoadBoard - lbcontroller not null");
+             if (LB_Controller.OnUpdatedScores==null)
+             {
+                 LB_Controller.OnUpdatedScores += OnLeaderboardUpdated;
+             }
+             //LB_Controller.instance.ReloadLeaderboard();
 
-            StartCoroutine(DownloadScores());
+             StartCoroutine(DownloadScores());
+         }*/
+
+        restAPIClient = GameObject.FindObjectOfType<RestAPIClient>();
+        if (restAPIClient!=null)
+        {
+            Debug.Log("rest not null");
+            RestAPIClient.OnSuccessLBGet += OnLBUpdated;
+            restAPIClient.GetLeaderBoard();
+       
+        }
+        else
+        {
+            Debug.Log("rest null");
         }
 
     }
@@ -55,6 +69,66 @@ public class LoadBoard : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnLBUpdated(string test)
+    {
+        Debug.Log("yupppi" + test);
+        //LeaderBoardEntry[] leaderBoardEntries = JsonConvert.DeserializeObject(test);
+
+        List<LeaderBoardEntry> ll = JsonConvert.DeserializeObject<List<LeaderBoardEntry>>(test);
+
+
+        Debug.Log(ll.Count.ToString());
+
+        Debug.Log("OnLBUpdated");
+        GameObject newRow;
+        GameObject userRow;
+
+        int i = 1;
+        int maxRow = 11;
+        userInTop10 = false;
+        nickNameWithId = storageEngine.LoadDataNick(true);
+
+        if (ll != null && ll.Count > 0)
+        {
+            foreach (LeaderBoardEntry entry in ll)
+            {
+                Debug.Log("Name: " + entry.playerid + "; Points: " + entry.playerscore);
+                newRow = GameObject.Find("LBRow" + i.ToString());
+                newRow.transform.Find("Rank").GetComponent<Text>().text = i.ToString();
+                newRow.transform.Find("PlayerWithId").GetComponent<Text>().text = entry.playerid;
+                //newRow.transform.Find("Player").GetComponent<Text>().text = entry.playerid.Substring(0, entry.playerid.ToString().IndexOf(StorageEngine.userIdSeperator));
+                newRow.transform.Find("Player").GetComponent<Text>().text = entry.playerid;
+                if (nickNameWithId.Equals(newRow.transform.Find("PlayerWithId").GetComponent<Text>().text))
+                {
+                    newRow.GetComponent<Animator>().enabled = true;
+                    userInTop10 = true;
+                    Debug.Log("test2");
+                }
+
+                newRow.transform.Find("Score").GetComponent<Text>().text = entry.playerscore.ToString();
+                i++;
+                if (i == maxRow)
+                    break;
+
+
+            }
+
+            if (userInTop10 == false)
+            {
+                userRow = GameObject.Find("LBRow99");
+                userRow.GetComponent<Animator>().enabled = true;
+                Debug.Log("test3");
+
+            }
+
+        }
+        else if (ll == null)
+        {
+            Debug.Log("ups something went wrong");
+        }
+
     }
 
     private void OnLeaderboardUpdated(LB_Entry[] entries)
