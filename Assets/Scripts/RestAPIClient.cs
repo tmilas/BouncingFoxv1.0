@@ -8,12 +8,13 @@ public class RestAPIClient : MonoBehaviour
 {
     private string geturi = "http://92.205.60.105:8181/api/leaderboard/players?gameid=gfox";
     private string posturi = "http://92.205.60.105:8181/api/leaderboard/players";
-
+    //private string geturi = "localhost:8181/api/leaderboard/players?gameid=gfox";
+    //private string posturi = "localhost:8181/api/leaderboard/players";
 
     public delegate void OnLBGetSuccess(string test);
     public static OnLBGetSuccess OnSuccessLBGet;
 
-    public delegate void OnLBPostSuccess(string test);
+    public delegate void OnLBPostSuccess(string data);
     public static OnLBPostSuccess OnSuccessLBPost;
 
     // Start is called before the first frame update
@@ -130,7 +131,7 @@ public class RestAPIClient : MonoBehaviour
 
             if (!requestErrorOccurred)
             {
-                OnSuccessLBPost?.Invoke("heyooooo");
+                OnSuccessLBPost?.Invoke(leaderBoardEntry.playerscore.ToString());
                 yield return null;
                 // process results
             }

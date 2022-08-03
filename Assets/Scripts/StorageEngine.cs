@@ -9,9 +9,11 @@ public class StorageEngine : MonoBehaviour
     public string scoreFileName = "GFoxScore.txt";
     public string nickFileName = "GFoxNick.txt";
     public string lifeFileName = "GFoxLife.txt";
+    public string postedScoreFileName = "GFoxPostedScore.txt";
     private string filePathScore = "";
     private string filePathNick = "";
     private string filePathLife = "";
+    private string filePathPostedScore = "";
     public static string userIdSeperator = "%ZZZ%";
 
     private void Awake()
@@ -29,6 +31,8 @@ public class StorageEngine : MonoBehaviour
         filePathScore = Application.persistentDataPath + "/" + scoreFileName;
         filePathNick = Application.persistentDataPath + "/" + nickFileName;
         filePathLife = Application.persistentDataPath + "/" + lifeFileName;
+        filePathPostedScore = Application.persistentDataPath + "/" + postedScoreFileName;
+
         //Debug.Log("ffff");
         //Debug.Log(filePathNick);
 
@@ -52,12 +56,35 @@ public class StorageEngine : MonoBehaviour
         Writer.Close();
     }
 
+    public void SaveDataPostedScore(string data)
+    {
+        //Data storage
+        var Writer = new StreamWriter(filePathPostedScore);
+        Writer.Write(data);
+        Writer.Flush();
+        Writer.Close();
+    }
+
     public string LoadDataScore()
     {
         //Data acquisition
         if(File.Exists(filePathScore))
         { 
             var reader = new StreamReader(filePathScore);
+            string data = reader.ReadToEnd();
+            reader.Close();
+            return data;
+        }
+
+        return "";
+    }
+
+    public string LoadDataPostedScore()
+    {
+        //Data acquisition
+        if (File.Exists(filePathPostedScore))
+        {
+            var reader = new StreamReader(filePathPostedScore);
             string data = reader.ReadToEnd();
             reader.Close();
             return data;

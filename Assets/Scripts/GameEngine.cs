@@ -29,6 +29,7 @@ public class GameEngine : MonoBehaviour
     public bool isBonusActive = false;
 
     public int highScore = 0;
+    public int highPostedScore = 0;
     private float bonusBeginTime = 0f;
 
     private UIHandler uiHandler;
@@ -43,6 +44,7 @@ public class GameEngine : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("startqq");
         uiHandler = FindObjectOfType<UIHandler>();
         optionsUIHandler = FindObjectOfType<OptionsUIHandler>();
         storageEngine = FindObjectOfType<StorageEngine>();
@@ -62,6 +64,9 @@ public class GameEngine : MonoBehaviour
         {
             StartCoroutine(ShowHelpOnStart());
         }
+
+        CheckAndPostScore();
+
     }
 
     void Update()
@@ -70,6 +75,29 @@ public class GameEngine : MonoBehaviour
         {
             IsBonusActive();
             CalculateScore();
+        }
+    }
+
+    private void CheckAndPostScore()
+    {
+        Debug.Log("CheckAndPostScoreqq");
+
+        GetHighScore();
+
+        GetHighPostedScore();
+
+        if (highScore > 0)
+        {
+            Debug.Log("tolgaqq");
+            Debug.Log(highScore);
+            Debug.Log(highPostedScore);
+
+
+            if (highScore != highPostedScore)
+            {
+                Debug.Log("CheckAndPostScoreqq1");
+                PostHighScore(highScore);
+            }
         }
     }
 
@@ -82,13 +110,22 @@ public class GameEngine : MonoBehaviour
         }
     }
 
+    private void GetHighPostedScore()
+    {
+        string highPostedScoreText = storageEngine.LoadDataPostedScore();
+        if (highPostedScoreText != "")
+        {
+            highPostedScore = Int32.Parse(highPostedScoreText);
+        }
+    }
+
     private void SetHighScore()
     {
         if (totalPoints > highScore)
         {
             highScore = totalPoints;
             storageEngine.SaveDataScore(totalPoints.ToString());
-            
+
             /*if (LB_Controller.instance != null)
             {
                 Debug.Log("Sethighscore");
@@ -98,22 +135,7 @@ public class GameEngine : MonoBehaviour
                 Debug.Log("Sethighscore NickWithId:" + storageEngine.LoadDataNick(true));
              }*/
 
-            restAPIClient = GameObject.FindObjectOfType<RestAPIClient>();
-            if (restAPIClient != null)
-            {
-                Debug.Log("rest not null");
-                RestAPIClient.OnSuccessLBPost += OnLBPost;
-                LeaderBoardEntry leaderBoardEntry = new LeaderBoardEntry();
-                leaderBoardEntry.gameid = "gfox";
-                leaderBoardEntry.playerid = storageEngine.LoadDataNick(true);
-                leaderBoardEntry.playerscore = totalPoints;
-                restAPIClient.SendPlayerScore(leaderBoardEntry);
-
-            }
-            else
-            {
-                Debug.Log("rest null");
-            }
+            PostHighScore(totalPoints);
 
 
             /*for (int i=1;i<300;i++)
@@ -124,9 +146,31 @@ public class GameEngine : MonoBehaviour
         }
     }
 
-    private void OnLBPost(string test)
+    private void PostHighScore(int totalPoints)
     {
-        Debug.Log("yupppi post" + test);
+        restAPIClient = GameObject.FindObjectOfType<RestAPIClient>();
+        if (restAPIClient != null)
+        {
+            Debug.Log("rest not null");
+            RestAPIClient.OnSuccessLBPost += OnLBPost;
+            LeaderBoardEntry leaderBoardEntry = new LeaderBoardEntry();
+            leaderBoardEntry.gameid = "gfox";
+            leaderBoardEntry.playerid = storageEngine.LoadDataNick(true);
+            leaderBoardEntry.playerscore = totalPoints;
+            restAPIClient.SendPlayerScore(leaderBoardEntry);
+
+        }
+        else
+        {
+            Debug.Log("rest null");
+        }
+
+    }
+
+    private void OnLBPost(string data)
+    {
+        storageEngine.SaveDataPostedScore(data);
+        Debug.Log("yupppi post" + data);
     }
 
     private void CalculateScore()

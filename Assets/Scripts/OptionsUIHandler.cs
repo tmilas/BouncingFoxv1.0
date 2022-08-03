@@ -31,6 +31,7 @@ public class OptionsUIHandler : MonoBehaviour
 
     void Start()
     {
+
         optionsMainCanvas.gameObject.SetActive(false);
 
         helpCanvas.gameObject.SetActive(false);
@@ -86,6 +87,7 @@ public class OptionsUIHandler : MonoBehaviour
         {
             storageEngine.SaveDataNick(nickName);
             storageEngine.SaveDataScore("0");
+            storageEngine.SaveDataPostedScore("0");
             GameObject highScoreText = GameObject.Find("HighScore Text");
             highScoreText.GetComponent<Text>().text = "High Score: 0";
         }
