@@ -6,8 +6,10 @@ using UnityEngine.Networking;
 
 public class RestAPIClient : MonoBehaviour
 {
-    private string geturi = "http://92.205.60.105:8181/api/leaderboard/players?gameid=gfox";
-    private string posturi = "http://92.205.60.105:8181/api/leaderboard/players";
+    //private string geturi = "http://92.205.60.105:8181/api/leaderboard/players?gameid=gfox";
+    //private string posturi = "http://92.205.60.105:8181/api/leaderboard/players";
+    private string geturi = "http://todigames.com:8181/api/leaderboard/players?gameid=gfox";
+    private string posturi = "http://todigames.com:8181/api/leaderboard/players";
     //private string geturi = "localhost:8181/api/leaderboard/players?gameid=gfox";
     //private string posturi = "localhost:8181/api/leaderboard/players";
 
