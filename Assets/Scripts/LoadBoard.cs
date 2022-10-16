@@ -98,8 +98,10 @@ public class LoadBoard : MonoBehaviour
                 newRow = GameObject.Find("LBRow" + i.ToString());
                 newRow.transform.Find("Rank").GetComponent<Text>().text = i.ToString();
                 newRow.transform.Find("PlayerWithId").GetComponent<Text>().text = entry.playerid;
-                //newRow.transform.Find("Player").GetComponent<Text>().text = entry.playerid.Substring(0, entry.playerid.ToString().IndexOf(StorageEngine.userIdSeperator));
-                newRow.transform.Find("Player").GetComponent<Text>().text = entry.playerid;
+                if (entry.playerid.ToString().IndexOf(StorageEngine.userIdSeperator) >0)
+                    newRow.transform.Find("Player").GetComponent<Text>().text = entry.playerid.Substring(0, entry.playerid.ToString().IndexOf(StorageEngine.userIdSeperator));
+                else
+                    newRow.transform.Find("Player").GetComponent<Text>().text = entry.playerid;
                 if (nickNameWithId.Equals(newRow.transform.Find("PlayerWithId").GetComponent<Text>().text))
                 {
                     newRow.GetComponent<Animator>().enabled = true;
