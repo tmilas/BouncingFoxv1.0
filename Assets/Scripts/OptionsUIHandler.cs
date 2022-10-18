@@ -31,6 +31,7 @@ public class OptionsUIHandler : MonoBehaviour
 
     void Start()
     {
+
         optionsMainCanvas.gameObject.SetActive(false);
 
         helpCanvas.gameObject.SetActive(false);
@@ -62,7 +63,7 @@ public class OptionsUIHandler : MonoBehaviour
     public void ShowOptions()
     {
         InputField nickInputField= nickNameField.GetComponent<InputField>();
-        string nickName = storageEngine.LoadDataNick();
+        string nickName = storageEngine.LoadDataNick(false);
         nickInputField.text = nickName;
 
         optionsMainCanvas.gameObject.SetActive(true);
@@ -80,8 +81,17 @@ public class OptionsUIHandler : MonoBehaviour
     {
         optionsMainCanvas.gameObject.SetActive(false);
         bgObject.gameObject.SetActive(false);
+        string currentNickName = storageEngine.LoadDataNick(false);
         string nickName = nickNameField.GetComponent<InputField>().text;
-        storageEngine.SaveDataNick(nickName);
+        if (!currentNickName.Equals(nickName))
+        {
+            storageEngine.SaveDataNick(nickName);
+            storageEngine.SaveDataScore("0");
+            storageEngine.SaveDataPostedScore("0");
+            GameObject highScoreText = GameObject.Find("HighScore Text");
+            highScoreText.GetComponent<Text>().text = "High Score: 0";
+        }
+
 
         if (gameEngine)
         {

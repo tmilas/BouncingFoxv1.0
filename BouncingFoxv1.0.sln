@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity-editor", "spine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{6A92A9FD-A138-47B1-E044-B361F3FD5A66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMobileAds.Editor", "GoogleMobileAds.Editor.csproj", "{C0DD53B9-73AB-2C98-5553-7E51749818F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{6A92A9FD-A138-47B1-E044-B361F3FD5A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A92A9FD-A138-47B1-E044-B361F3FD5A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A92A9FD-A138-47B1-E044-B361F3FD5A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DD53B9-73AB-2C98-5553-7E51749818F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DD53B9-73AB-2C98-5553-7E51749818F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DD53B9-73AB-2C98-5553-7E51749818F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DD53B9-73AB-2C98-5553-7E51749818F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,9 +9,12 @@ public class StorageEngine : MonoBehaviour
     public string scoreFileName = "GFoxScore.txt";
     public string nickFileName = "GFoxNick.txt";
     public string lifeFileName = "GFoxLife.txt";
+    public string postedScoreFileName = "GFoxPostedScore.txt";
     private string filePathScore = "";
     private string filePathNick = "";
     private string filePathLife = "";
+    private string filePathPostedScore = "";
+    public static string userIdSeperator = "%ZZZ%";
 
     private void Awake()
     {
@@ -28,6 +31,8 @@ public class StorageEngine : MonoBehaviour
         filePathScore = Application.persistentDataPath + "/" + scoreFileName;
         filePathNick = Application.persistentDataPath + "/" + nickFileName;
         filePathLife = Application.persistentDataPath + "/" + lifeFileName;
+        filePathPostedScore = Application.persistentDataPath + "/" + postedScoreFileName;
+
         //Debug.Log("ffff");
         //Debug.Log(filePathNick);
 
@@ -51,6 +56,15 @@ public class StorageEngine : MonoBehaviour
         Writer.Close();
     }
 
+    public void SaveDataPostedScore(string data)
+    {
+        //Data storage
+        var Writer = new StreamWriter(filePathPostedScore);
+        Writer.Write(data);
+        Writer.Flush();
+        Writer.Close();
+    }
+
     public string LoadDataScore()
     {
         //Data acquisition
@@ -65,16 +79,31 @@ public class StorageEngine : MonoBehaviour
         return "";
     }
 
+    public string LoadDataPostedScore()
+    {
+        //Data acquisition
+        if (File.Exists(filePathPostedScore))
+        {
+            var reader = new StreamReader(filePathPostedScore);
+            string data = reader.ReadToEnd();
+            reader.Close();
+            return data;
+        }
+
+        return "";
+    }
+
     public void SaveDataNick(string data)
     {
         //Data storage
         var Writer = new StreamWriter(filePathNick);
-        Writer.Write(data);
+        Debug.Log("SaveDataNick:" + data + userIdSeperator + SystemInfo.deviceUniqueIdentifier);
+        Writer.Write(data + userIdSeperator + SystemInfo.deviceUniqueIdentifier);
         Writer.Flush();
         Writer.Close();
     }
 
-    public string LoadDataNick()
+    public string LoadDataNick(bool getWithUniqueId)
     {
         //Data acquisition
         Debug.Log("qqqqqqq");
@@ -87,6 +116,9 @@ public class StorageEngine : MonoBehaviour
             var reader = new StreamReader(filePathNick);
             string data = reader.ReadToEnd();
             reader.Close();
+            if (!getWithUniqueId)
+                if (data.IndexOf(userIdSeperator)>0)
+                    data = data.Substring(0, data.IndexOf(userIdSeperator));
             return data;
         }
 
