@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = System.Random;
 
 public class GameEngine : MonoBehaviour
 {
@@ -60,8 +61,12 @@ public class GameEngine : MonoBehaviour
         //highScore = 0;
 
         //Show help screen on first play
-        if(highScore == 0)
+        if(storageEngine.LoadHelpShowed().Equals(""))
         {
+            Random rnd = new Random();
+            String playerName = "Player" + rnd.Next(1000000).ToString();
+            storageEngine.SaveDataNick(playerName);
+            storageEngine.SaveNickChangeCnt("0");
             StartCoroutine(ShowHelpOnStart());
         }
 

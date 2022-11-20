@@ -10,10 +10,16 @@ public class StorageEngine : MonoBehaviour
     public string nickFileName = "GFoxNick.txt";
     public string lifeFileName = "GFoxLife.txt";
     public string postedScoreFileName = "GFoxPostedScore.txt";
+    public string helpShowedFileName = "GFoxHelpShowed.txt";
+    public string nickChangeCntFileName = "GFoxNickChangeCnt.txt";
+
     private string filePathScore = "";
     private string filePathNick = "";
     private string filePathLife = "";
     private string filePathPostedScore = "";
+    private string filePathHelpShowed;
+    private string filePathNickChangeCnt;
+
     public static string userIdSeperator = "%ZZZ%";
 
     private void Awake()
@@ -32,6 +38,11 @@ public class StorageEngine : MonoBehaviour
         filePathNick = Application.persistentDataPath + "/" + nickFileName;
         filePathLife = Application.persistentDataPath + "/" + lifeFileName;
         filePathPostedScore = Application.persistentDataPath + "/" + postedScoreFileName;
+        filePathHelpShowed = Application.persistentDataPath + "/" + helpShowedFileName;
+        filePathNickChangeCnt = Application.persistentDataPath + "/" + nickChangeCntFileName;
+
+        Debug.Log(Application.persistentDataPath);
+
 
         //Debug.Log("ffff");
         //Debug.Log(filePathNick);
@@ -45,6 +56,26 @@ public class StorageEngine : MonoBehaviour
         {
             Directory.CreateDirectory(path);
         }
+    }
+
+    public void SaveHelpShowed(string data)
+    {
+        //Data storage
+        var Writer = new StreamWriter(filePathHelpShowed);
+        Writer.Write(data);
+        Writer.Flush();
+        Writer.Close();
+        Debug.Log("Help Showed Saved2");
+    }
+
+    public void SaveNickChangeCnt(string data)
+    {
+        //Data storage
+        var Writer = new StreamWriter(filePathNickChangeCnt);
+        Writer.Write(data);
+        Writer.Flush();
+        Writer.Close();
+        Debug.Log("Nick Change Cnt Saved2");
     }
 
     public void SaveDataScore(string data)
@@ -63,6 +94,42 @@ public class StorageEngine : MonoBehaviour
         Writer.Write(data);
         Writer.Flush();
         Writer.Close();
+    }
+
+    public string LoadHelpShowed()
+    {
+        Debug.Log("Help Showed Load1");
+
+        //Data acquisition
+        if (File.Exists(filePathHelpShowed))
+        {
+            Debug.Log("Help Showed Load2");
+            var reader = new StreamReader(filePathHelpShowed);
+            string data = reader.ReadToEnd();
+            reader.Close();
+            return data;
+        }
+        Debug.Log("Help Showed Load3");
+
+        return "";
+    }
+
+    public string LoadNickChangeCnt()
+    {
+        Debug.Log("Nick Change Cnt Load1");
+
+        //Data acquisition
+        if (File.Exists(filePathNickChangeCnt))
+        {
+            Debug.Log("Nick Change Cnt Load2");
+            var reader = new StreamReader(filePathNickChangeCnt);
+            string data = reader.ReadToEnd();
+            reader.Close();
+            return data;
+        }
+        Debug.Log("Nick Change Cnt Load3");
+
+        return "";
     }
 
     public string LoadDataScore()

@@ -13,6 +13,7 @@ public class OptionsUIHandler : MonoBehaviour
     [Header("Options Properties")]
     public GameObject optionsMainCanvas;
     public Slider musicSoundSlider;
+    public int nickChangeMaxCnt = 2;
 
     [Header("Help Properties")]
     public GameObject helpCanvas;
@@ -85,11 +86,21 @@ public class OptionsUIHandler : MonoBehaviour
         string nickName = nickNameField.GetComponent<InputField>().text;
         if (!currentNickName.Equals(nickName))
         {
-            storageEngine.SaveDataNick(nickName);
-            storageEngine.SaveDataScore("0");
-            storageEngine.SaveDataPostedScore("0");
-            GameObject highScoreText = GameObject.Find("HighScore Text");
-            highScoreText.GetComponent<Text>().text = "High Score: 0";
+            int nickChangeCnt = int.Parse(storageEngine.LoadNickChangeCnt());
+            if (nickChangeCnt<nickChangeMaxCnt)
+            {
+                storageEngine.SaveDataNick(nickName);
+                storageEngine.SaveDataScore("0");
+                storageEngine.SaveDataPostedScore("0");
+                storageEngine.SaveNickChangeCnt((nickChangeCnt + 1).ToString());
+                GameObject highScoreText = GameObject.Find("HighScore Text");
+                highScoreText.GetComponent<Text>().text = "High Score: 0";
+            }
+            else
+            {
+                Debug.Log("Display Nick Change Error!!!");
+            }
+
         }
 
 
@@ -220,6 +231,9 @@ public class OptionsUIHandler : MonoBehaviour
         helpVideo.gameObject.SetActive(false);
         bgObject.gameObject.SetActive(true);
         helpImage.gameObject.SetActive(true);
+
+        storageEngine.SaveHelpShowed("help screen showed");
+        Debug.Log("Help Showed Saved1");
     }
 
     #endregion
