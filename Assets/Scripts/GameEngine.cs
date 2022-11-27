@@ -45,7 +45,7 @@ public class GameEngine : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("startqq");
+//        Debug.Log("startqq");
         uiHandler = FindObjectOfType<UIHandler>();
         optionsUIHandler = FindObjectOfType<OptionsUIHandler>();
         storageEngine = FindObjectOfType<StorageEngine>();
@@ -85,7 +85,7 @@ public class GameEngine : MonoBehaviour
 
     private void CheckAndPostScore()
     {
-        Debug.Log("CheckAndPostScoreqq");
+//        Debug.Log("CheckAndPostScoreqq");
 
         GetHighScore();
 
@@ -93,14 +93,14 @@ public class GameEngine : MonoBehaviour
 
         if (highScore > 0)
         {
-            Debug.Log("tolgaqq");
-            Debug.Log(highScore);
-            Debug.Log(highPostedScore);
+//            Debug.Log("tolgaqq");
+//            Debug.Log(highScore);
+//            Debug.Log(highPostedScore);
 
 
             if (highScore != highPostedScore)
             {
-                Debug.Log("CheckAndPostScoreqq1");
+ //               Debug.Log("CheckAndPostScoreqq1");
                 PostHighScore(highScore);
             }
         }
@@ -259,14 +259,15 @@ public class GameEngine : MonoBehaviour
 
             SetHighScore();
 
-            Debug.Log("jjj");
+//            Debug.Log("jjj");
 
 
             if (checkLives)
                 StartCoroutine(GoToGameOverScene());
             else
             {
-                SceneManager.LoadScene("Game Over Screen");
+                //SceneManager.LoadScene("Game Over Screen");
+                SceneManager.LoadScene("Start Screen");
                 Time.timeScale = 1;
             }
                 
@@ -310,7 +311,8 @@ public class GameEngine : MonoBehaviour
     IEnumerator GoToGameOverScene()
     {
         yield return new WaitForSeconds(1.6f);
-        SceneManager.LoadScene("Game Over Screen");
+        //SceneManager.LoadScene("Game Over Screen");
+        SceneManager.LoadScene("Start Screen");
     }
 
     public bool IsGameOver()
@@ -394,6 +396,7 @@ public class GameEngine : MonoBehaviour
             if(collectableItem.collectableType == CollectableItem.CollectableType.FastMotion2x ||
                collectableItem.collectableType == CollectableItem.CollectableType.FastMotion3x)
             {
+                Debug.Log("Run fast really");
                 fox.RunFast();
                 scoreFactor = 2;
             }

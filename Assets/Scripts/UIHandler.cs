@@ -134,7 +134,7 @@ public class UIHandler : MonoBehaviour
         if (gameEngine)
             gameEngine.SetGameOver(true, false);
 
-        Debug.Log("hhh");
+        //Debug.Log("hhh");
     }
 
     public void ShowContinueGame(bool isShow)

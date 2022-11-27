@@ -35,7 +35,7 @@ public class Fox : MonoBehaviour
     [SerializeField] [Range(0, 1)] float slideSoundVolume = 0.8f;
 
     [SerializeField] AudioClip fastRunSound;
-    [SerializeField] [Range(0, 1)] float fastRunSoundVolume = 0.8f;
+    //[SerializeField] [Range(0, 1)] float fastRunSoundVolume = 0.8f;
 
     //Cache parameters
     Rigidbody2D myRigidBody;
@@ -205,11 +205,12 @@ public class Fox : MonoBehaviour
         }
         else
         {
-            //Debug.Log("istouched, isjumped: " + isJumped);
             isTouched = true;
 
             if (isJumped)
             {
+                //Debug.Log("istouched, isjumped: " + isJumped + " isRunningFast: " + isRunningFast);
+
                 myAnimator.SetTrigger("isTouched");
                 isJumped = false;
 
@@ -268,7 +269,8 @@ public class Fox : MonoBehaviour
         }
 
         if(isSliding)
-        { 
+        {
+            Debug.Log("isSliding " + isSliding);
             isSliding = false;
 
             myAnimator.SetTrigger("isSlide");
@@ -339,6 +341,8 @@ public class Fox : MonoBehaviour
 
     public void RunFast()
     {
+        //Debug.Log("Run fast");
+
         isRunningFast = true;
         myAnimator.SetTrigger("isRunFast");
         myAnimator.SetBool("fastOrNormal", false);
@@ -351,6 +355,8 @@ public class Fox : MonoBehaviour
 
     public void RunNormal()
     {
+        //Debug.Log("Run normal");
+
         isRunningFast = false;
         if(myAnimator)
         { 
