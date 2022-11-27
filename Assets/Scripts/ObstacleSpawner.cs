@@ -97,7 +97,7 @@ public class ObstacleSpawner : MonoBehaviour
     private void CreateObstacle(int currentLevelIndex)
     {
         int randomObstacleIndex;
-        Debug.Log("CreateObsCurrLevel:" + currentLevelIndex.ToString());
+//        Debug.Log("CreateObsCurrLevel:" + currentLevelIndex.ToString());
         LevelProps currentLevel = levelList[currentLevelIndex - 1].GetComponent<LevelProps>();
         randomObstacleIndex = Random.Range(0, currentLevel.levelObstacles.Length);
         //Vector2 creationPosition = new Vector2(transform.position.x, currentLevel.obstaclePosY[randomObstacleIndex]);
@@ -141,7 +141,7 @@ public class ObstacleSpawner : MonoBehaviour
                 potionsCreated[currentLevelIndex] = (int)potionsCreated[currentLevelIndex] + 1;
             else
                 potionsCreated.Add(currentLevelIndex, (int)1);
-            Debug.Log("xxxxx:" + potionsCreated[currentLevelIndex].ToString());
+//            Debug.Log("xxxxx:" + potionsCreated[currentLevelIndex].ToString());
         }
 
         newObstacle.transform.parent = mainPath.transform;

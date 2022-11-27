@@ -6,7 +6,8 @@ public class LifeEngine : MonoBehaviour
     public static LifeEngine instance;
 
     private const int MAX_LIVES = 5;
-    private static TimeSpan newLifeInterval = new TimeSpan(0, 2, 0);
+    private static TimeSpan newLifeInterval = new TimeSpan(0, 1, 0);
+    //private static TimeSpan newLifeInterval = new TimeSpan(0, 0, 30);
 
     private StorageEngine storageEngine;
     private NavigationHandler navHandler;
@@ -16,6 +17,7 @@ public class LifeEngine : MonoBehaviour
     private int livesLeft = MAX_LIVES;
     private bool isLimitless = false;
     private DateTime limitEndDate = DateTime.Now;
+//    private bool isTimerActive = false;
 
     private void Awake()
     {
@@ -37,10 +39,12 @@ public class LifeEngine : MonoBehaviour
 
     void Update()
     {
+        bool isIntervalPassed = false;
+
         if (livesLeft < MAX_LIVES || (isLimitless && DateTime.Now <= limitEndDate))
         {
             TimeSpan t = DateTime.Now - lostLifeTimeStamp;
-            int amountOfIntervalsPassed = 0;
+            int amountOfIntervalsPassed;
 
             try
             {
@@ -49,9 +53,12 @@ public class LifeEngine : MonoBehaviour
 
                 if (amountOfIntervalsPassed > 0)
                 {
-                    //Debug.Log("On update : Lives left: " + livesLeft.ToString() + ", new lives: " + amountOfIntervalsPassed.ToString());
+                    //Debug.Log("On update : Lives left: " + livesLeft.ToString() + ", new lives: " + amountOfIntervalsPassed.ToString()+ " t= " + t.Seconds);
                     livesLeft = livesLeft + amountOfIntervalsPassed;
-                    lostLifeTimeStamp = DateTime.Now;
+
+                    lostLifeTimeStamp = lostLifeTimeStamp.AddSeconds(amountOfIntervalsPassed * newLifeInterval.TotalSeconds);
+
+                    isIntervalPassed = true;
 
                     if (livesLeft >= MAX_LIVES)
                     {
@@ -63,8 +70,16 @@ public class LifeEngine : MonoBehaviour
 
                 if (livesLeft < MAX_LIVES)
                 {
-                    TimeSpan tempTime = newLifeInterval - t + TimeSpan.FromSeconds(1);
-                    ShowTime(tempTime);
+                    TimeSpan tempTime = newLifeInterval - t;
+                    //Debug.Log("timespans - " + tempTime.Seconds + "passed time - " + t.Seconds);
+                    int tempSeconds = tempTime.Seconds;
+
+                    if (startGameCanvas && (isIntervalPassed || !startGameCanvas.IsCounterActive()))
+                    {
+                        //Debug.Log("timespans in " + newLifeInterval.Seconds + " - " + tempTime.Seconds);
+
+                        startGameCanvas.ShowLifeCounter(tempSeconds);
+                    }
                 }
             }
             catch (OverflowException)
@@ -103,58 +118,43 @@ public class LifeEngine : MonoBehaviour
 
     public void DecideStart()
     {
-        Debug.Log("TOLGA11");
+        //Debug.Log("TOLGA11");
         if(livesLeft>0)
         {
-            Debug.Log("TOLGA22");
+            //Debug.Log("TOLGA22");
 
-            livesLeft--;
+            
 
-            Debug.Log(livesLeft + "1");
-            if (livesLeft < MAX_LIVES)
+            //Debug.Log(livesLeft + "1");
+            if (livesLeft >= MAX_LIVES)
             {
-                Debug.Log(livesLeft + "2");
-                if (startGameCanvas && !startGameCanvas.IsLifeTimesLeftActive())
+                //Debug.Log(livesLeft + "2");
+                if (startGameCanvas)
                 {
-                    Debug.Log(livesLeft + "3");
+                    //Debug.Log(livesLeft + "3");
                     lostLifeTimeStamp = DateTime.Now;
                 }
             }
 
+            livesLeft--;
+
             if (navHandler)
             {
-                Debug.Log("TOLGA33");
+                //Debug.Log("TOLGA33");
                 Time.timeScale = 1;
+                //isTimerActive = false;
                 navHandler.StartGame();
             }
 
-            Debug.Log(livesLeft + "4");
+            //Debug.Log(livesLeft + "4");
 
             SaveLivesToStorage();
-        }
-    }
-
-    private void ShowTime(TimeSpan timeSpan)
-    {
-        if(startGameCanvas)
-        {
-            if (!startGameCanvas.IsLifeTimesLeftActive())
-            {
-                startGameCanvas.SetLifeTimesLeftActive(true);
-            }
-
-            startGameCanvas.ShowLifeCounter(timeSpan);
         }
     }
 
     private void FullLives()
     {
         livesLeft = MAX_LIVES;
-
-        if(startGameCanvas)
-        {
-            startGameCanvas.SetLifeTimesLeftActive(false);
-        }
     }
 
     private void GetLivesFromStorage()
