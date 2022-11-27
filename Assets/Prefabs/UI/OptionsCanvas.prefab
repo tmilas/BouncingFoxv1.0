@@ -98,7 +98,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &479919962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -981,6 +981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionsMainCanvas: {fileID: 1218027245893776244}
   musicSoundSlider: {fileID: 2904427439165175470}
+  nickChangeMaxCnt: 2
   helpCanvas: {fileID: 1111184333822194620}
   bgObject: {fileID: 1111184333652244729}
   helpNextButton: {fileID: 1111184333238722370}
