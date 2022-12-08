@@ -67,13 +67,18 @@
     <Compile Include="Assets/DamageNumbersPro/Scripts/FadeSettings.cs" />
     <Compile Include="Assets/LeaderBoard_Component/Scripts/LB_StoreScore.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
+    <Compile Include="Assets/Scripts/IAPEventHandler.cs" />
     <Compile Include="Assets/LeaderBoard_Component/Scripts/LB_Entry.cs" />
+    <Compile Include="Assets/Scripts/RestAPIClient.cs" />
     <Compile Include="Assets/Scripts/LevelProps.cs" />
     <Compile Include="Assets/Scripts/StorageEngine.cs" />
     <Compile Include="Assets/LeaderBoard_Component/Scripts/Demo/UI_DemoLeaderboard.cs" />
+    <Compile Include="Assets/Scripts/UnityPurchasing/generated/AppleTangle.cs" />
     <Compile Include="Assets/Scripts/StartGameCanvas.cs" />
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/Scripts/CollectableItem.cs" />
+    <Compile Include="Assets/Scripts/LeaderBoardEntry.cs" />
+    <Compile Include="Assets/Scripts/InitializeAdsScript.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
     <Compile Include="Assets/Scripts/LanguageSupport.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
@@ -82,6 +87,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
     <Compile Include="Assets/DamageNumbersPro/Scripts/DigitSettings.cs" />
     <Compile Include="Assets/LeaderBoard_Component/Scripts/LB_Controller.cs" />
+    <Compile Include="Assets/Scripts/UnityPurchasing/generated/AppleStoreKitTestTangle.cs" />
     <Compile Include="Assets/Scripts/TextSpawner.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
     <Compile Include="Assets/DamageNumbersPro/Scripts/PerspectiveSettings.cs" />
@@ -117,15 +123,18 @@
     <Compile Include="Assets/DamageNumbersPro/Demo/Script/DNP_Gold.cs" />
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/AnimationSpriteDemo.cs" />
     <Compile Include="Assets/dreamlo/dreamloLeaderBoard.cs" />
+    <Compile Include="Assets/Scripts/VideoPlayerHandler.cs" />
     <Compile Include="Assets/LeaderBoard_Component/Scripts/Demo/LeaderBoardEntrySizeFitter.cs" />
     <Compile Include="Assets/LeaderBoard_Component/Scripts/Demo/UIDemoLeaderboardEntry.cs" />
     <Compile Include="Assets/DamageNumbersPro/Demo/Script/DNP_Player.cs" />
+    <Compile Include="Assets/Scripts/UnityPurchasing/generated/GooglePlayTangle.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
     <Compile Include="Assets/Scripts/BGScroller.cs" />
     <Compile Include="Assets/DamageNumbersPro/Scripts/MoveType.cs" />
     <Compile Include="Assets/dreamlo/LeaderBoardSample.cs" />
     <Compile Include="Assets/DamageNumbersPro/Scripts/TextSettings.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
+    <Compile Include="Assets/Scripts/LifeEngine.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
@@ -134,23 +143,23 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
-    <Compile Include="Assets/Scripts/LoadBoard.cs" />
-    <Compile Include="Assets/Scripts/GameOverCanvas.cs" />
     <Compile Include="Assets/Scripts/LeaderBoard.cs" />
+    <Compile Include="Assets/Scripts/LoadBoard.cs" />
     <Compile Include="Assets/DamageNumbersPro/Demo/Script/DNP_DemoCamera.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
     <Compile Include="Assets/Scripts/OptionsUIHandler.cs" />
-    <Compile Include="Assets/Scripts/VideoPlayerHandler.cs" />
-    <Compile Include="Assets/Scripts/IAPEventHandler.cs" />
-    <Compile Include="Assets/Scripts/UnityPurchasing/generated/GooglePlayTangle.cs" />
-    <Compile Include="Assets/Scripts/UnityPurchasing/generated/AppleTangle.cs" />
-    <Compile Include="Assets/Scripts/UnityPurchasing/generated/AppleStoreKitTestTangle.cs" />
-    <Compile Include="Assets/Scripts/LifeEngine.cs" />
-    <Compile Include="Assets/Scripts/InitializeAdsScript.cs" />
-    <Compile Include="Assets/Scripts/RestAPIClient.cs" />
-    <Compile Include="Assets/Scripts/LeaderBoardEntry.cs" />
+    <Compile Include="Assets/Countdown/Example/Scripts/bl_ExampleCountdownUse.cs" />
+    <Compile Include="Assets/Countdown/Scripts/Runtime/UI/bl_CountdownText.cs" />
+    <Compile Include="Assets/Countdown/Example/Scripts/bl_ExampleCountdownSwitcher.cs" />
+    <Compile Include="Assets/Countdown/Scripts/Internal/Base/bl_CountdownUIBase.cs" />
+    <Compile Include="Assets/Countdown/Scripts/Runtime/Misc/bl_AnimationPlayRewind.cs" />
+    <Compile Include="Assets/Countdown/Scripts/Runtime/Main/bl_CountdownAudio.cs" />
+    <Compile Include="Assets/Countdown/Scripts/Runtime/UI/bl_CountdownUI.cs" />
+    <Compile Include="Assets/Countdown/Scripts/Runtime/Main/bl_Countdown.cs" />
+    <Compile Include="Assets/Countdown/Scripts/Runtime/UI/bl_UGUIText.cs" />
+    <Compile Include="Assets/Countdown/Scripts/Runtime/UI/bl_TMPText.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -182,6 +191,7 @@
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
+     <None Include="Assets/Countdown/ReadMe.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
      <None Include="Assets/JsonDotNet/Assemblies/AOT/Newtonsoft.Json.dll" />
@@ -414,20 +424,20 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="GoogleMobileAds.Core">
-      <HintPath>Assets/GoogleMobileAds/GoogleMobileAds.Core.dll</HintPath>
-    </Reference>
     <Reference Include="GoogleMobileAds">
       <HintPath>Assets/GoogleMobileAds/GoogleMobileAds.dll</HintPath>
     </Reference>
     <Reference Include="GoogleMobileAds.Unity">
       <HintPath>Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll</HintPath>
     </Reference>
-    <Reference Include="GoogleMobileAds.Common">
-      <HintPath>Assets/GoogleMobileAds/GoogleMobileAds.Common.dll</HintPath>
+    <Reference Include="GoogleMobileAds.Core">
+      <HintPath>Assets/GoogleMobileAds/GoogleMobileAds.Core.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleMobileAds.Common">
+      <HintPath>Assets/GoogleMobileAds/GoogleMobileAds.Common.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2020.3.6f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -780,8 +790,8 @@
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+    <Reference Include="Purchasing.Common">
+      <HintPath>Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
       <HintPath>Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
@@ -794,6 +804,12 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
       <HintPath>Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
@@ -809,6 +825,12 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
@@ -840,6 +862,12 @@
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -852,6 +880,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
@@ -861,41 +892,17 @@
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Purchasing.Common">
-      <HintPath>Library/ScriptAssemblies/Purchasing.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityCore">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.Stores">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityStub">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityStub.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.Codeless">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Monetization">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
+    <Reference Include="Unity.2D.Common.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

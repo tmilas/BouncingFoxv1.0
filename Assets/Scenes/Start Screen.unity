@@ -2285,6 +2285,46 @@ PrefabInstance:
       propertyPath: onPurchaseComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 735975277}
+    - target: {fileID: 1226504838, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226504840, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226504840, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226504840, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226504840, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226504840, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowAds
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226504840, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226504840, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: InitializeAdsScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1226504840, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1111184333822194620, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1111184334188366082, guid: 26b035872ceb34c3b917e204716c753d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
