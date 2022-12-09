@@ -6,24 +6,35 @@ using GoogleMobileAds.Api;
 public class InitializeAdsScript : MonoBehaviour,IUnityAdsLoadListener,IUnityAdsShowListener,IUnityAdsInitializationListener
 {
 
-    string gameIdAndroid = "4589101";
-    string gameIdIOS = "4589100";
+    string gameIdAndroid_Unity = "4589101";
+    string gameIdIOS_Unity = "4589100";
+
+    string gameIdAndroid_Google = "ca-app-pub-7509485190589045/4874914977";
+    string gameIdIOS_Google = "ca-app-pub-7509485190589045/8239444916";
 
     bool testMode = true;
     bool unityAdReady = false;
     bool googleAdReady = false;
 
     InterstitialAd googleAd;
-    string _adUnitId;
+    string adUnitIdUnity;
+    string adUnitIdGoogle;
 
     void Awake()
     {
         // Get the Ad Unit ID for the current platform:
-        _adUnitId = (Application.platform == RuntimePlatform.IPhonePlayer)
-            ? gameIdIOS
-            : gameIdAndroid;
+        adUnitIdUnity = (Application.platform == RuntimePlatform.IPhonePlayer)
+            ? gameIdIOS_Unity
+            : gameIdAndroid_Unity;
 
-        _adUnitId = gameIdAndroid;
+        adUnitIdUnity = gameIdAndroid_Unity;
+
+        adUnitIdGoogle = (Application.platform == RuntimePlatform.IPhonePlayer)
+           ? gameIdIOS_Google
+           : gameIdAndroid_Google;
+
+        adUnitIdGoogle = gameIdAndroid_Google;
+
         Debug.Log("Platform:" + Application.platform);
     }
 
@@ -37,12 +48,13 @@ public class InitializeAdsScript : MonoBehaviour,IUnityAdsLoadListener,IUnityAds
         //Unity Ads
         //Advertisement.Initialize(gameId, testMode);
         //Advertisement.AddListener(this);
-        Advertisement.Initialize(_adUnitId, true, this);
+        Advertisement.Initialize(adUnitIdUnity, true, this);
 
 
         //Google Ads
         MobileAds.Initialize((InitializationStatus obj) => { });
-        googleAd = new InterstitialAd("ca-app-pub-3940256099942544/1033173712");
+        //googleAd = new InterstitialAd("ca-app-pub-3940256099942544/1033173712");
+        googleAd = new InterstitialAd(adUnitIdGoogle);
         googleAd.OnAdLoaded += GoogleAdLoaded;
         googleAd.OnAdDidRecordImpression += GoogleAdRecImp;
         googleAd.OnAdClosed += GoogleAdClosed;
