@@ -9,8 +9,8 @@ public class InitializeAdsScript : MonoBehaviour,IUnityAdsLoadListener,IUnityAds
     string gameIdAndroid_Unity = "4589101";
     string gameIdIOS_Unity = "4589100";
 
-    string gameIdAndroid_Google = "ca-app-pub-7509485190589045/4874914977";
-    string gameIdIOS_Google = "ca-app-pub-7509485190589045/8239444916";
+    string gameIdAndroid_Google = "ca-app-pub-7509485190589045~9373661591";
+    string gameIdIOS_Google = "ca-app-pub-7509485190589045~5353729379";
 
     bool testMode = true;
     bool unityAdReady = false;
@@ -54,13 +54,15 @@ public class InitializeAdsScript : MonoBehaviour,IUnityAdsLoadListener,IUnityAds
         //Google Ads
         MobileAds.Initialize((InitializationStatus obj) => { });
         //googleAd = new InterstitialAd("ca-app-pub-3940256099942544/1033173712");
-        googleAd = new InterstitialAd(adUnitIdGoogle);
+
+        /*googleAd = new InterstitialAd(adUnitIdGoogle);
+        googleAd = new InterstitialAd()
         googleAd.OnAdLoaded += GoogleAdLoaded;
         googleAd.OnAdDidRecordImpression += GoogleAdRecImp;
         googleAd.OnAdClosed += GoogleAdClosed;
         AdRequest request = new AdRequest.Builder().Build();
         // Load the interstitial with the request.
-        googleAd.LoadAd(request); 
+        googleAd.LoadAd(request); */
 
         StartCoroutine(ShowAdsWhenReady());
 
