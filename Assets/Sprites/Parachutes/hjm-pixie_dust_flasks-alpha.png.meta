@@ -318,7 +318,7 @@ TextureImporter:
       213: 823845723918219275
     second: hjm-pixie_dust_flasks-alpha_104
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -339,6 +339,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -347,9 +348,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -377,6 +378,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -404,6 +406,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2632,6 +2646,112 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      hjm-pixie_dust_flasks-alpha_0: 5511282448070908222
+      hjm-pixie_dust_flasks-alpha_1: -8972378160654493810
+      hjm-pixie_dust_flasks-alpha_10: -6812019293206297273
+      hjm-pixie_dust_flasks-alpha_100: -2628183179338286231
+      hjm-pixie_dust_flasks-alpha_101: -4528594198289973782
+      hjm-pixie_dust_flasks-alpha_102: -2711649526769804996
+      hjm-pixie_dust_flasks-alpha_103: 3815720194095886245
+      hjm-pixie_dust_flasks-alpha_104: 823845723918219275
+      hjm-pixie_dust_flasks-alpha_11: 1576585391711791578
+      hjm-pixie_dust_flasks-alpha_12: -2790280247191970105
+      hjm-pixie_dust_flasks-alpha_13: 4826676316129907834
+      hjm-pixie_dust_flasks-alpha_14: 5470614761262451082
+      hjm-pixie_dust_flasks-alpha_15: 7838975877577934494
+      hjm-pixie_dust_flasks-alpha_16: 8574129797420691596
+      hjm-pixie_dust_flasks-alpha_17: 8701286520800982014
+      hjm-pixie_dust_flasks-alpha_18: -952793142352816595
+      hjm-pixie_dust_flasks-alpha_19: -1045276885283243856
+      hjm-pixie_dust_flasks-alpha_2: 3321427043403668126
+      hjm-pixie_dust_flasks-alpha_20: 168277533922151313
+      hjm-pixie_dust_flasks-alpha_21: -5879612203937536120
+      hjm-pixie_dust_flasks-alpha_22: 8572419114464207415
+      hjm-pixie_dust_flasks-alpha_23: 3787418930075543750
+      hjm-pixie_dust_flasks-alpha_24: 9176785338517871794
+      hjm-pixie_dust_flasks-alpha_25: -890930786447175756
+      hjm-pixie_dust_flasks-alpha_26: 2617055654387989092
+      hjm-pixie_dust_flasks-alpha_27: 1918834654982827868
+      hjm-pixie_dust_flasks-alpha_28: -3274475525184993796
+      hjm-pixie_dust_flasks-alpha_29: -8915843116726089288
+      hjm-pixie_dust_flasks-alpha_3: 2721951255477376245
+      hjm-pixie_dust_flasks-alpha_30: -8174703584228051288
+      hjm-pixie_dust_flasks-alpha_31: 8628553270801254272
+      hjm-pixie_dust_flasks-alpha_32: 8188620962739817098
+      hjm-pixie_dust_flasks-alpha_33: -6788417769184530366
+      hjm-pixie_dust_flasks-alpha_34: 1073448655830640182
+      hjm-pixie_dust_flasks-alpha_35: 6700458972704022583
+      hjm-pixie_dust_flasks-alpha_36: 8181175013190475220
+      hjm-pixie_dust_flasks-alpha_37: -611758938239096789
+      hjm-pixie_dust_flasks-alpha_38: 8759800538394274322
+      hjm-pixie_dust_flasks-alpha_39: -2919423947158298865
+      hjm-pixie_dust_flasks-alpha_4: -3614444396364050923
+      hjm-pixie_dust_flasks-alpha_40: 279341170986450893
+      hjm-pixie_dust_flasks-alpha_41: -5277236248845224320
+      hjm-pixie_dust_flasks-alpha_42: 1147716227385295582
+      hjm-pixie_dust_flasks-alpha_43: 6229968888720007711
+      hjm-pixie_dust_flasks-alpha_44: -6674548081838431112
+      hjm-pixie_dust_flasks-alpha_45: 2340727239606463277
+      hjm-pixie_dust_flasks-alpha_46: 2139149876570198926
+      hjm-pixie_dust_flasks-alpha_47: 3534010556274680967
+      hjm-pixie_dust_flasks-alpha_48: 9206462130306614346
+      hjm-pixie_dust_flasks-alpha_49: 8662686904054977279
+      hjm-pixie_dust_flasks-alpha_5: 7159610873524576396
+      hjm-pixie_dust_flasks-alpha_50: 4126911958022890281
+      hjm-pixie_dust_flasks-alpha_51: 554750983535110021
+      hjm-pixie_dust_flasks-alpha_52: -2262744399928237473
+      hjm-pixie_dust_flasks-alpha_53: 8186212236010092009
+      hjm-pixie_dust_flasks-alpha_54: 6970382158441717184
+      hjm-pixie_dust_flasks-alpha_55: -3029350725266406902
+      hjm-pixie_dust_flasks-alpha_56: -3935112769365242737
+      hjm-pixie_dust_flasks-alpha_57: -9041380876498539650
+      hjm-pixie_dust_flasks-alpha_58: 3072365712129724919
+      hjm-pixie_dust_flasks-alpha_59: -2470391538686787831
+      hjm-pixie_dust_flasks-alpha_6: -2649401056458149623
+      hjm-pixie_dust_flasks-alpha_60: -4490212706191751397
+      hjm-pixie_dust_flasks-alpha_61: 4476559360780140775
+      hjm-pixie_dust_flasks-alpha_62: -4840692687523857670
+      hjm-pixie_dust_flasks-alpha_63: 7521019478519603213
+      hjm-pixie_dust_flasks-alpha_64: 5177791803349799803
+      hjm-pixie_dust_flasks-alpha_65: 4634975805548216039
+      hjm-pixie_dust_flasks-alpha_66: 6590086696366593255
+      hjm-pixie_dust_flasks-alpha_67: 7781870363800709139
+      hjm-pixie_dust_flasks-alpha_68: 7343700349464870987
+      hjm-pixie_dust_flasks-alpha_69: 3197152930402950946
+      hjm-pixie_dust_flasks-alpha_7: 8007879529550918657
+      hjm-pixie_dust_flasks-alpha_70: 1718785722878937829
+      hjm-pixie_dust_flasks-alpha_71: -4748659657343325686
+      hjm-pixie_dust_flasks-alpha_72: 3087345487791132895
+      hjm-pixie_dust_flasks-alpha_73: -5347940284232105300
+      hjm-pixie_dust_flasks-alpha_74: 7597930963276762297
+      hjm-pixie_dust_flasks-alpha_75: -5154991599987403956
+      hjm-pixie_dust_flasks-alpha_76: 5047449155582781239
+      hjm-pixie_dust_flasks-alpha_77: -7959631101940187480
+      hjm-pixie_dust_flasks-alpha_78: -9031835667285599485
+      hjm-pixie_dust_flasks-alpha_79: -9070282746175928973
+      hjm-pixie_dust_flasks-alpha_8: -6058659173388542530
+      hjm-pixie_dust_flasks-alpha_80: 4203734595210454705
+      hjm-pixie_dust_flasks-alpha_81: -7501428356650410894
+      hjm-pixie_dust_flasks-alpha_82: 5039331484674149686
+      hjm-pixie_dust_flasks-alpha_83: -5913821869921037694
+      hjm-pixie_dust_flasks-alpha_84: -2459879871656182108
+      hjm-pixie_dust_flasks-alpha_85: -4589436630752190280
+      hjm-pixie_dust_flasks-alpha_86: -6728374431780052711
+      hjm-pixie_dust_flasks-alpha_87: 6528052633236516892
+      hjm-pixie_dust_flasks-alpha_88: -3131475537106730349
+      hjm-pixie_dust_flasks-alpha_89: -2206039588503556424
+      hjm-pixie_dust_flasks-alpha_9: -1989818596166350262
+      hjm-pixie_dust_flasks-alpha_90: 8511011547570586105
+      hjm-pixie_dust_flasks-alpha_91: -7180326290590247301
+      hjm-pixie_dust_flasks-alpha_92: -4959228853736364619
+      hjm-pixie_dust_flasks-alpha_93: 8754922715288385918
+      hjm-pixie_dust_flasks-alpha_94: -6652138549001207616
+      hjm-pixie_dust_flasks-alpha_95: 6718566325134315463
+      hjm-pixie_dust_flasks-alpha_96: -6908769091960242470
+      hjm-pixie_dust_flasks-alpha_97: 3509305618380911175
+      hjm-pixie_dust_flasks-alpha_98: 8955605343513831050
+      hjm-pixie_dust_flasks-alpha_99: -3566732131307190516
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
