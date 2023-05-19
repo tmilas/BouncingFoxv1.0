@@ -259,14 +259,12 @@ public class GameEngine : MonoBehaviour
 
             SetHighScore();
 
-//            Debug.Log("jjj");
-
+            GameOverModel.SetGameOver(totalPoints, totalCoins);
 
             if (checkLives)
                 StartCoroutine(GoToGameOverScene());
             else
             {
-                //SceneManager.LoadScene("Game Over Screen");
                 SceneManager.LoadScene("Start Screen");
                 Time.timeScale = 1;
             }
