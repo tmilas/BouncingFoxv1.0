@@ -43,8 +43,6 @@ public class OptionsUIHandler : MonoBehaviour
 
         langSupport = FindObjectOfType<LanguageSupport>();
 
-        helpCanvas.gameObject.SetActive(false);
-
         gameCanvas = FindObjectOfType<UIHandler>();
 
         startGameCanvas = FindObjectOfType<StartGameCanvas>();
