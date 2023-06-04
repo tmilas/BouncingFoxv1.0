@@ -58,7 +58,6 @@
   <ItemGroup>
     <Compile Include="Assets/Countdown/Scripts/Internal/Editor/CountdownDoc.cs" />
     <Compile Include="Assets/DamageNumbersPro/Scripts/Editor/DamageNumberEditor.cs" />
-    <Compile Include="Assets\Scripts\ApplicationModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Countdown/Scripts/Internal/Editor/TutorialWizardCountdown.dll" />

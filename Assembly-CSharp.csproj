@@ -102,6 +102,7 @@
     <Compile Include="Assets/Countdown/Scripts/Runtime/UI/bl_UGUIText.cs" />
     <Compile Include="Assets/Scripts/BGScroller.cs" />
     <Compile Include="Assets/DamageNumbersPro/Scripts/MoveType.cs" />
+    <Compile Include="Assets/Scripts/GameOverModel.cs" />
     <Compile Include="Assets/DamageNumbersPro/Scripts/TextSettings.cs" />
     <Compile Include="Assets/Scripts/LifeEngine.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
@@ -121,6 +122,7 @@
     <Compile Include="Assets/Countdown/Example/Scripts/bl_ExampleCountdownSwitcher.cs" />
     <Compile Include="Assets/Scripts/StorageEngine.cs" />
     <Compile Include="Assets/Countdown/Scripts/Internal/Base/bl_CountdownUIBase.cs" />
+    <Compile Include="Assets/Scripts/GameOverCanvas.cs" />
     <Compile Include="Assets/Scripts/CollectableItem.cs" />
     <Compile Include="Assets/Scripts/InitializeAdsScript.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
@@ -157,8 +159,6 @@
     <Compile Include="Assets/DamageNumbersPro/Demo/Script/DNP_DemoCamera.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Scripts/OptionsUIHandler.cs" />
-    <Compile Include="Assets/Scripts/GameOverCanvas.cs" />
-    <Compile Include="Assets/Scripts/GameOverModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
