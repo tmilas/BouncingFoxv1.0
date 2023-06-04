@@ -53,7 +53,7 @@
     <UnityVersion>2021.3.20f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/DamageNumbersPro/Scripts/VelocitySettings.cs" />
@@ -94,6 +94,7 @@
     <Compile Include="Assets/DamageNumbersPro/Scripts/LerpSettings.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
     <Compile Include="Assets/Scripts/GameEngine.cs" />
+    <Compile Include="Assets/dreamlo/dreamloPromoCode.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets/LeaderBoard_Component/Scripts/Demo/LeaderBoardEntrySizeFitter.cs" />
@@ -102,6 +103,8 @@
     <Compile Include="Assets/Countdown/Scripts/Runtime/UI/bl_UGUIText.cs" />
     <Compile Include="Assets/Scripts/BGScroller.cs" />
     <Compile Include="Assets/DamageNumbersPro/Scripts/MoveType.cs" />
+    <Compile Include="Assets/dreamlo/LeaderBoardSample.cs" />
+    <Compile Include="Assets/Scripts/GameOverModel.cs" />
     <Compile Include="Assets/DamageNumbersPro/Scripts/TextSettings.cs" />
     <Compile Include="Assets/Scripts/LifeEngine.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
@@ -121,6 +124,7 @@
     <Compile Include="Assets/Countdown/Example/Scripts/bl_ExampleCountdownSwitcher.cs" />
     <Compile Include="Assets/Scripts/StorageEngine.cs" />
     <Compile Include="Assets/Countdown/Scripts/Internal/Base/bl_CountdownUIBase.cs" />
+    <Compile Include="Assets/Scripts/GameOverCanvas.cs" />
     <Compile Include="Assets/Scripts/CollectableItem.cs" />
     <Compile Include="Assets/Scripts/InitializeAdsScript.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
@@ -143,6 +147,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
     <Compile Include="Assets/DamageNumbersPro/Demo/Script/DNP_Gold.cs" />
     <Compile Include="Assets/Spine 2D Foxy Character Assets/Scripts/AnimationSpriteDemo.cs" />
+    <Compile Include="Assets/dreamlo/dreamloLeaderBoard.cs" />
     <Compile Include="Assets/Scripts/VideoPlayerHandler.cs" />
     <Compile Include="Assets/LeaderBoard_Component/Scripts/Demo/UIDemoLeaderboardEntry.cs" />
     <Compile Include="Assets/Scripts/UnityPurchasing/generated/GooglePlayTangle.cs" />
@@ -157,8 +162,6 @@
     <Compile Include="Assets/DamageNumbersPro/Demo/Script/DNP_DemoCamera.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
     <Compile Include="Assets/Scripts/OptionsUIHandler.cs" />
-    <Compile Include="Assets/Scripts/GameOverCanvas.cs" />
-    <Compile Include="Assets/Scripts/GameOverModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -174,6 +177,7 @@
     <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton OFL.txt" />
     <None Include="Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
+    <None Include="Assets/Tiny Fantasy Icons/README.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets/GoogleMobileAds/GoogleMobileAds.Core.dll" />
@@ -190,8 +194,10 @@
     <None Include="Assets/GoogleMobileAds/GoogleMobileAds.Ump.dll" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
+    <None Include="Assets/Kenney/Particle samples/License.txt" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
     <None Include="Assets/GoogleMobileAds/GoogleMobileAds.Unity.dll" />
+    <None Include="Assets/dreamlo/README_FIRST.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets/GoogleMobileAds/GoogleMobileAds.Android.dll" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
@@ -478,12 +484,6 @@
     </Reference>
     <Reference Include="GoogleMobileAds.Ump">
       <HintPath>Assets/GoogleMobileAds/GoogleMobileAds.Ump.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>/Applications/Unity/Hub/Editor/2021.3.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>/Applications/Unity/Hub/Editor/2021.3.20f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.20f1/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll</HintPath>
