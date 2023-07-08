@@ -40,7 +40,7 @@ public class RestAPIClient : MonoBehaviour
         bool requestFinished = false;
         bool requestErrorOccurred = false;
 
-        UnityWebRequest request = UnityWebRequest.Get(uri);
+        using UnityWebRequest request = UnityWebRequest.Get(uri) ;
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();
 
@@ -49,6 +49,7 @@ public class RestAPIClient : MonoBehaviour
         {
             Debug.Log("Something went wrong, and returned error: " + request.error);
             requestErrorOccurred = true;
+            request.Dispose();
         }
         else
         {
@@ -64,11 +65,13 @@ public class RestAPIClient : MonoBehaviour
                 Debug.Log("Error 401: Unauthorized. Resubmitted request!");
                 //StartCoroutine(GetRequest(GenerateRequestURL(lastRequestURL, lastRequestParameters)));
                 requestErrorOccurred = true;
+                request.Dispose();
             }
             else
             {
                 Debug.Log("Request failed (status:" + request.responseCode + ")");
                 requestErrorOccurred = true;
+                request.Dispose();
             }
 
             if (!requestErrorOccurred)
@@ -99,7 +102,7 @@ public class RestAPIClient : MonoBehaviour
 
         Debug.Log("post json deserialize:" + JsonConvert.SerializeObject(leaderBoardEntry));
         byte[] bytes = GetBytes(JsonConvert.SerializeObject(leaderBoardEntry));
-        UnityWebRequest request = UnityWebRequest.Put(posturi, bytes);
+        using UnityWebRequest request = UnityWebRequest.Put(posturi, bytes);
         request.method = "POST";
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();
@@ -109,6 +112,8 @@ public class RestAPIClient : MonoBehaviour
         {
             Debug.Log("Something went wrong, and returned error: " + request.error);
             requestErrorOccurred = true;
+            request.Dispose();
+
         }
         else
         {
@@ -124,11 +129,15 @@ public class RestAPIClient : MonoBehaviour
                 Debug.Log("Error 401: Unauthorized. Resubmitted request!");
                 //StartCoroutine(GetRequest(GenerateRequestURL(lastRequestURL, lastRequestParameters)));
                 requestErrorOccurred = true;
+                request.Dispose();
+
             }
             else
             {
                 Debug.Log("Request failed (status:" + request.responseCode + ")");
                 requestErrorOccurred = true;
+                request.Dispose();
+
             }
 
             if (!requestErrorOccurred)
